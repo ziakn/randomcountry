@@ -2,15 +2,26 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Random Country Generator | Discover the World",
-  description: "Generate a random country instantly! Discover facts, flags, capitals, and populations with our premium Random Country Generator.",
+  title: "Random Country Generator | Discover the World Instantly",
+  description: "Generate a random country instantly! Discover facts, flags, capitals, and populations with our premium, lightning-fast Random Country Generator.",
+  metadataBase: new URL('https://random.country'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
-    title: "Random Country Generator | Discover the World",
+    title: "Random Country Generator | Discover the World Instantly",
     description: "Generate a random country instantly! Discover facts, flags, capitals, and populations.",
+    url: 'https://random.country',
+    siteName: 'Random Country Generator',
     type: "website",
     locale: "en_US",
   },
-  keywords: ["random country generator", "random country picker", "country generator", "randomizer"],
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Random Country Generator',
+    description: 'Generate a random country instantly and learn about its geography, language, and culture.',
+  },
+  keywords: ["random country generator", "random country picker", "country generator", "randomizer", "random place generator", "random travel destination"],
 };
 
 export default function RootLayout({
@@ -18,9 +29,28 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Random Country Generator',
+    description: 'Generate a random country instantly! Discover facts, flags, capitals, and populations.',
+    url: 'https://random.country',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: 'https://random.country/?q={search_term_string}',
+      'query-input': 'required name=search_term_string',
+    },
+  };
+
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
