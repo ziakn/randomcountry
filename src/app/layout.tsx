@@ -4,14 +4,14 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Random Country Generator | Discover the World Instantly",
   description: "Generate a random country instantly! Discover facts, flags, capitals, and populations with our premium, lightning-fast Random Country Generator.",
-  metadataBase: new URL('https://random.country'),
+  metadataBase: new URL('https://randomcountry.ziamuhammad.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Random Country Generator | Discover the World Instantly",
     description: "Generate a random country instantly! Discover facts, flags, capitals, and populations.",
-    url: 'https://random.country',
+    url: 'https://randomcountry.ziamuhammad.com',
     siteName: 'Random Country Generator',
     type: "website",
     locale: "en_US",
@@ -34,10 +34,10 @@ export default function RootLayout({
     '@type': 'WebSite',
     name: 'Random Country Generator',
     description: 'Generate a random country instantly! Discover facts, flags, capitals, and populations.',
-    url: 'https://random.country',
+    url: 'https://randomcountry.ziamuhammad.com',
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://random.country/?q={search_term_string}',
+      target: 'https://randomcountry.ziamuhammad.com/?q={search_term_string}',
       'query-input': 'required name=search_term_string',
     },
   };
