@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './GenerateButton.module.css';
 
 type GenerateButtonProps = {
   onClick: () => void;
@@ -7,7 +6,10 @@ type GenerateButtonProps = {
 
 export default function GenerateButton({ onClick }: GenerateButtonProps) {
   return (
-    <button className={styles.button} onClick={onClick}>
+    <button 
+      className="flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 text-lg"
+      onClick={onClick}
+    >
       Generate Random Country
       <svg 
         width="20" 

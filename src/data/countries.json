@@ -1,3502 +1,7154 @@
 [
   {
     "name": "Afghanistan",
+    "officialName": "Islamic Republic of Afghanistan",
     "capital": "Kabul",
     "population": "43,844,000",
+    "populationRaw": 43844000,
     "region": "Asia",
+    "subregion": "Southern Asia",
     "flagUrl": "https://flagcdn.com/w320/af.png",
+    "flagIcon": "https://flagcdn.com/w40/af.png",
     "code": "af",
+    "iso3": "AFG",
     "currency": "Afghan afghani (؋)",
-    "language": "Dari, Pashto",
+    "currencyCode": "AFN",
+    "language": "Dari, Pashto, Turkmen",
     "coordinates": [
       33,
       65
+    ],
+    "area": 652230,
+    "borders": [
+      "IRN",
+      "PAK",
+      "TKM",
+      "UZB",
+      "TJK",
+      "CHN"
+    ],
+    "timezones": [
+      "UTC+04:30"
     ]
   },
   {
     "name": "Åland Islands",
+    "officialName": "Åland Islands",
     "capital": "Mariehamn",
     "population": "30,654",
+    "populationRaw": 30654,
     "region": "Europe",
+    "subregion": "Northern Europe",
     "flagUrl": "https://flagcdn.com/w320/ax.png",
+    "flagIcon": "https://flagcdn.com/w40/ax.png",
     "code": "ax",
+    "iso3": "ALA",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "Swedish",
     "coordinates": [
       60.116667,
       19.9
+    ],
+    "area": 1580,
+    "borders": [],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "Albania",
+    "officialName": "Republic of Albania",
     "capital": "Tirana",
     "population": "2,363,314",
+    "populationRaw": 2363314,
     "region": "Europe",
+    "subregion": "Southeast Europe",
     "flagUrl": "https://flagcdn.com/w320/al.png",
+    "flagIcon": "https://flagcdn.com/w40/al.png",
     "code": "al",
+    "iso3": "ALB",
     "currency": "Albanian lek (L)",
+    "currencyCode": "ALL",
     "language": "Albanian",
     "coordinates": [
       41,
       20
+    ],
+    "area": 28748,
+    "borders": [
+      "MNE",
+      "GRC",
+      "MKD",
+      "UNK"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Algeria",
+    "officialName": "People's Democratic Republic of Algeria",
     "capital": "Algiers",
     "population": "47,400,000",
+    "populationRaw": 47400000,
     "region": "Africa",
+    "subregion": "Northern Africa",
     "flagUrl": "https://flagcdn.com/w320/dz.png",
+    "flagIcon": "https://flagcdn.com/w40/dz.png",
     "code": "dz",
+    "iso3": "DZA",
     "currency": "Algerian dinar (د.ج)",
+    "currencyCode": "DZD",
     "language": "Arabic",
     "coordinates": [
       28,
       3
+    ],
+    "area": 2381741,
+    "borders": [
+      "TUN",
+      "LBY",
+      "NER",
+      "ESH",
+      "MRT",
+      "MLI",
+      "MAR"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "American Samoa",
+    "officialName": "American Samoa",
     "capital": "Pago Pago",
     "population": "49,710",
+    "populationRaw": 49710,
     "region": "Oceania",
+    "subregion": "Polynesia",
     "flagUrl": "https://flagcdn.com/w320/as.png",
+    "flagIcon": "https://flagcdn.com/w40/as.png",
     "code": "as",
+    "iso3": "ASM",
     "currency": "United States dollar ($)",
+    "currencyCode": "USD",
     "language": "English, Samoan",
     "coordinates": [
       -14.33333333,
       -170
+    ],
+    "area": 199,
+    "borders": [],
+    "timezones": [
+      "UTC-11:00"
     ]
   },
   {
     "name": "Andorra",
+    "officialName": "Principality of Andorra",
     "capital": "Andorra la Vella",
     "population": "88,406",
+    "populationRaw": 88406,
     "region": "Europe",
+    "subregion": "Southern Europe",
     "flagUrl": "https://flagcdn.com/w320/ad.png",
+    "flagIcon": "https://flagcdn.com/w40/ad.png",
     "code": "ad",
+    "iso3": "AND",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "Catalan",
     "coordinates": [
       42.5,
       1.5
+    ],
+    "area": 468,
+    "borders": [
+      "FRA",
+      "ESP"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Angola",
+    "officialName": "Republic of Angola",
     "capital": "Luanda",
     "population": "36,170,961",
+    "populationRaw": 36170961,
     "region": "Africa",
+    "subregion": "Middle Africa",
     "flagUrl": "https://flagcdn.com/w320/ao.png",
+    "flagIcon": "https://flagcdn.com/w40/ao.png",
     "code": "ao",
+    "iso3": "AGO",
     "currency": "Angolan kwanza (Kz)",
+    "currencyCode": "AOA",
     "language": "Portuguese",
     "coordinates": [
       -12.5,
       18.5
+    ],
+    "area": 1246700,
+    "borders": [
+      "COG",
+      "COD",
+      "ZMB",
+      "NAM"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Anguilla",
+    "officialName": "Anguilla",
     "capital": "The Valley",
     "population": "16,010",
+    "populationRaw": 16010,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/ai.png",
+    "flagIcon": "https://flagcdn.com/w40/ai.png",
     "code": "ai",
+    "iso3": "AIA",
     "currency": "Eastern Caribbean dollar ($)",
+    "currencyCode": "XCD",
     "language": "English",
     "coordinates": [
       18.25,
       -63.16666666
+    ],
+    "area": 91,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Antarctica",
+    "officialName": "Antarctica",
     "capital": "N/A",
     "population": "1,300",
+    "populationRaw": 1300,
     "region": "Antarctic",
+    "subregion": "N/A",
     "flagUrl": "https://flagcdn.com/w320/aq.png",
+    "flagIcon": "https://flagcdn.com/w40/aq.png",
     "code": "aq",
+    "iso3": "ATA",
     "currency": "N/A",
+    "currencyCode": "N/A",
     "language": "",
     "coordinates": [
       -90,
       0
+    ],
+    "area": 14000000,
+    "borders": [],
+    "timezones": [
+      "UTC-03:00",
+      "UTC+03:00",
+      "UTC+05:00",
+      "UTC+06:00",
+      "UTC+07:00",
+      "UTC+08:00",
+      "UTC+10:00",
+      "UTC+12:00"
     ]
   },
   {
     "name": "Antigua and Barbuda",
+    "officialName": "Antigua and Barbuda",
     "capital": "Saint John's",
     "population": "103,603",
+    "populationRaw": 103603,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/ag.png",
+    "flagIcon": "https://flagcdn.com/w40/ag.png",
     "code": "ag",
+    "iso3": "ATG",
     "currency": "Eastern Caribbean dollar ($)",
+    "currencyCode": "XCD",
     "language": "English",
     "coordinates": [
       17.05,
       -61.8
+    ],
+    "area": 442,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Argentina",
+    "officialName": "Argentine Republic",
     "capital": "Buenos Aires",
     "population": "46,735,004",
+    "populationRaw": 46735004,
     "region": "Americas",
+    "subregion": "South America",
     "flagUrl": "https://flagcdn.com/w320/ar.png",
+    "flagIcon": "https://flagcdn.com/w40/ar.png",
     "code": "ar",
+    "iso3": "ARG",
     "currency": "Argentine peso ($)",
+    "currencyCode": "ARS",
     "language": "Guaraní, Spanish",
     "coordinates": [
       -34,
       -64
+    ],
+    "area": 2780400,
+    "borders": [
+      "BOL",
+      "BRA",
+      "CHL",
+      "PRY",
+      "URY"
+    ],
+    "timezones": [
+      "UTC-03:00"
     ]
   },
   {
     "name": "Armenia",
+    "officialName": "Republic of Armenia",
     "capital": "Yerevan",
     "population": "3,076,200",
+    "populationRaw": 3076200,
     "region": "Asia",
+    "subregion": "Western Asia",
     "flagUrl": "https://flagcdn.com/w320/am.png",
+    "flagIcon": "https://flagcdn.com/w40/am.png",
     "code": "am",
+    "iso3": "ARM",
     "currency": "Armenian dram (֏)",
+    "currencyCode": "AMD",
     "language": "Armenian",
     "coordinates": [
       40,
       45
+    ],
+    "area": 29743,
+    "borders": [
+      "AZE",
+      "GEO",
+      "IRN",
+      "TUR"
+    ],
+    "timezones": [
+      "UTC+04:00"
     ]
   },
   {
     "name": "Aruba",
+    "officialName": "Aruba",
     "capital": "Oranjestad",
     "population": "107,566",
+    "populationRaw": 107566,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/aw.png",
+    "flagIcon": "https://flagcdn.com/w40/aw.png",
     "code": "aw",
+    "iso3": "ABW",
     "currency": "Aruban florin (ƒ)",
+    "currencyCode": "AWG",
     "language": "Dutch, Papiamento",
     "coordinates": [
       12.5,
       -69.96666666
+    ],
+    "area": 180,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Australia",
+    "officialName": "Commonwealth of Australia",
     "capital": "Canberra",
     "population": "27,536,874",
+    "populationRaw": 27536874,
     "region": "Oceania",
+    "subregion": "Australia and New Zealand",
     "flagUrl": "https://flagcdn.com/w320/au.png",
+    "flagIcon": "https://flagcdn.com/w40/au.png",
     "code": "au",
+    "iso3": "AUS",
     "currency": "Australian dollar ($)",
+    "currencyCode": "AUD",
     "language": "English",
     "coordinates": [
       -27,
       133
+    ],
+    "area": 7692024,
+    "borders": [],
+    "timezones": [
+      "UTC+05:00",
+      "UTC+06:30",
+      "UTC+07:00",
+      "UTC+08:00",
+      "UTC+09:30",
+      "UTC+10:00",
+      "UTC+10:30",
+      "UTC+11:30"
     ]
   },
   {
     "name": "Austria",
+    "officialName": "Republic of Austria",
     "capital": "Vienna",
     "population": "9,200,931",
+    "populationRaw": 9200931,
     "region": "Europe",
+    "subregion": "Central Europe",
     "flagUrl": "https://flagcdn.com/w320/at.png",
+    "flagIcon": "https://flagcdn.com/w40/at.png",
     "code": "at",
+    "iso3": "AUT",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "German",
     "coordinates": [
       47.33333333,
       13.33333333
+    ],
+    "area": 83871,
+    "borders": [
+      "CZE",
+      "DEU",
+      "HUN",
+      "ITA",
+      "LIE",
+      "SVK",
+      "SVN",
+      "CHE"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Azerbaijan",
+    "officialName": "Republic of Azerbaijan",
     "capital": "Baku",
     "population": "10,241,722",
+    "populationRaw": 10241722,
     "region": "Asia",
+    "subregion": "Western Asia",
     "flagUrl": "https://flagcdn.com/w320/az.png",
+    "flagIcon": "https://flagcdn.com/w40/az.png",
     "code": "az",
+    "iso3": "AZE",
     "currency": "Azerbaijani manat (₼)",
+    "currencyCode": "AZN",
     "language": "Azerbaijani",
     "coordinates": [
       40.5,
       47.5
+    ],
+    "area": 86600,
+    "borders": [
+      "ARM",
+      "GEO",
+      "IRN",
+      "RUS",
+      "TUR"
+    ],
+    "timezones": [
+      "UTC+04:00"
     ]
   },
   {
     "name": "Bahamas",
+    "officialName": "Commonwealth of the Bahamas",
     "capital": "Nassau",
     "population": "398,165",
+    "populationRaw": 398165,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/bs.png",
+    "flagIcon": "https://flagcdn.com/w40/bs.png",
     "code": "bs",
+    "iso3": "BHS",
     "currency": "Bahamian dollar ($)",
+    "currencyCode": "BSD",
     "language": "English",
     "coordinates": [
       25.0343,
       -77.3963
+    ],
+    "area": 13943,
+    "borders": [],
+    "timezones": [
+      "UTC-05:00"
     ]
   },
   {
     "name": "Bahrain",
+    "officialName": "Kingdom of Bahrain",
     "capital": "Manama",
     "population": "1,594,654",
+    "populationRaw": 1594654,
     "region": "Asia",
+    "subregion": "Western Asia",
     "flagUrl": "https://flagcdn.com/w320/bh.png",
+    "flagIcon": "https://flagcdn.com/w40/bh.png",
     "code": "bh",
+    "iso3": "BHR",
     "currency": "Bahraini dinar (.د.ب)",
+    "currencyCode": "BHD",
     "language": "Arabic",
     "coordinates": [
       26,
       50.55
+    ],
+    "area": 765,
+    "borders": [],
+    "timezones": [
+      "UTC+03:00"
     ]
   },
   {
     "name": "Bangladesh",
+    "officialName": "People's Republic of Bangladesh",
     "capital": "Dhaka",
     "population": "169,828,911",
+    "populationRaw": 169828911,
     "region": "Asia",
+    "subregion": "Southern Asia",
     "flagUrl": "https://flagcdn.com/w320/bd.png",
+    "flagIcon": "https://flagcdn.com/w40/bd.png",
     "code": "bd",
+    "iso3": "BGD",
     "currency": "Bangladeshi taka (৳)",
+    "currencyCode": "BDT",
     "language": "Bengali",
     "coordinates": [
       24,
       90
+    ],
+    "area": 147570,
+    "borders": [
+      "MMR",
+      "IND"
+    ],
+    "timezones": [
+      "UTC+06:00"
     ]
   },
   {
     "name": "Barbados",
+    "officialName": "Barbados",
     "capital": "Bridgetown",
     "population": "267,800",
+    "populationRaw": 267800,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/bb.png",
+    "flagIcon": "https://flagcdn.com/w40/bb.png",
     "code": "bb",
+    "iso3": "BRB",
     "currency": "Barbadian dollar ($)",
+    "currencyCode": "BBD",
     "language": "English",
     "coordinates": [
       13.16666666,
       -59.53333333
+    ],
+    "area": 430,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Belarus",
+    "officialName": "Republic of Belarus",
     "capital": "Minsk",
     "population": "9,109,280",
+    "populationRaw": 9109280,
     "region": "Europe",
+    "subregion": "Eastern Europe",
     "flagUrl": "https://flagcdn.com/w320/by.png",
+    "flagIcon": "https://flagcdn.com/w40/by.png",
     "code": "by",
+    "iso3": "BLR",
     "currency": "Belarusian ruble (Br)",
+    "currencyCode": "BYN",
     "language": "Belarusian, Russian",
     "coordinates": [
       53,
       28
+    ],
+    "area": 207600,
+    "borders": [
+      "LVA",
+      "LTU",
+      "POL",
+      "RUS",
+      "UKR"
+    ],
+    "timezones": [
+      "UTC+03:00"
     ]
   },
   {
     "name": "Belgium",
+    "officialName": "Kingdom of Belgium",
     "capital": "Brussels",
     "population": "11,825,551",
+    "populationRaw": 11825551,
     "region": "Europe",
+    "subregion": "Western Europe",
     "flagUrl": "https://flagcdn.com/w320/be.png",
+    "flagIcon": "https://flagcdn.com/w40/be.png",
     "code": "be",
+    "iso3": "BEL",
     "currency": "euro (€)",
-    "language": "German, French",
+    "currencyCode": "EUR",
+    "language": "German, French, Dutch",
     "coordinates": [
       50.83333333,
       4
+    ],
+    "area": 30528,
+    "borders": [
+      "FRA",
+      "DEU",
+      "LUX",
+      "NLD"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Belize",
+    "officialName": "Belize",
     "capital": "Belmopan",
     "population": "417,634",
+    "populationRaw": 417634,
     "region": "Americas",
+    "subregion": "Central America",
     "flagUrl": "https://flagcdn.com/w320/bz.png",
+    "flagIcon": "https://flagcdn.com/w40/bz.png",
     "code": "bz",
+    "iso3": "BLZ",
     "currency": "Belize dollar ($)",
-    "language": "Belizean Creole, English",
+    "currencyCode": "BZD",
+    "language": "Belizean Creole, English, Spanish",
     "coordinates": [
       17.25,
       -88.75
+    ],
+    "area": 22966,
+    "borders": [
+      "GTM",
+      "MEX"
+    ],
+    "timezones": [
+      "UTC-06:00"
     ]
   },
   {
     "name": "Benin",
+    "officialName": "Republic of Benin",
     "capital": "Porto-Novo",
     "population": "13,224,860",
+    "populationRaw": 13224860,
     "region": "Africa",
+    "subregion": "Western Africa",
     "flagUrl": "https://flagcdn.com/w320/bj.png",
+    "flagIcon": "https://flagcdn.com/w40/bj.png",
     "code": "bj",
+    "iso3": "BEN",
     "currency": "West African CFA franc (Fr)",
+    "currencyCode": "XOF",
     "language": "French",
     "coordinates": [
       9.5,
       2.25
+    ],
+    "area": 112622,
+    "borders": [
+      "BFA",
+      "NER",
+      "NGA",
+      "TGO"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Bermuda",
+    "officialName": "Bermuda",
     "capital": "Hamilton",
     "population": "64,055",
+    "populationRaw": 64055,
     "region": "Americas",
+    "subregion": "North America",
     "flagUrl": "https://flagcdn.com/w320/bm.png",
+    "flagIcon": "https://flagcdn.com/w40/bm.png",
     "code": "bm",
+    "iso3": "BMU",
     "currency": "Bermudian dollar ($)",
+    "currencyCode": "BMD",
     "language": "English",
     "coordinates": [
       32.33333333,
       -64.75
+    ],
+    "area": 54,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Bhutan",
+    "officialName": "Kingdom of Bhutan",
     "capital": "Thimphu",
     "population": "784,043",
+    "populationRaw": 784043,
     "region": "Asia",
+    "subregion": "Southern Asia",
     "flagUrl": "https://flagcdn.com/w320/bt.png",
+    "flagIcon": "https://flagcdn.com/w40/bt.png",
     "code": "bt",
+    "iso3": "BTN",
     "currency": "Bhutanese ngultrum (Nu.)",
+    "currencyCode": "BTN",
     "language": "Dzongkha",
     "coordinates": [
       27.5,
       90.5
+    ],
+    "area": 38394,
+    "borders": [
+      "CHN",
+      "IND"
+    ],
+    "timezones": [
+      "UTC+06:00"
     ]
   },
   {
     "name": "Bolivia",
+    "officialName": "Plurinational State of Bolivia",
     "capital": "Sucre",
     "population": "11,365,333",
+    "populationRaw": 11365333,
     "region": "Americas",
+    "subregion": "South America",
     "flagUrl": "https://flagcdn.com/w320/bo.png",
+    "flagIcon": "https://flagcdn.com/w40/bo.png",
     "code": "bo",
+    "iso3": "BOL",
     "currency": "Bolivian boliviano (Bs.)",
-    "language": "Aymara, Guaraní",
+    "currencyCode": "BOB",
+    "language": "Aymara, Guaraní, Quechua",
     "coordinates": [
       -17,
       -65
+    ],
+    "area": 1098581,
+    "borders": [
+      "ARG",
+      "BRA",
+      "CHL",
+      "PRY",
+      "PER"
+    ],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Bosnia and Herzegovina",
+    "officialName": "Bosnia and Herzegovina",
     "capital": "Sarajevo",
     "population": "3,422,000",
+    "populationRaw": 3422000,
     "region": "Europe",
+    "subregion": "Southeast Europe",
     "flagUrl": "https://flagcdn.com/w320/ba.png",
+    "flagIcon": "https://flagcdn.com/w40/ba.png",
     "code": "ba",
+    "iso3": "BIH",
     "currency": "Bosnia and Herzegovina convertible mark (KM)",
-    "language": "Bosnian, Croatian",
+    "currencyCode": "BAM",
+    "language": "Bosnian, Croatian, Serbian",
     "coordinates": [
       44,
       18
+    ],
+    "area": 51209,
+    "borders": [
+      "HRV",
+      "MNE",
+      "SRB"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Botswana",
+    "officialName": "Republic of Botswana",
     "capital": "Gaborone",
     "population": "2,359,609",
+    "populationRaw": 2359609,
     "region": "Africa",
+    "subregion": "Southern Africa",
     "flagUrl": "https://flagcdn.com/w320/bw.png",
+    "flagIcon": "https://flagcdn.com/w40/bw.png",
     "code": "bw",
+    "iso3": "BWA",
     "currency": "Botswana pula (P)",
+    "currencyCode": "BWP",
     "language": "English, Tswana",
     "coordinates": [
       -22,
       24
+    ],
+    "area": 582000,
+    "borders": [
+      "NAM",
+      "ZAF",
+      "ZMB",
+      "ZWE"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "Bouvet Island",
+    "officialName": "Bouvet Island",
     "capital": "N/A",
     "population": "0",
+    "populationRaw": 0,
     "region": "Antarctic",
+    "subregion": "N/A",
     "flagUrl": "https://flagcdn.com/w320/bv.png",
+    "flagIcon": "https://flagcdn.com/w40/bv.png",
     "code": "bv",
+    "iso3": "BVT",
     "currency": "N/A",
+    "currencyCode": "N/A",
     "language": "Norwegian",
     "coordinates": [
       -54.4208,
       3.3464
+    ],
+    "area": 49,
+    "borders": [],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Brazil",
+    "officialName": "Federative Republic of Brazil",
     "capital": "Brasília",
     "population": "213,421,037",
+    "populationRaw": 213421037,
     "region": "Americas",
+    "subregion": "South America",
     "flagUrl": "https://flagcdn.com/w320/br.png",
+    "flagIcon": "https://flagcdn.com/w40/br.png",
     "code": "br",
+    "iso3": "BRA",
     "currency": "Brazilian real (R$)",
+    "currencyCode": "BRL",
     "language": "Portuguese",
     "coordinates": [
       -10,
       -55
+    ],
+    "area": 8515767,
+    "borders": [
+      "ARG",
+      "BOL",
+      "COL",
+      "GUF",
+      "GUY",
+      "PRY",
+      "PER",
+      "SUR",
+      "URY",
+      "VEN"
+    ],
+    "timezones": [
+      "UTC-05:00",
+      "UTC-04:00",
+      "UTC-03:00",
+      "UTC-02:00"
     ]
   },
   {
     "name": "British Indian Ocean Territory",
+    "officialName": "British Indian Ocean Territory",
     "capital": "Diego Garcia",
     "population": "0",
+    "populationRaw": 0,
     "region": "Africa",
+    "subregion": "Eastern Africa",
     "flagUrl": "https://flagcdn.com/w320/io.png",
+    "flagIcon": "https://flagcdn.com/w40/io.png",
     "code": "io",
+    "iso3": "IOT",
     "currency": "United States dollar ($)",
+    "currencyCode": "USD",
     "language": "English",
     "coordinates": [
       -6,
       71.5
+    ],
+    "area": 60,
+    "borders": [],
+    "timezones": [
+      "UTC+06:00"
     ]
   },
   {
     "name": "British Virgin Islands",
+    "officialName": "Virgin Islands",
     "capital": "Road Town",
     "population": "39,471",
+    "populationRaw": 39471,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/vg.png",
+    "flagIcon": "https://flagcdn.com/w40/vg.png",
     "code": "vg",
+    "iso3": "VGB",
     "currency": "United States dollar ($)",
+    "currencyCode": "USD",
     "language": "English",
     "coordinates": [
       18.431383,
       -64.62305
+    ],
+    "area": 151,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Brunei",
+    "officialName": "Nation of Brunei, Abode of Peace",
     "capital": "Bandar Seri Begawan",
     "population": "455,500",
+    "populationRaw": 455500,
     "region": "Asia",
+    "subregion": "South-Eastern Asia",
     "flagUrl": "https://flagcdn.com/w320/bn.png",
+    "flagIcon": "https://flagcdn.com/w40/bn.png",
     "code": "bn",
+    "iso3": "BRN",
     "currency": "Brunei dollar ($)",
+    "currencyCode": "BND",
     "language": "Malay",
     "coordinates": [
       4.5,
       114.66666666
+    ],
+    "area": 5765,
+    "borders": [
+      "MYS"
+    ],
+    "timezones": [
+      "UTC+08:00"
     ]
   },
   {
     "name": "Bulgaria",
+    "officialName": "Republic of Bulgaria",
     "capital": "Sofia",
     "population": "6,437,360",
+    "populationRaw": 6437360,
     "region": "Europe",
+    "subregion": "Southeast Europe",
     "flagUrl": "https://flagcdn.com/w320/bg.png",
+    "flagIcon": "https://flagcdn.com/w40/bg.png",
     "code": "bg",
+    "iso3": "BGR",
     "currency": "Bulgarian lev (лв)",
+    "currencyCode": "BGN",
     "language": "Bulgarian",
     "coordinates": [
       43,
       25
+    ],
+    "area": 110879,
+    "borders": [
+      "GRC",
+      "MKD",
+      "ROU",
+      "SRB",
+      "TUR"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "Burkina Faso",
+    "officialName": "Burkina Faso",
     "capital": "Ouagadougou",
     "population": "24,070,553",
+    "populationRaw": 24070553,
     "region": "Africa",
+    "subregion": "Western Africa",
     "flagUrl": "https://flagcdn.com/w320/bf.png",
+    "flagIcon": "https://flagcdn.com/w40/bf.png",
     "code": "bf",
+    "iso3": "BFA",
     "currency": "West African CFA franc (Fr)",
+    "currencyCode": "XOF",
     "language": "French",
     "coordinates": [
       13,
       -2
+    ],
+    "area": 272967,
+    "borders": [
+      "BEN",
+      "CIV",
+      "GHA",
+      "MLI",
+      "NER",
+      "TGO"
+    ],
+    "timezones": [
+      "UTC"
     ]
   },
   {
     "name": "Burundi",
+    "officialName": "Republic of Burundi",
     "capital": "Gitega",
     "population": "12,332,788",
+    "populationRaw": 12332788,
     "region": "Africa",
+    "subregion": "Eastern Africa",
     "flagUrl": "https://flagcdn.com/w320/bi.png",
+    "flagIcon": "https://flagcdn.com/w40/bi.png",
     "code": "bi",
+    "iso3": "BDI",
     "currency": "Burundian franc (Fr)",
+    "currencyCode": "BIF",
     "language": "French, Kirundi",
     "coordinates": [
       -3.5,
       30
+    ],
+    "area": 27834,
+    "borders": [
+      "COD",
+      "RWA",
+      "TZA"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "Cambodia",
+    "officialName": "Kingdom of Cambodia",
     "capital": "Phnom Penh",
     "population": "17,577,760",
+    "populationRaw": 17577760,
     "region": "Asia",
+    "subregion": "South-Eastern Asia",
     "flagUrl": "https://flagcdn.com/w320/kh.png",
+    "flagIcon": "https://flagcdn.com/w40/kh.png",
     "code": "kh",
+    "iso3": "KHM",
     "currency": "Cambodian riel (៛)",
+    "currencyCode": "KHR",
     "language": "Khmer",
     "coordinates": [
       13,
       105
+    ],
+    "area": 181035,
+    "borders": [
+      "LAO",
+      "THA",
+      "VNM"
+    ],
+    "timezones": [
+      "UTC+07:00"
     ]
   },
   {
     "name": "Cameroon",
+    "officialName": "Republic of Cameroon",
     "capital": "Yaoundé",
     "population": "29,442,327",
+    "populationRaw": 29442327,
     "region": "Africa",
+    "subregion": "Middle Africa",
     "flagUrl": "https://flagcdn.com/w320/cm.png",
+    "flagIcon": "https://flagcdn.com/w40/cm.png",
     "code": "cm",
+    "iso3": "CMR",
     "currency": "Central African CFA franc (Fr)",
+    "currencyCode": "XAF",
     "language": "English, French",
     "coordinates": [
       6,
       12
+    ],
+    "area": 475442,
+    "borders": [
+      "CAF",
+      "TCD",
+      "COG",
+      "GNQ",
+      "GAB",
+      "NGA"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Canada",
+    "officialName": "Canada",
     "capital": "Ottawa",
     "population": "41,651,653",
+    "populationRaw": 41651653,
     "region": "Americas",
+    "subregion": "North America",
     "flagUrl": "https://flagcdn.com/w320/ca.png",
+    "flagIcon": "https://flagcdn.com/w40/ca.png",
     "code": "ca",
+    "iso3": "CAN",
     "currency": "Canadian dollar ($)",
+    "currencyCode": "CAD",
     "language": "English, French",
     "coordinates": [
       60,
       -95
+    ],
+    "area": 9984670,
+    "borders": [
+      "USA"
+    ],
+    "timezones": [
+      "UTC-08:00",
+      "UTC-07:00",
+      "UTC-06:00",
+      "UTC-05:00",
+      "UTC-04:00",
+      "UTC-03:30"
     ]
   },
   {
     "name": "Cape Verde",
+    "officialName": "Republic of Cabo Verde",
     "capital": "Praia",
     "population": "491,233",
+    "populationRaw": 491233,
     "region": "Africa",
+    "subregion": "Western Africa",
     "flagUrl": "https://flagcdn.com/w320/cv.png",
+    "flagIcon": "https://flagcdn.com/w40/cv.png",
     "code": "cv",
+    "iso3": "CPV",
     "currency": "Cape Verdean escudo (Esc)",
+    "currencyCode": "CVE",
     "language": "Portuguese",
     "coordinates": [
       16.5388,
       -23.0418
+    ],
+    "area": 4033,
+    "borders": [],
+    "timezones": [
+      "UTC-01:00"
     ]
   },
   {
     "name": "Caribbean Netherlands",
+    "officialName": "Bonaire, Sint Eustatius and Saba",
     "capital": "Kralendijk",
     "population": "31,980",
+    "populationRaw": 31980,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/bq.png",
+    "flagIcon": "https://flagcdn.com/w40/bq.png",
     "code": "bq",
+    "iso3": "BES",
     "currency": "United States dollar ($)",
-    "language": "English, Dutch",
+    "currencyCode": "USD",
+    "language": "English, Dutch, Papiamento",
     "coordinates": [
       12.18,
       -68.25
+    ],
+    "area": 328,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Cayman Islands",
+    "officialName": "Cayman Islands",
     "capital": "George Town",
     "population": "84,738",
+    "populationRaw": 84738,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/ky.png",
+    "flagIcon": "https://flagcdn.com/w40/ky.png",
     "code": "ky",
+    "iso3": "CYM",
     "currency": "Cayman Islands dollar ($)",
+    "currencyCode": "KYD",
     "language": "English",
     "coordinates": [
       19.3133,
       -81.2546
+    ],
+    "area": 264,
+    "borders": [],
+    "timezones": [
+      "UTC-05:00"
     ]
   },
   {
     "name": "Central African Republic",
+    "officialName": "Central African Republic",
     "capital": "Bangui",
     "population": "6,470,307",
+    "populationRaw": 6470307,
     "region": "Africa",
+    "subregion": "Middle Africa",
     "flagUrl": "https://flagcdn.com/w320/cf.png",
+    "flagIcon": "https://flagcdn.com/w40/cf.png",
     "code": "cf",
+    "iso3": "CAF",
     "currency": "Central African CFA franc (Fr)",
+    "currencyCode": "XAF",
     "language": "French, Sango",
     "coordinates": [
       7,
       21
+    ],
+    "area": 622984,
+    "borders": [
+      "CMR",
+      "TCD",
+      "COD",
+      "COG",
+      "SSD",
+      "SDN"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Chad",
+    "officialName": "Republic of Chad",
     "capital": "N'Djamena",
     "population": "19,340,757",
+    "populationRaw": 19340757,
     "region": "Africa",
+    "subregion": "Middle Africa",
     "flagUrl": "https://flagcdn.com/w320/td.png",
+    "flagIcon": "https://flagcdn.com/w40/td.png",
     "code": "td",
+    "iso3": "TCD",
     "currency": "Central African CFA franc (Fr)",
+    "currencyCode": "XAF",
     "language": "Arabic, French",
     "coordinates": [
       15,
       19
+    ],
+    "area": 1284000,
+    "borders": [
+      "CMR",
+      "CAF",
+      "LBY",
+      "NER",
+      "NGA",
+      "SDN"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Chile",
+    "officialName": "Republic of Chile",
     "capital": "Santiago",
     "population": "20,206,953",
+    "populationRaw": 20206953,
     "region": "Americas",
+    "subregion": "South America",
     "flagUrl": "https://flagcdn.com/w320/cl.png",
+    "flagIcon": "https://flagcdn.com/w40/cl.png",
     "code": "cl",
+    "iso3": "CHL",
     "currency": "Chilean peso ($)",
+    "currencyCode": "CLP",
     "language": "Spanish",
     "coordinates": [
       -30,
       -71
+    ],
+    "area": 756102,
+    "borders": [
+      "ARG",
+      "BOL",
+      "PER"
+    ],
+    "timezones": [
+      "UTC-06:00",
+      "UTC-04:00"
     ]
   },
   {
     "name": "China",
+    "officialName": "People's Republic of China",
     "capital": "Beijing",
     "population": "1,408,280,000",
+    "populationRaw": 1408280000,
     "region": "Asia",
+    "subregion": "Eastern Asia",
     "flagUrl": "https://flagcdn.com/w320/cn.png",
+    "flagIcon": "https://flagcdn.com/w40/cn.png",
     "code": "cn",
+    "iso3": "CHN",
     "currency": "Chinese yuan (¥)",
+    "currencyCode": "CNY",
     "language": "Chinese",
     "coordinates": [
       35,
       105
+    ],
+    "area": 9706961,
+    "borders": [
+      "AFG",
+      "BTN",
+      "MMR",
+      "HKG",
+      "IND",
+      "KAZ",
+      "NPL",
+      "PRK",
+      "KGZ",
+      "LAO",
+      "MAC",
+      "MNG",
+      "PAK",
+      "RUS",
+      "TJK",
+      "VNM"
+    ],
+    "timezones": [
+      "UTC+08:00"
     ]
   },
   {
     "name": "Christmas Island",
+    "officialName": "Territory of Christmas Island",
     "capital": "Flying Fish Cove",
     "population": "1,692",
+    "populationRaw": 1692,
     "region": "Oceania",
+    "subregion": "Australia and New Zealand",
     "flagUrl": "https://flagcdn.com/w320/cx.png",
+    "flagIcon": "https://flagcdn.com/w40/cx.png",
     "code": "cx",
+    "iso3": "CXR",
     "currency": "Australian dollar ($)",
+    "currencyCode": "AUD",
     "language": "English",
     "coordinates": [
       -10.5,
       105.66666666
+    ],
+    "area": 135,
+    "borders": [],
+    "timezones": [
+      "UTC+07:00"
     ]
   },
   {
     "name": "Cocos (Keeling) Islands",
+    "officialName": "Territory of the Cocos (Keeling) Islands",
     "capital": "West Island",
     "population": "593",
+    "populationRaw": 593,
     "region": "Oceania",
+    "subregion": "Australia and New Zealand",
     "flagUrl": "https://flagcdn.com/w320/cc.png",
+    "flagIcon": "https://flagcdn.com/w40/cc.png",
     "code": "cc",
+    "iso3": "CCK",
     "currency": "Australian dollar ($)",
+    "currencyCode": "AUD",
     "language": "English",
     "coordinates": [
       -12.1642,
       96.871
+    ],
+    "area": 14,
+    "borders": [],
+    "timezones": [
+      "UTC+06:30"
     ]
   },
   {
     "name": "Colombia",
+    "officialName": "Republic of Colombia",
     "capital": "Bogotá",
     "population": "53,057,212",
+    "populationRaw": 53057212,
     "region": "Americas",
+    "subregion": "South America",
     "flagUrl": "https://flagcdn.com/w320/co.png",
+    "flagIcon": "https://flagcdn.com/w40/co.png",
     "code": "co",
+    "iso3": "COL",
     "currency": "Colombian peso ($)",
+    "currencyCode": "COP",
     "language": "Spanish",
     "coordinates": [
       4,
       -72
+    ],
+    "area": 1141748,
+    "borders": [
+      "BRA",
+      "ECU",
+      "PAN",
+      "PER",
+      "VEN"
+    ],
+    "timezones": [
+      "UTC-05:00"
     ]
   },
   {
     "name": "Comoros",
+    "officialName": "Union of the Comoros",
     "capital": "Moroni",
     "population": "919,901",
+    "populationRaw": 919901,
     "region": "Africa",
+    "subregion": "Eastern Africa",
     "flagUrl": "https://flagcdn.com/w320/km.png",
+    "flagIcon": "https://flagcdn.com/w40/km.png",
     "code": "km",
+    "iso3": "COM",
     "currency": "Comorian franc (Fr)",
-    "language": "Arabic, French",
+    "currencyCode": "KMF",
+    "language": "Arabic, French, Comorian",
     "coordinates": [
       -12.16666666,
       44.25
+    ],
+    "area": 1862,
+    "borders": [],
+    "timezones": [
+      "UTC+03:00"
     ]
   },
   {
     "name": "Cook Islands",
+    "officialName": "Cook Islands",
     "capital": "Avarua",
     "population": "15,040",
+    "populationRaw": 15040,
     "region": "Oceania",
+    "subregion": "Polynesia",
     "flagUrl": "https://flagcdn.com/w320/ck.png",
+    "flagIcon": "https://flagcdn.com/w40/ck.png",
     "code": "ck",
+    "iso3": "COK",
     "currency": "Cook Islands dollar ($)",
+    "currencyCode": "CKD",
     "language": "English, Cook Islands Māori",
     "coordinates": [
       -21.23333333,
       -159.76666666
+    ],
+    "area": 236,
+    "borders": [],
+    "timezones": [
+      "UTC-10:00"
     ]
   },
   {
     "name": "Costa Rica",
+    "officialName": "Republic of Costa Rica",
     "capital": "San José",
     "population": "5,309,625",
+    "populationRaw": 5309625,
     "region": "Americas",
+    "subregion": "Central America",
     "flagUrl": "https://flagcdn.com/w320/cr.png",
+    "flagIcon": "https://flagcdn.com/w40/cr.png",
     "code": "cr",
+    "iso3": "CRI",
     "currency": "Costa Rican colón (₡)",
+    "currencyCode": "CRC",
     "language": "Spanish",
     "coordinates": [
       10,
       -84
+    ],
+    "area": 51100,
+    "borders": [
+      "NIC",
+      "PAN"
+    ],
+    "timezones": [
+      "UTC-06:00"
     ]
   },
   {
     "name": "Croatia",
+    "officialName": "Republic of Croatia",
     "capital": "Zagreb",
     "population": "3,866,233",
+    "populationRaw": 3866233,
     "region": "Europe",
+    "subregion": "Southeast Europe",
     "flagUrl": "https://flagcdn.com/w320/hr.png",
+    "flagIcon": "https://flagcdn.com/w40/hr.png",
     "code": "hr",
+    "iso3": "HRV",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "Croatian",
     "coordinates": [
       45.16666666,
       15.5
+    ],
+    "area": 56594,
+    "borders": [
+      "BIH",
+      "HUN",
+      "MNE",
+      "SRB",
+      "SVN"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Cuba",
+    "officialName": "Republic of Cuba",
     "capital": "Havana",
     "population": "9,748,007",
+    "populationRaw": 9748007,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/cu.png",
+    "flagIcon": "https://flagcdn.com/w40/cu.png",
     "code": "cu",
+    "iso3": "CUB",
     "currency": "Cuban convertible peso ($)",
+    "currencyCode": "CUC",
     "language": "Spanish",
     "coordinates": [
       21.5,
       -80
+    ],
+    "area": 109884,
+    "borders": [],
+    "timezones": [
+      "UTC-05:00"
     ]
   },
   {
     "name": "Curaçao",
+    "officialName": "Country of Curaçao",
     "capital": "Willemstad",
     "population": "156,115",
+    "populationRaw": 156115,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/cw.png",
+    "flagIcon": "https://flagcdn.com/w40/cw.png",
     "code": "cw",
+    "iso3": "CUW",
     "currency": "Netherlands Antillean guilder (ƒ)",
-    "language": "English, Dutch",
+    "currencyCode": "ANG",
+    "language": "English, Dutch, Papiamento",
     "coordinates": [
       12.116667,
       -68.933333
+    ],
+    "area": 444,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Cyprus",
+    "officialName": "Republic of Cyprus",
     "capital": "Nicosia",
     "population": "1,442,614",
+    "populationRaw": 1442614,
     "region": "Europe",
+    "subregion": "Southern Europe",
     "flagUrl": "https://flagcdn.com/w320/cy.png",
+    "flagIcon": "https://flagcdn.com/w40/cy.png",
     "code": "cy",
+    "iso3": "CYP",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "Greek, Turkish",
     "coordinates": [
       35,
       33
+    ],
+    "area": 9251,
+    "borders": [],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "Czechia",
+    "officialName": "Czech Republic",
     "capital": "Prague",
     "population": "10,882,341",
+    "populationRaw": 10882341,
     "region": "Europe",
+    "subregion": "Central Europe",
     "flagUrl": "https://flagcdn.com/w320/cz.png",
+    "flagIcon": "https://flagcdn.com/w40/cz.png",
     "code": "cz",
+    "iso3": "CZE",
     "currency": "Czech koruna (Kč)",
+    "currencyCode": "CZK",
     "language": "Czech, Slovak",
     "coordinates": [
       49.75,
       15.5
+    ],
+    "area": 78865,
+    "borders": [
+      "AUT",
+      "DEU",
+      "POL",
+      "SVK"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Denmark",
+    "officialName": "Kingdom of Denmark",
     "capital": "Copenhagen",
     "population": "6,011,488",
+    "populationRaw": 6011488,
     "region": "Europe",
+    "subregion": "Northern Europe",
     "flagUrl": "https://flagcdn.com/w320/dk.png",
+    "flagIcon": "https://flagcdn.com/w40/dk.png",
     "code": "dk",
+    "iso3": "DNK",
     "currency": "Danish krone (kr)",
+    "currencyCode": "DKK",
     "language": "Danish",
     "coordinates": [
       56,
       10
+    ],
+    "area": 43094,
+    "borders": [
+      "DEU"
+    ],
+    "timezones": [
+      "UTC-04:00",
+      "UTC-03:00",
+      "UTC-01:00",
+      "UTC",
+      "UTC+01:00"
     ]
   },
   {
     "name": "Djibouti",
+    "officialName": "Republic of Djibouti",
     "capital": "Djibouti",
     "population": "1,066,809",
+    "populationRaw": 1066809,
     "region": "Africa",
+    "subregion": "Eastern Africa",
     "flagUrl": "https://flagcdn.com/w320/dj.png",
+    "flagIcon": "https://flagcdn.com/w40/dj.png",
     "code": "dj",
+    "iso3": "DJI",
     "currency": "Djiboutian franc (Fr)",
+    "currencyCode": "DJF",
     "language": "Arabic, French",
     "coordinates": [
       11.5,
       43
+    ],
+    "area": 23200,
+    "borders": [
+      "ERI",
+      "ETH",
+      "SOM"
+    ],
+    "timezones": [
+      "UTC+03:00"
     ]
   },
   {
     "name": "Dominica",
+    "officialName": "Commonwealth of Dominica",
     "capital": "Roseau",
     "population": "67,408",
+    "populationRaw": 67408,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/dm.png",
+    "flagIcon": "https://flagcdn.com/w40/dm.png",
     "code": "dm",
+    "iso3": "DMA",
     "currency": "Eastern Caribbean dollar ($)",
+    "currencyCode": "XCD",
     "language": "English",
     "coordinates": [
       15.41666666,
       -61.33333333
+    ],
+    "area": 751,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Dominican Republic",
+    "officialName": "Dominican Republic",
     "capital": "Santo Domingo",
     "population": "10,771,504",
+    "populationRaw": 10771504,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/do.png",
+    "flagIcon": "https://flagcdn.com/w40/do.png",
     "code": "do",
+    "iso3": "DOM",
     "currency": "Dominican peso ($)",
+    "currencyCode": "DOP",
     "language": "Spanish",
     "coordinates": [
       19,
       -70.66666666
+    ],
+    "area": 48671,
+    "borders": [
+      "HTI"
+    ],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "DR Congo",
+    "officialName": "Democratic Republic of the Congo",
     "capital": "Kinshasa",
     "population": "112,832,000",
+    "populationRaw": 112832000,
     "region": "Africa",
+    "subregion": "Middle Africa",
     "flagUrl": "https://flagcdn.com/w320/cd.png",
+    "flagIcon": "https://flagcdn.com/w40/cd.png",
     "code": "cd",
+    "iso3": "COD",
     "currency": "Congolese franc (FC)",
-    "language": "French, Kikongo",
+    "currencyCode": "CDF",
+    "language": "French, Kikongo, Lingala",
     "coordinates": [
       0,
       25
+    ],
+    "area": 2344858,
+    "borders": [
+      "AGO",
+      "BDI",
+      "CAF",
+      "COG",
+      "RWA",
+      "SSD",
+      "TZA",
+      "UGA",
+      "ZMB"
+    ],
+    "timezones": [
+      "UTC+01:00",
+      "UTC+02:00"
     ]
   },
   {
     "name": "Ecuador",
+    "officialName": "Republic of Ecuador",
     "capital": "Quito",
     "population": "18,103,660",
+    "populationRaw": 18103660,
     "region": "Americas",
+    "subregion": "South America",
     "flagUrl": "https://flagcdn.com/w320/ec.png",
+    "flagIcon": "https://flagcdn.com/w40/ec.png",
     "code": "ec",
+    "iso3": "ECU",
     "currency": "United States dollar ($)",
+    "currencyCode": "USD",
     "language": "Spanish",
     "coordinates": [
       -2,
       -77.5
+    ],
+    "area": 276841,
+    "borders": [
+      "COL",
+      "PER"
+    ],
+    "timezones": [
+      "UTC-06:00",
+      "UTC-05:00"
     ]
   },
   {
     "name": "Egypt",
+    "officialName": "Arab Republic of Egypt",
     "capital": "Cairo",
     "population": "107,271,260",
+    "populationRaw": 107271260,
     "region": "Africa",
+    "subregion": "Northern Africa",
     "flagUrl": "https://flagcdn.com/w320/eg.png",
+    "flagIcon": "https://flagcdn.com/w40/eg.png",
     "code": "eg",
+    "iso3": "EGY",
     "currency": "Egyptian pound (£)",
+    "currencyCode": "EGP",
     "language": "Arabic",
     "coordinates": [
       27,
       30
+    ],
+    "area": 1002450,
+    "borders": [
+      "ISR",
+      "LBY",
+      "PSE",
+      "SDN"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "El Salvador",
+    "officialName": "Republic of El Salvador",
     "capital": "San Salvador",
     "population": "6,029,976",
+    "populationRaw": 6029976,
     "region": "Americas",
+    "subregion": "Central America",
     "flagUrl": "https://flagcdn.com/w320/sv.png",
+    "flagIcon": "https://flagcdn.com/w40/sv.png",
     "code": "sv",
+    "iso3": "SLV",
     "currency": "United States dollar ($)",
+    "currencyCode": "USD",
     "language": "Spanish",
     "coordinates": [
       13.83333333,
       -88.91666666
+    ],
+    "area": 21041,
+    "borders": [
+      "GTM",
+      "HND"
+    ],
+    "timezones": [
+      "UTC-06:00"
     ]
   },
   {
     "name": "Equatorial Guinea",
+    "officialName": "Republic of Equatorial Guinea",
     "capital": "Ciudad de la Paz",
     "population": "1,668,768",
+    "populationRaw": 1668768,
     "region": "Africa",
+    "subregion": "Middle Africa",
     "flagUrl": "https://flagcdn.com/w320/gq.png",
+    "flagIcon": "https://flagcdn.com/w40/gq.png",
     "code": "gq",
+    "iso3": "GNQ",
     "currency": "Central African CFA franc (Fr)",
-    "language": "French, Portuguese",
+    "currencyCode": "XAF",
+    "language": "French, Portuguese, Spanish",
     "coordinates": [
       2,
       10
+    ],
+    "area": 28051,
+    "borders": [
+      "CMR",
+      "GAB"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Eritrea",
+    "officialName": "State of Eritrea",
     "capital": "Asmara",
     "population": "3,607,000",
+    "populationRaw": 3607000,
     "region": "Africa",
+    "subregion": "Eastern Africa",
     "flagUrl": "https://flagcdn.com/w320/er.png",
+    "flagIcon": "https://flagcdn.com/w40/er.png",
     "code": "er",
+    "iso3": "ERI",
     "currency": "Eritrean nakfa (Nfk)",
-    "language": "Arabic, English",
+    "currencyCode": "ERN",
+    "language": "Arabic, English, Tigrinya",
     "coordinates": [
       15,
       39
+    ],
+    "area": 117600,
+    "borders": [
+      "DJI",
+      "ETH",
+      "SDN"
+    ],
+    "timezones": [
+      "UTC+03:00"
     ]
   },
   {
     "name": "Estonia",
+    "officialName": "Republic of Estonia",
     "capital": "Tallinn",
     "population": "1,369,995",
+    "populationRaw": 1369995,
     "region": "Europe",
+    "subregion": "Northern Europe",
     "flagUrl": "https://flagcdn.com/w320/ee.png",
+    "flagIcon": "https://flagcdn.com/w40/ee.png",
     "code": "ee",
+    "iso3": "EST",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "Estonian",
     "coordinates": [
       59,
       26
+    ],
+    "area": 45227,
+    "borders": [
+      "LVA",
+      "RUS"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "Eswatini",
+    "officialName": "Kingdom of Eswatini",
     "capital": "Mbabane",
     "population": "1,235,549",
+    "populationRaw": 1235549,
     "region": "Africa",
+    "subregion": "Southern Africa",
     "flagUrl": "https://flagcdn.com/w320/sz.png",
+    "flagIcon": "https://flagcdn.com/w40/sz.png",
     "code": "sz",
+    "iso3": "SWZ",
     "currency": "Swazi lilangeni (L)",
+    "currencyCode": "SZL",
     "language": "English, Swazi",
     "coordinates": [
       -26.5,
       31.5
+    ],
+    "area": 17364,
+    "borders": [
+      "MOZ",
+      "ZAF"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "Ethiopia",
+    "officialName": "Federal Democratic Republic of Ethiopia",
     "capital": "Addis Ababa",
     "population": "111,652,998",
+    "populationRaw": 111652998,
     "region": "Africa",
+    "subregion": "Eastern Africa",
     "flagUrl": "https://flagcdn.com/w320/et.png",
+    "flagIcon": "https://flagcdn.com/w40/et.png",
     "code": "et",
+    "iso3": "ETH",
     "currency": "Ethiopian birr (Br)",
+    "currencyCode": "ETB",
     "language": "Amharic",
     "coordinates": [
       8,
       38
+    ],
+    "area": 1104300,
+    "borders": [
+      "DJI",
+      "ERI",
+      "KEN",
+      "SOM",
+      "SSD",
+      "SDN"
+    ],
+    "timezones": [
+      "UTC+03:00"
     ]
   },
   {
     "name": "Falkland Islands",
+    "officialName": "Falkland Islands",
     "capital": "Stanley",
     "population": "3,662",
+    "populationRaw": 3662,
     "region": "Americas",
+    "subregion": "South America",
     "flagUrl": "https://flagcdn.com/w320/fk.png",
+    "flagIcon": "https://flagcdn.com/w40/fk.png",
     "code": "fk",
+    "iso3": "FLK",
     "currency": "Falkland Islands pound (£)",
+    "currencyCode": "FKP",
     "language": "English",
     "coordinates": [
       -51.75,
       -59
+    ],
+    "area": 12173,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Faroe Islands",
+    "officialName": "Faroe Islands",
     "capital": "Tórshavn",
     "population": "54,885",
+    "populationRaw": 54885,
     "region": "Europe",
+    "subregion": "Northern Europe",
     "flagUrl": "https://flagcdn.com/w320/fo.png",
+    "flagIcon": "https://flagcdn.com/w40/fo.png",
     "code": "fo",
+    "iso3": "FRO",
     "currency": "Danish krone (kr)",
+    "currencyCode": "DKK",
     "language": "Danish, Faroese",
     "coordinates": [
       62,
       -7
+    ],
+    "area": 1393,
+    "borders": [],
+    "timezones": [
+      "UTC+00:00"
     ]
   },
   {
     "name": "Fiji",
+    "officialName": "Republic of Fiji",
     "capital": "Suva",
     "population": "900,869",
+    "populationRaw": 900869,
     "region": "Oceania",
+    "subregion": "Melanesia",
     "flagUrl": "https://flagcdn.com/w320/fj.png",
+    "flagIcon": "https://flagcdn.com/w40/fj.png",
     "code": "fj",
+    "iso3": "FJI",
     "currency": "Fijian dollar ($)",
-    "language": "English, Fijian",
+    "currencyCode": "FJD",
+    "language": "English, Fijian, Fiji Hindi",
     "coordinates": [
       -17.7134,
       178.065
+    ],
+    "area": 18272,
+    "borders": [],
+    "timezones": [
+      "UTC+12:00"
     ]
   },
   {
     "name": "Finland",
+    "officialName": "Republic of Finland",
     "capital": "Helsinki",
     "population": "5,650,325",
+    "populationRaw": 5650325,
     "region": "Europe",
+    "subregion": "Northern Europe",
     "flagUrl": "https://flagcdn.com/w320/fi.png",
+    "flagIcon": "https://flagcdn.com/w40/fi.png",
     "code": "fi",
+    "iso3": "FIN",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "Finnish, Swedish",
     "coordinates": [
       64,
       26
+    ],
+    "area": 338455,
+    "borders": [
+      "NOR",
+      "SWE",
+      "RUS"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "France",
+    "officialName": "French Republic",
     "capital": "Paris",
     "population": "66,351,959",
+    "populationRaw": 66351959,
     "region": "Europe",
+    "subregion": "Western Europe",
     "flagUrl": "https://flagcdn.com/w320/fr.png",
+    "flagIcon": "https://flagcdn.com/w40/fr.png",
     "code": "fr",
+    "iso3": "FRA",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "French",
     "coordinates": [
       46,
       2
+    ],
+    "area": 543908,
+    "borders": [
+      "AND",
+      "BEL",
+      "DEU",
+      "ITA",
+      "LUX",
+      "MCO",
+      "ESP",
+      "CHE"
+    ],
+    "timezones": [
+      "UTC-10:00",
+      "UTC-09:30",
+      "UTC-09:00",
+      "UTC-08:00",
+      "UTC-04:00",
+      "UTC-03:00",
+      "UTC+01:00",
+      "UTC+02:00",
+      "UTC+03:00",
+      "UTC+04:00",
+      "UTC+05:00",
+      "UTC+10:00",
+      "UTC+11:00",
+      "UTC+12:00"
     ]
   },
   {
     "name": "French Guiana",
+    "officialName": "Guiana",
     "capital": "Cayenne",
     "population": "292,354",
+    "populationRaw": 292354,
     "region": "Americas",
+    "subregion": "South America",
     "flagUrl": "https://flagcdn.com/w320/gf.png",
+    "flagIcon": "https://flagcdn.com/w40/gf.png",
     "code": "gf",
+    "iso3": "GUF",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "French",
     "coordinates": [
       4,
       -53
+    ],
+    "area": 83534,
+    "borders": [
+      "BRA",
+      "SUR"
+    ],
+    "timezones": [
+      "UTC-03:00"
     ]
   },
   {
     "name": "French Polynesia",
+    "officialName": "French Polynesia",
     "capital": "Papeetē",
     "population": "279,500",
+    "populationRaw": 279500,
     "region": "Oceania",
+    "subregion": "Polynesia",
     "flagUrl": "https://flagcdn.com/w320/pf.png",
+    "flagIcon": "https://flagcdn.com/w40/pf.png",
     "code": "pf",
+    "iso3": "PYF",
     "currency": "CFP franc (₣)",
+    "currencyCode": "XPF",
     "language": "French",
     "coordinates": [
       -17.6797,
       -149.4068
+    ],
+    "area": 4167,
+    "borders": [],
+    "timezones": [
+      "UTC-10:00",
+      "UTC-09:30",
+      "UTC-09:00"
     ]
   },
   {
     "name": "French Southern and Antarctic Lands",
+    "officialName": "Territory of the French Southern and Antarctic Lands",
     "capital": "Port-aux-Français",
     "population": "400",
+    "populationRaw": 400,
     "region": "Antarctic",
+    "subregion": "N/A",
     "flagUrl": "https://flagcdn.com/w320/tf.png",
+    "flagIcon": "https://flagcdn.com/w40/tf.png",
     "code": "tf",
+    "iso3": "ATF",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "French",
     "coordinates": [
       -49.25,
       69.167
+    ],
+    "area": 7747,
+    "borders": [],
+    "timezones": [
+      "UTC+05:00"
     ]
   },
   {
     "name": "Gabon",
+    "officialName": "Gabonese Republic",
     "capital": "Libreville",
     "population": "2,469,296",
+    "populationRaw": 2469296,
     "region": "Africa",
+    "subregion": "Middle Africa",
     "flagUrl": "https://flagcdn.com/w320/ga.png",
+    "flagIcon": "https://flagcdn.com/w40/ga.png",
     "code": "ga",
+    "iso3": "GAB",
     "currency": "Central African CFA franc (Fr)",
+    "currencyCode": "XAF",
     "language": "French",
     "coordinates": [
       -1,
       11.75
+    ],
+    "area": 267668,
+    "borders": [
+      "CMR",
+      "COG",
+      "GNQ"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Gambia",
+    "officialName": "Republic of the Gambia",
     "capital": "Banjul",
     "population": "2,422,712",
+    "populationRaw": 2422712,
     "region": "Africa",
+    "subregion": "Western Africa",
     "flagUrl": "https://flagcdn.com/w320/gm.png",
+    "flagIcon": "https://flagcdn.com/w40/gm.png",
     "code": "gm",
+    "iso3": "GMB",
     "currency": "dalasi (D)",
+    "currencyCode": "GMD",
     "language": "English",
     "coordinates": [
       13.46666666,
       -16.56666666
+    ],
+    "area": 10689,
+    "borders": [
+      "SEN"
+    ],
+    "timezones": [
+      "UTC+00:00"
     ]
   },
   {
     "name": "Georgia",
+    "officialName": "Georgia",
     "capital": "Tbilisi",
     "population": "4,000,921",
+    "populationRaw": 4000921,
     "region": "Asia",
+    "subregion": "Western Asia",
     "flagUrl": "https://flagcdn.com/w320/ge.png",
+    "flagIcon": "https://flagcdn.com/w40/ge.png",
     "code": "ge",
+    "iso3": "GEO",
     "currency": "lari (₾)",
+    "currencyCode": "GEL",
     "language": "Georgian",
     "coordinates": [
       42,
       43.5
+    ],
+    "area": 69700,
+    "borders": [
+      "ARM",
+      "AZE",
+      "RUS",
+      "TUR"
+    ],
+    "timezones": [
+      "UTC+04:00"
     ]
   },
   {
     "name": "Germany",
+    "officialName": "Federal Republic of Germany",
     "capital": "Berlin",
     "population": "83,491,249",
+    "populationRaw": 83491249,
     "region": "Europe",
+    "subregion": "Western Europe",
     "flagUrl": "https://flagcdn.com/w320/de.png",
+    "flagIcon": "https://flagcdn.com/w40/de.png",
     "code": "de",
+    "iso3": "DEU",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "German",
     "coordinates": [
       51,
       9
+    ],
+    "area": 357114,
+    "borders": [
+      "AUT",
+      "BEL",
+      "CZE",
+      "DNK",
+      "FRA",
+      "LUX",
+      "NLD",
+      "POL",
+      "CHE"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Ghana",
+    "officialName": "Republic of Ghana",
     "capital": "Accra",
     "population": "33,742,380",
+    "populationRaw": 33742380,
     "region": "Africa",
+    "subregion": "Western Africa",
     "flagUrl": "https://flagcdn.com/w320/gh.png",
+    "flagIcon": "https://flagcdn.com/w40/gh.png",
     "code": "gh",
+    "iso3": "GHA",
     "currency": "Ghanaian cedi (₵)",
+    "currencyCode": "GHS",
     "language": "English",
     "coordinates": [
       8,
       -2
+    ],
+    "area": 238533,
+    "borders": [
+      "BFA",
+      "CIV",
+      "TGO"
+    ],
+    "timezones": [
+      "UTC"
     ]
   },
   {
     "name": "Gibraltar",
+    "officialName": "Gibraltar",
     "capital": "Gibraltar",
     "population": "38,000",
+    "populationRaw": 38000,
     "region": "Europe",
+    "subregion": "Southern Europe",
     "flagUrl": "https://flagcdn.com/w320/gi.png",
+    "flagIcon": "https://flagcdn.com/w40/gi.png",
     "code": "gi",
+    "iso3": "GIB",
     "currency": "Gibraltar pound (£)",
+    "currencyCode": "GIP",
     "language": "English",
     "coordinates": [
       36.13333333,
       -5.35
+    ],
+    "area": 6,
+    "borders": [
+      "ESP"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Greece",
+    "officialName": "Hellenic Republic",
     "capital": "Athens",
     "population": "10,400,720",
+    "populationRaw": 10400720,
     "region": "Europe",
+    "subregion": "Southern Europe",
     "flagUrl": "https://flagcdn.com/w320/gr.png",
+    "flagIcon": "https://flagcdn.com/w40/gr.png",
     "code": "gr",
+    "iso3": "GRC",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "Greek",
     "coordinates": [
       39,
       22
+    ],
+    "area": 131990,
+    "borders": [
+      "ALB",
+      "BGR",
+      "TUR",
+      "MKD"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "Greenland",
+    "officialName": "Greenland",
     "capital": "Nuuk",
     "population": "56,542",
+    "populationRaw": 56542,
     "region": "Americas",
+    "subregion": "North America",
     "flagUrl": "https://flagcdn.com/w320/gl.png",
+    "flagIcon": "https://flagcdn.com/w40/gl.png",
     "code": "gl",
+    "iso3": "GRL",
     "currency": "krone (kr.)",
+    "currencyCode": "DKK",
     "language": "Greenlandic",
     "coordinates": [
       72,
       -40
+    ],
+    "area": 2166086,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00",
+      "UTC-03:00",
+      "UTC-01:00",
+      "UTC+00:00"
     ]
   },
   {
     "name": "Grenada",
+    "officialName": "Grenada",
     "capital": "St. George's",
     "population": "109,021",
+    "populationRaw": 109021,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/gd.png",
+    "flagIcon": "https://flagcdn.com/w40/gd.png",
     "code": "gd",
+    "iso3": "GRD",
     "currency": "Eastern Caribbean dollar ($)",
+    "currencyCode": "XCD",
     "language": "English",
     "coordinates": [
       12.11666666,
       -61.66666666
+    ],
+    "area": 344,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Guadeloupe",
+    "officialName": "Guadeloupe",
     "capital": "Basse-Terre",
     "population": "378,561",
+    "populationRaw": 378561,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/gp.png",
+    "flagIcon": "https://flagcdn.com/w40/gp.png",
     "code": "gp",
+    "iso3": "GLP",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "French",
     "coordinates": [
       16.25,
       -61.583333
+    ],
+    "area": 1628,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Guam",
+    "officialName": "Guam",
     "capital": "Hagåtña",
     "population": "153,836",
+    "populationRaw": 153836,
     "region": "Oceania",
+    "subregion": "Micronesia",
     "flagUrl": "https://flagcdn.com/w320/gu.png",
+    "flagIcon": "https://flagcdn.com/w40/gu.png",
     "code": "gu",
+    "iso3": "GUM",
     "currency": "United States dollar ($)",
-    "language": "Chamorro, English",
+    "currencyCode": "USD",
+    "language": "Chamorro, English, Spanish",
     "coordinates": [
       13.46666666,
       144.78333333
+    ],
+    "area": 549,
+    "borders": [],
+    "timezones": [
+      "UTC+10:00"
     ]
   },
   {
     "name": "Guatemala",
+    "officialName": "Republic of Guatemala",
     "capital": "Guatemala City",
     "population": "18,079,810",
+    "populationRaw": 18079810,
     "region": "Americas",
+    "subregion": "Central America",
     "flagUrl": "https://flagcdn.com/w320/gt.png",
+    "flagIcon": "https://flagcdn.com/w40/gt.png",
     "code": "gt",
+    "iso3": "GTM",
     "currency": "Guatemalan quetzal (Q)",
+    "currencyCode": "GTQ",
     "language": "Spanish",
     "coordinates": [
       15.5,
       -90.25
+    ],
+    "area": 108889,
+    "borders": [
+      "BLZ",
+      "SLV",
+      "HND",
+      "MEX"
+    ],
+    "timezones": [
+      "UTC-06:00"
     ]
   },
   {
     "name": "Guernsey",
+    "officialName": "Bailiwick of Guernsey",
     "capital": "St. Peter Port",
     "population": "64,781",
+    "populationRaw": 64781,
     "region": "Europe",
+    "subregion": "Northern Europe",
     "flagUrl": "https://flagcdn.com/w320/gg.png",
+    "flagIcon": "https://flagcdn.com/w40/gg.png",
     "code": "gg",
+    "iso3": "GGY",
     "currency": "British pound (£)",
-    "language": "English, French",
+    "currencyCode": "GBP",
+    "language": "English, French, Guernésiais",
     "coordinates": [
       49.46666666,
       -2.58333333
+    ],
+    "area": 78,
+    "borders": [],
+    "timezones": [
+      "UTC+00:00"
     ]
   },
   {
     "name": "Guinea",
+    "officialName": "Republic of Guinea",
     "capital": "Conakry",
     "population": "14,363,931",
+    "populationRaw": 14363931,
     "region": "Africa",
+    "subregion": "Western Africa",
     "flagUrl": "https://flagcdn.com/w320/gn.png",
+    "flagIcon": "https://flagcdn.com/w40/gn.png",
     "code": "gn",
+    "iso3": "GIN",
     "currency": "Guinean franc (Fr)",
+    "currencyCode": "GNF",
     "language": "French",
     "coordinates": [
       11,
       -10
+    ],
+    "area": 245857,
+    "borders": [
+      "CIV",
+      "GNB",
+      "LBR",
+      "MLI",
+      "SEN",
+      "SLE"
+    ],
+    "timezones": [
+      "UTC"
     ]
   },
   {
     "name": "Guinea-Bissau",
+    "officialName": "Republic of Guinea-Bissau",
     "capital": "Bissau",
     "population": "1,781,308",
+    "populationRaw": 1781308,
     "region": "Africa",
+    "subregion": "Western Africa",
     "flagUrl": "https://flagcdn.com/w320/gw.png",
+    "flagIcon": "https://flagcdn.com/w40/gw.png",
     "code": "gw",
+    "iso3": "GNB",
     "currency": "West African CFA franc (Fr)",
+    "currencyCode": "XOF",
     "language": "Portuguese, Upper Guinea Creole",
     "coordinates": [
       12,
       -15
+    ],
+    "area": 36125,
+    "borders": [
+      "GIN",
+      "SEN"
+    ],
+    "timezones": [
+      "UTC"
     ]
   },
   {
     "name": "Guyana",
+    "officialName": "Co-operative Republic of Guyana",
     "capital": "Georgetown",
     "population": "772,975",
+    "populationRaw": 772975,
     "region": "Americas",
+    "subregion": "South America",
     "flagUrl": "https://flagcdn.com/w320/gy.png",
+    "flagIcon": "https://flagcdn.com/w40/gy.png",
     "code": "gy",
+    "iso3": "GUY",
     "currency": "Guyanese dollar ($)",
+    "currencyCode": "GYD",
     "language": "English",
     "coordinates": [
       5,
       -59
+    ],
+    "area": 214969,
+    "borders": [
+      "BRA",
+      "SUR",
+      "VEN"
+    ],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Haiti",
+    "officialName": "Republic of Haiti",
     "capital": "Port-au-Prince",
     "population": "11,867,032",
+    "populationRaw": 11867032,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/ht.png",
+    "flagIcon": "https://flagcdn.com/w40/ht.png",
     "code": "ht",
+    "iso3": "HTI",
     "currency": "Haitian gourde (G)",
+    "currencyCode": "HTG",
     "language": "French, Haitian Creole",
     "coordinates": [
       19,
       -72.41666666
+    ],
+    "area": 27750,
+    "borders": [
+      "DOM"
+    ],
+    "timezones": [
+      "UTC-05:00"
     ]
   },
   {
     "name": "Heard Island and McDonald Islands",
+    "officialName": "Heard Island and McDonald Islands",
     "capital": "N/A",
     "population": "0",
+    "populationRaw": 0,
     "region": "Antarctic",
+    "subregion": "N/A",
     "flagUrl": "https://flagcdn.com/w320/hm.png",
+    "flagIcon": "https://flagcdn.com/w40/hm.png",
     "code": "hm",
+    "iso3": "HMD",
     "currency": "N/A",
+    "currencyCode": "N/A",
     "language": "English",
     "coordinates": [
       -53.0818,
       73.5042
+    ],
+    "area": 412,
+    "borders": [],
+    "timezones": [
+      "UTC+05:00"
     ]
   },
   {
     "name": "Honduras",
+    "officialName": "Republic of Honduras",
     "capital": "Tegucigalpa",
     "population": "9,892,632",
+    "populationRaw": 9892632,
     "region": "Americas",
+    "subregion": "Central America",
     "flagUrl": "https://flagcdn.com/w320/hn.png",
+    "flagIcon": "https://flagcdn.com/w40/hn.png",
     "code": "hn",
+    "iso3": "HND",
     "currency": "Honduran lempira (L)",
+    "currencyCode": "HNL",
     "language": "Spanish",
     "coordinates": [
       15,
       -86.5
+    ],
+    "area": 112492,
+    "borders": [
+      "GTM",
+      "SLV",
+      "NIC"
+    ],
+    "timezones": [
+      "UTC-06:00"
     ]
   },
   {
     "name": "Hong Kong",
+    "officialName": "Hong Kong Special Administrative Region of the People's Republic of China",
     "capital": "City of Victoria",
     "population": "7,527,500",
+    "populationRaw": 7527500,
     "region": "Asia",
+    "subregion": "Eastern Asia",
     "flagUrl": "https://flagcdn.com/w320/hk.png",
+    "flagIcon": "https://flagcdn.com/w40/hk.png",
     "code": "hk",
+    "iso3": "HKG",
     "currency": "Hong Kong dollar ($)",
+    "currencyCode": "HKD",
     "language": "English, Chinese",
     "coordinates": [
       22.267,
       114.188
+    ],
+    "area": 1104,
+    "borders": [
+      "CHN"
+    ],
+    "timezones": [
+      "UTC+08:00"
     ]
   },
   {
     "name": "Hungary",
+    "officialName": "Hungary",
     "capital": "Budapest",
     "population": "9,539,502",
+    "populationRaw": 9539502,
     "region": "Europe",
+    "subregion": "Central Europe",
     "flagUrl": "https://flagcdn.com/w320/hu.png",
+    "flagIcon": "https://flagcdn.com/w40/hu.png",
     "code": "hu",
+    "iso3": "HUN",
     "currency": "Hungarian forint (Ft)",
+    "currencyCode": "HUF",
     "language": "Hungarian",
     "coordinates": [
       47,
       20
+    ],
+    "area": 93028,
+    "borders": [
+      "AUT",
+      "HRV",
+      "ROU",
+      "SRB",
+      "SVK",
+      "SVN",
+      "UKR"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Iceland",
+    "officialName": "Iceland",
     "capital": "Reykjavik",
     "population": "391,810",
+    "populationRaw": 391810,
     "region": "Europe",
+    "subregion": "Northern Europe",
     "flagUrl": "https://flagcdn.com/w320/is.png",
+    "flagIcon": "https://flagcdn.com/w40/is.png",
     "code": "is",
+    "iso3": "ISL",
     "currency": "Icelandic króna (kr)",
+    "currencyCode": "ISK",
     "language": "Icelandic",
     "coordinates": [
       65,
       -18
+    ],
+    "area": 103000,
+    "borders": [],
+    "timezones": [
+      "UTC"
     ]
   },
   {
     "name": "India",
+    "officialName": "Republic of India",
     "capital": "New Delhi",
     "population": "1,417,492,000",
+    "populationRaw": 1417492000,
     "region": "Asia",
+    "subregion": "Southern Asia",
     "flagUrl": "https://flagcdn.com/w320/in.png",
+    "flagIcon": "https://flagcdn.com/w40/in.png",
     "code": "in",
+    "iso3": "IND",
     "currency": "Indian rupee (₹)",
-    "language": "English, Hindi",
+    "currencyCode": "INR",
+    "language": "English, Hindi, Tamil",
     "coordinates": [
       20,
       77
+    ],
+    "area": 3287263,
+    "borders": [
+      "BGD",
+      "BTN",
+      "MMR",
+      "CHN",
+      "NPL",
+      "PAK"
+    ],
+    "timezones": [
+      "UTC+05:30"
     ]
   },
   {
     "name": "Indonesia",
+    "officialName": "Republic of Indonesia",
     "capital": "Jakarta",
     "population": "284,438,782",
+    "populationRaw": 284438782,
     "region": "Asia",
+    "subregion": "South-Eastern Asia",
     "flagUrl": "https://flagcdn.com/w320/id.png",
+    "flagIcon": "https://flagcdn.com/w40/id.png",
     "code": "id",
+    "iso3": "IDN",
     "currency": "Indonesian rupiah (Rp)",
+    "currencyCode": "IDR",
     "language": "Indonesian",
     "coordinates": [
       -5,
       120
+    ],
+    "area": 1904569,
+    "borders": [
+      "TLS",
+      "MYS",
+      "PNG"
+    ],
+    "timezones": [
+      "UTC+07:00",
+      "UTC+08:00",
+      "UTC+09:00"
     ]
   },
   {
     "name": "Iran",
+    "officialName": "Islamic Republic of Iran",
     "capital": "Tehran",
     "population": "85,961,000",
+    "populationRaw": 85961000,
     "region": "Asia",
+    "subregion": "Southern Asia",
     "flagUrl": "https://flagcdn.com/w320/ir.png",
+    "flagIcon": "https://flagcdn.com/w40/ir.png",
     "code": "ir",
+    "iso3": "IRN",
     "currency": "Iranian rial (﷼)",
+    "currencyCode": "IRR",
     "language": "Persian (Farsi)",
     "coordinates": [
       32,
       53
+    ],
+    "area": 1648195,
+    "borders": [
+      "AFG",
+      "ARM",
+      "AZE",
+      "IRQ",
+      "PAK",
+      "TUR",
+      "TKM"
+    ],
+    "timezones": [
+      "UTC+03:30"
     ]
   },
   {
     "name": "Iraq",
+    "officialName": "Republic of Iraq",
     "capital": "Baghdad",
     "population": "46,118,793",
+    "populationRaw": 46118793,
     "region": "Asia",
+    "subregion": "Western Asia",
     "flagUrl": "https://flagcdn.com/w320/iq.png",
+    "flagIcon": "https://flagcdn.com/w40/iq.png",
     "code": "iq",
+    "iso3": "IRQ",
     "currency": "Iraqi dinar (ع.د)",
-    "language": "Arabic, Aramaic",
+    "currencyCode": "IQD",
+    "language": "Arabic, Aramaic, Sorani",
     "coordinates": [
       33,
       44
+    ],
+    "area": 438317,
+    "borders": [
+      "IRN",
+      "JOR",
+      "KWT",
+      "SAU",
+      "SYR",
+      "TUR"
+    ],
+    "timezones": [
+      "UTC+03:00"
     ]
   },
   {
     "name": "Ireland",
+    "officialName": "Republic of Ireland",
     "capital": "Dublin",
     "population": "5,458,600",
+    "populationRaw": 5458600,
     "region": "Europe",
+    "subregion": "Northern Europe",
     "flagUrl": "https://flagcdn.com/w320/ie.png",
+    "flagIcon": "https://flagcdn.com/w40/ie.png",
     "code": "ie",
+    "iso3": "IRL",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "English, Irish",
     "coordinates": [
       53,
       -8
+    ],
+    "area": 70273,
+    "borders": [
+      "GBR"
+    ],
+    "timezones": [
+      "UTC"
     ]
   },
   {
     "name": "Isle of Man",
+    "officialName": "Isle of Man",
     "capital": "Douglas",
     "population": "84,530",
+    "populationRaw": 84530,
     "region": "Europe",
+    "subregion": "Northern Europe",
     "flagUrl": "https://flagcdn.com/w320/im.png",
+    "flagIcon": "https://flagcdn.com/w40/im.png",
     "code": "im",
+    "iso3": "IMN",
     "currency": "British pound (£)",
+    "currencyCode": "GBP",
     "language": "English, Manx",
     "coordinates": [
       54.25,
       -4.5
+    ],
+    "area": 572,
+    "borders": [],
+    "timezones": [
+      "UTC+00:00"
     ]
   },
   {
     "name": "Israel",
+    "officialName": "State of Israel",
     "capital": "Jerusalem",
     "population": "10,134,800",
+    "populationRaw": 10134800,
     "region": "Asia",
+    "subregion": "Western Asia",
     "flagUrl": "https://flagcdn.com/w320/il.png",
+    "flagIcon": "https://flagcdn.com/w40/il.png",
     "code": "il",
+    "iso3": "ISR",
     "currency": "Israeli new shekel (₪)",
+    "currencyCode": "ILS",
     "language": "Arabic, Hebrew",
     "coordinates": [
       31.47,
       35.13
+    ],
+    "area": 21937,
+    "borders": [
+      "EGY",
+      "JOR",
+      "LBN",
+      "PSE",
+      "SYR"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "Italy",
+    "officialName": "Italian Republic",
     "capital": "Rome",
     "population": "58,927,633",
+    "populationRaw": 58927633,
     "region": "Europe",
+    "subregion": "Southern Europe",
     "flagUrl": "https://flagcdn.com/w320/it.png",
+    "flagIcon": "https://flagcdn.com/w40/it.png",
     "code": "it",
+    "iso3": "ITA",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "Italian, Catalan",
     "coordinates": [
       42.83333333,
       12.83333333
+    ],
+    "area": 301336,
+    "borders": [
+      "AUT",
+      "FRA",
+      "SMR",
+      "SVN",
+      "CHE",
+      "VAT"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Ivory Coast",
+    "officialName": "Republic of Côte d'Ivoire",
     "capital": "Yamoussoukro",
     "population": "31,719,275",
+    "populationRaw": 31719275,
     "region": "Africa",
+    "subregion": "Western Africa",
     "flagUrl": "https://flagcdn.com/w320/ci.png",
+    "flagIcon": "https://flagcdn.com/w40/ci.png",
     "code": "ci",
+    "iso3": "CIV",
     "currency": "West African CFA franc (Fr)",
+    "currencyCode": "XOF",
     "language": "French",
     "coordinates": [
       8,
       -5
+    ],
+    "area": 322463,
+    "borders": [
+      "BFA",
+      "GHA",
+      "GIN",
+      "LBR",
+      "MLI"
+    ],
+    "timezones": [
+      "UTC"
     ]
   },
   {
     "name": "Jamaica",
+    "officialName": "Jamaica",
     "capital": "Kingston",
     "population": "2,825,544",
+    "populationRaw": 2825544,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/jm.png",
+    "flagIcon": "https://flagcdn.com/w40/jm.png",
     "code": "jm",
+    "iso3": "JAM",
     "currency": "Jamaican dollar ($)",
+    "currencyCode": "JMD",
     "language": "English, Jamaican Patois",
     "coordinates": [
       18.25,
       -77.5
+    ],
+    "area": 10991,
+    "borders": [],
+    "timezones": [
+      "UTC-05:00"
     ]
   },
   {
     "name": "Japan",
+    "officialName": "Japan",
     "capital": "Tokyo",
     "population": "123,210,000",
+    "populationRaw": 123210000,
     "region": "Asia",
+    "subregion": "Eastern Asia",
     "flagUrl": "https://flagcdn.com/w320/jp.png",
+    "flagIcon": "https://flagcdn.com/w40/jp.png",
     "code": "jp",
+    "iso3": "JPN",
     "currency": "Japanese yen (¥)",
+    "currencyCode": "JPY",
     "language": "Japanese",
     "coordinates": [
       36,
       138
+    ],
+    "area": 377930,
+    "borders": [],
+    "timezones": [
+      "UTC+09:00"
     ]
   },
   {
     "name": "Jersey",
+    "officialName": "Bailiwick of Jersey",
     "capital": "Saint Helier",
     "population": "103,267",
+    "populationRaw": 103267,
     "region": "Europe",
+    "subregion": "Northern Europe",
     "flagUrl": "https://flagcdn.com/w320/je.png",
+    "flagIcon": "https://flagcdn.com/w40/je.png",
     "code": "je",
+    "iso3": "JEY",
     "currency": "British pound (£)",
-    "language": "English, French",
+    "currencyCode": "GBP",
+    "language": "English, French, Jèrriais",
     "coordinates": [
       49.25,
       -2.16666666
+    ],
+    "area": 116,
+    "borders": [],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Jordan",
+    "officialName": "Hashemite Kingdom of Jordan",
     "capital": "Amman",
     "population": "11,734,000",
+    "populationRaw": 11734000,
     "region": "Asia",
+    "subregion": "Western Asia",
     "flagUrl": "https://flagcdn.com/w320/jo.png",
+    "flagIcon": "https://flagcdn.com/w40/jo.png",
     "code": "jo",
+    "iso3": "JOR",
     "currency": "Jordanian dinar (د.ا)",
+    "currencyCode": "JOD",
     "language": "Arabic",
     "coordinates": [
       31,
       36
+    ],
+    "area": 89342,
+    "borders": [
+      "IRQ",
+      "ISR",
+      "PSE",
+      "SAU",
+      "SYR"
+    ],
+    "timezones": [
+      "UTC+03:00"
     ]
   },
   {
     "name": "Kazakhstan",
+    "officialName": "Republic of Kazakhstan",
     "capital": "Astana",
     "population": "20,426,568",
+    "populationRaw": 20426568,
     "region": "Asia",
+    "subregion": "Central Asia",
     "flagUrl": "https://flagcdn.com/w320/kz.png",
+    "flagIcon": "https://flagcdn.com/w40/kz.png",
     "code": "kz",
+    "iso3": "KAZ",
     "currency": "Kazakhstani tenge (₸)",
+    "currencyCode": "KZT",
     "language": "Kazakh, Russian",
     "coordinates": [
       48.0196,
       66.9237
+    ],
+    "area": 2724900,
+    "borders": [
+      "CHN",
+      "KGZ",
+      "RUS",
+      "TKM",
+      "UZB"
+    ],
+    "timezones": [
+      "UTC+05:00",
+      "UTC+06:00"
     ]
   },
   {
     "name": "Kenya",
+    "officialName": "Republic of Kenya",
     "capital": "Nairobi",
     "population": "53,330,978",
+    "populationRaw": 53330978,
     "region": "Africa",
+    "subregion": "Eastern Africa",
     "flagUrl": "https://flagcdn.com/w320/ke.png",
+    "flagIcon": "https://flagcdn.com/w40/ke.png",
     "code": "ke",
+    "iso3": "KEN",
     "currency": "Kenyan shilling (Sh)",
+    "currencyCode": "KES",
     "language": "English, Swahili",
     "coordinates": [
       1,
       38
+    ],
+    "area": 580367,
+    "borders": [
+      "ETH",
+      "SOM",
+      "SSD",
+      "TZA",
+      "UGA"
+    ],
+    "timezones": [
+      "UTC+03:00"
     ]
   },
   {
     "name": "Kiribati",
+    "officialName": "Independent and Sovereign Republic of Kiribati",
     "capital": "South Tarawa",
     "population": "120,740",
+    "populationRaw": 120740,
     "region": "Oceania",
+    "subregion": "Micronesia",
     "flagUrl": "https://flagcdn.com/w320/ki.png",
+    "flagIcon": "https://flagcdn.com/w40/ki.png",
     "code": "ki",
+    "iso3": "KIR",
     "currency": "Australian dollar ($)",
+    "currencyCode": "AUD",
     "language": "English, Gilbertese",
     "coordinates": [
       1.41666666,
       173
+    ],
+    "area": 811,
+    "borders": [],
+    "timezones": [
+      "UTC+12:00",
+      "UTC+13:00",
+      "UTC+14:00"
     ]
   },
   {
     "name": "Kosovo",
+    "officialName": "Republic of Kosovo",
     "capital": "Pristina",
     "population": "1,585,566",
+    "populationRaw": 1585566,
     "region": "Europe",
+    "subregion": "Southeast Europe",
     "flagUrl": "https://flagcdn.com/w320/xk.png",
+    "flagIcon": "https://flagcdn.com/w40/xk.png",
     "code": "xk",
+    "iso3": "UNK",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "Albanian, Serbian",
     "coordinates": [
       42.666667,
       21.166667
+    ],
+    "area": 10908,
+    "borders": [
+      "ALB",
+      "MKD",
+      "MNE",
+      "SRB"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Kuwait",
+    "officialName": "State of Kuwait",
     "capital": "Kuwait City",
     "population": "4,881,254",
+    "populationRaw": 4881254,
     "region": "Asia",
+    "subregion": "Western Asia",
     "flagUrl": "https://flagcdn.com/w320/kw.png",
+    "flagIcon": "https://flagcdn.com/w40/kw.png",
     "code": "kw",
+    "iso3": "KWT",
     "currency": "Kuwaiti dinar (د.ك)",
+    "currencyCode": "KWD",
     "language": "Arabic",
     "coordinates": [
       29.5,
       45.75
+    ],
+    "area": 17818,
+    "borders": [
+      "IRQ",
+      "SAU"
+    ],
+    "timezones": [
+      "UTC+03:00"
     ]
   },
   {
     "name": "Kyrgyzstan",
+    "officialName": "Kyrgyz Republic",
     "capital": "Bishkek",
     "population": "7,281,800",
+    "populationRaw": 7281800,
     "region": "Asia",
+    "subregion": "Central Asia",
     "flagUrl": "https://flagcdn.com/w320/kg.png",
+    "flagIcon": "https://flagcdn.com/w40/kg.png",
     "code": "kg",
+    "iso3": "KGZ",
     "currency": "Kyrgyzstani som (с)",
+    "currencyCode": "KGS",
     "language": "Kyrgyz, Russian",
     "coordinates": [
       41,
       75
+    ],
+    "area": 199951,
+    "borders": [
+      "CHN",
+      "KAZ",
+      "TJK",
+      "UZB"
+    ],
+    "timezones": [
+      "UTC+06:00"
     ]
   },
   {
     "name": "Laos",
+    "officialName": "Lao People's Democratic Republic",
     "capital": "Vientiane",
     "population": "7,647,000",
+    "populationRaw": 7647000,
     "region": "Asia",
+    "subregion": "South-Eastern Asia",
     "flagUrl": "https://flagcdn.com/w320/la.png",
+    "flagIcon": "https://flagcdn.com/w40/la.png",
     "code": "la",
+    "iso3": "LAO",
     "currency": "Lao kip (₭)",
+    "currencyCode": "LAK",
     "language": "Lao",
     "coordinates": [
       18,
       105
+    ],
+    "area": 236800,
+    "borders": [
+      "MMR",
+      "KHM",
+      "CHN",
+      "THA",
+      "VNM"
+    ],
+    "timezones": [
+      "UTC+07:00"
     ]
   },
   {
     "name": "Latvia",
+    "officialName": "Republic of Latvia",
     "capital": "Riga",
     "population": "1,829,000",
+    "populationRaw": 1829000,
     "region": "Europe",
+    "subregion": "Northern Europe",
     "flagUrl": "https://flagcdn.com/w320/lv.png",
+    "flagIcon": "https://flagcdn.com/w40/lv.png",
     "code": "lv",
+    "iso3": "LVA",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "Latvian",
     "coordinates": [
       57,
       25
+    ],
+    "area": 64559,
+    "borders": [
+      "BLR",
+      "EST",
+      "LTU",
+      "RUS"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "Lebanon",
+    "officialName": "Lebanese Republic",
     "capital": "Beirut",
     "population": "5,490,000",
+    "populationRaw": 5490000,
     "region": "Asia",
+    "subregion": "Western Asia",
     "flagUrl": "https://flagcdn.com/w320/lb.png",
+    "flagIcon": "https://flagcdn.com/w40/lb.png",
     "code": "lb",
+    "iso3": "LBN",
     "currency": "Lebanese pound (ل.ل)",
+    "currencyCode": "LBP",
     "language": "Arabic, French",
     "coordinates": [
       33.83333333,
       35.83333333
+    ],
+    "area": 10452,
+    "borders": [
+      "ISR",
+      "SYR"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "Lesotho",
+    "officialName": "Kingdom of Lesotho",
     "capital": "Maseru",
     "population": "2,116,427",
+    "populationRaw": 2116427,
     "region": "Africa",
+    "subregion": "Southern Africa",
     "flagUrl": "https://flagcdn.com/w320/ls.png",
+    "flagIcon": "https://flagcdn.com/w40/ls.png",
     "code": "ls",
+    "iso3": "LSO",
     "currency": "Lesotho loti (L)",
+    "currencyCode": "LSL",
     "language": "English, Sotho",
     "coordinates": [
       -29.5,
       28.5
+    ],
+    "area": 30355,
+    "borders": [
+      "ZAF"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "Liberia",
+    "officialName": "Republic of Liberia",
     "capital": "Monrovia",
     "population": "5,248,621",
+    "populationRaw": 5248621,
     "region": "Africa",
+    "subregion": "Western Africa",
     "flagUrl": "https://flagcdn.com/w320/lr.png",
+    "flagIcon": "https://flagcdn.com/w40/lr.png",
     "code": "lr",
+    "iso3": "LBR",
     "currency": "Liberian dollar ($)",
+    "currencyCode": "LRD",
     "language": "English",
     "coordinates": [
       6.5,
       -9.5
+    ],
+    "area": 111369,
+    "borders": [
+      "GIN",
+      "CIV",
+      "SLE"
+    ],
+    "timezones": [
+      "UTC"
     ]
   },
   {
     "name": "Libya",
+    "officialName": "State of Libya",
     "capital": "Tripoli",
     "population": "7,459,000",
+    "populationRaw": 7459000,
     "region": "Africa",
+    "subregion": "Northern Africa",
     "flagUrl": "https://flagcdn.com/w320/ly.png",
+    "flagIcon": "https://flagcdn.com/w40/ly.png",
     "code": "ly",
+    "iso3": "LBY",
     "currency": "Libyan dinar (ل.د)",
+    "currencyCode": "LYD",
     "language": "Arabic",
     "coordinates": [
       25,
       17
+    ],
+    "area": 1759540,
+    "borders": [
+      "DZA",
+      "TCD",
+      "EGY",
+      "NER",
+      "SDN",
+      "TUN"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Liechtenstein",
+    "officialName": "Principality of Liechtenstein",
     "capital": "Vaduz",
     "population": "40,900",
+    "populationRaw": 40900,
     "region": "Europe",
+    "subregion": "Western Europe",
     "flagUrl": "https://flagcdn.com/w320/li.png",
+    "flagIcon": "https://flagcdn.com/w40/li.png",
     "code": "li",
+    "iso3": "LIE",
     "currency": "Swiss franc (Fr)",
+    "currencyCode": "CHF",
     "language": "German",
     "coordinates": [
       47.26666666,
       9.53333333
+    ],
+    "area": 160,
+    "borders": [
+      "AUT",
+      "CHE"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Lithuania",
+    "officialName": "Republic of Lithuania",
     "capital": "Vilnius",
     "population": "2,894,886",
+    "populationRaw": 2894886,
     "region": "Europe",
+    "subregion": "Northern Europe",
     "flagUrl": "https://flagcdn.com/w320/lt.png",
+    "flagIcon": "https://flagcdn.com/w40/lt.png",
     "code": "lt",
+    "iso3": "LTU",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "Lithuanian",
     "coordinates": [
       56,
       24
+    ],
+    "area": 65300,
+    "borders": [
+      "BLR",
+      "LVA",
+      "POL",
+      "RUS"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "Luxembourg",
+    "officialName": "Grand Duchy of Luxembourg",
     "capital": "Luxembourg",
     "population": "681,973",
+    "populationRaw": 681973,
     "region": "Europe",
+    "subregion": "Western Europe",
     "flagUrl": "https://flagcdn.com/w320/lu.png",
+    "flagIcon": "https://flagcdn.com/w40/lu.png",
     "code": "lu",
+    "iso3": "LUX",
     "currency": "euro (€)",
-    "language": "German, French",
+    "currencyCode": "EUR",
+    "language": "German, French, Luxembourgish",
     "coordinates": [
       49.75,
       6.16666666
+    ],
+    "area": 2586,
+    "borders": [
+      "BEL",
+      "FRA",
+      "DEU"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Macau",
+    "officialName": "Macao Special Administrative Region of the People's Republic of China",
     "capital": "N/A",
     "population": "685,900",
+    "populationRaw": 685900,
     "region": "Asia",
+    "subregion": "Eastern Asia",
     "flagUrl": "https://flagcdn.com/w320/mo.png",
+    "flagIcon": "https://flagcdn.com/w40/mo.png",
     "code": "mo",
+    "iso3": "MAC",
     "currency": "Macanese pataca (P)",
+    "currencyCode": "MOP",
     "language": "Portuguese, Chinese",
     "coordinates": [
       22.16666666,
       113.55
+    ],
+    "area": 30,
+    "borders": [
+      "CHN"
+    ],
+    "timezones": [
+      "UTC+08:00"
     ]
   },
   {
     "name": "Madagascar",
+    "officialName": "Republic of Madagascar",
     "capital": "Antananarivo",
     "population": "31,727,042",
+    "populationRaw": 31727042,
     "region": "Africa",
+    "subregion": "Eastern Africa",
     "flagUrl": "https://flagcdn.com/w320/mg.png",
+    "flagIcon": "https://flagcdn.com/w40/mg.png",
     "code": "mg",
+    "iso3": "MDG",
     "currency": "Malagasy ariary (Ar)",
+    "currencyCode": "MGA",
     "language": "French, Malagasy",
     "coordinates": [
       -20,
       47
+    ],
+    "area": 587041,
+    "borders": [],
+    "timezones": [
+      "UTC+03:00"
     ]
   },
   {
     "name": "Malawi",
+    "officialName": "Republic of Malawi",
     "capital": "Lilongwe",
     "population": "20,734,262",
+    "populationRaw": 20734262,
     "region": "Africa",
+    "subregion": "Eastern Africa",
     "flagUrl": "https://flagcdn.com/w320/mw.png",
+    "flagIcon": "https://flagcdn.com/w40/mw.png",
     "code": "mw",
+    "iso3": "MWI",
     "currency": "Malawian kwacha (MK)",
+    "currencyCode": "MWK",
     "language": "English, Chewa",
     "coordinates": [
       -13.5,
       34
+    ],
+    "area": 118484,
+    "borders": [
+      "MOZ",
+      "TZA",
+      "ZMB"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "Malaysia",
+    "officialName": "Malaysia",
     "capital": "Kuala Lumpur",
     "population": "34,231,700",
+    "populationRaw": 34231700,
     "region": "Asia",
+    "subregion": "South-Eastern Asia",
     "flagUrl": "https://flagcdn.com/w320/my.png",
+    "flagIcon": "https://flagcdn.com/w40/my.png",
     "code": "my",
+    "iso3": "MYS",
     "currency": "Malaysian ringgit (RM)",
+    "currencyCode": "MYR",
     "language": "English, Malay",
     "coordinates": [
       2.5,
       112.5
+    ],
+    "area": 330803,
+    "borders": [
+      "BRN",
+      "IDN",
+      "THA"
+    ],
+    "timezones": [
+      "UTC+08:00"
     ]
   },
   {
     "name": "Maldives",
+    "officialName": "Republic of the Maldives",
     "capital": "Malé",
     "population": "515,132",
+    "populationRaw": 515132,
     "region": "Asia",
+    "subregion": "Southern Asia",
     "flagUrl": "https://flagcdn.com/w320/mv.png",
+    "flagIcon": "https://flagcdn.com/w40/mv.png",
     "code": "mv",
+    "iso3": "MDV",
     "currency": "Maldivian rufiyaa (.ރ)",
+    "currencyCode": "MVR",
     "language": "Maldivian",
     "coordinates": [
       3.25,
       73
+    ],
+    "area": 300,
+    "borders": [],
+    "timezones": [
+      "UTC+05:00"
     ]
   },
   {
     "name": "Mali",
+    "officialName": "Republic of Mali",
     "capital": "Bamako",
     "population": "22,395,489",
+    "populationRaw": 22395489,
     "region": "Africa",
+    "subregion": "Western Africa",
     "flagUrl": "https://flagcdn.com/w320/ml.png",
+    "flagIcon": "https://flagcdn.com/w40/ml.png",
     "code": "ml",
+    "iso3": "MLI",
     "currency": "West African CFA franc (Fr)",
+    "currencyCode": "XOF",
     "language": "French",
     "coordinates": [
       17,
       -4
+    ],
+    "area": 1240192,
+    "borders": [
+      "DZA",
+      "BFA",
+      "GIN",
+      "CIV",
+      "MRT",
+      "NER",
+      "SEN"
+    ],
+    "timezones": [
+      "UTC"
     ]
   },
   {
     "name": "Malta",
+    "officialName": "Republic of Malta",
     "capital": "Valletta",
     "population": "574,250",
+    "populationRaw": 574250,
     "region": "Europe",
+    "subregion": "Southern Europe",
     "flagUrl": "https://flagcdn.com/w320/mt.png",
+    "flagIcon": "https://flagcdn.com/w40/mt.png",
     "code": "mt",
+    "iso3": "MLT",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "English, Maltese",
     "coordinates": [
       35.9375,
       14.3754
+    ],
+    "area": 316,
+    "borders": [],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Marshall Islands",
+    "officialName": "Republic of the Marshall Islands",
     "capital": "Majuro",
     "population": "42,418",
+    "populationRaw": 42418,
     "region": "Oceania",
+    "subregion": "Micronesia",
     "flagUrl": "https://flagcdn.com/w320/mh.png",
+    "flagIcon": "https://flagcdn.com/w40/mh.png",
     "code": "mh",
+    "iso3": "MHL",
     "currency": "United States dollar ($)",
+    "currencyCode": "USD",
     "language": "English, Marshallese",
     "coordinates": [
       9,
       168
+    ],
+    "area": 181,
+    "borders": [],
+    "timezones": [
+      "UTC+12:00"
     ]
   },
   {
     "name": "Martinique",
+    "officialName": "Martinique",
     "capital": "Fort-de-France",
     "population": "349,925",
+    "populationRaw": 349925,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/mq.png",
+    "flagIcon": "https://flagcdn.com/w40/mq.png",
     "code": "mq",
+    "iso3": "MTQ",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "French",
     "coordinates": [
       14.666667,
       -61
+    ],
+    "area": 1128,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Mauritania",
+    "officialName": "Islamic Republic of Mauritania",
     "capital": "Nouakchott",
     "population": "4,927,532",
+    "populationRaw": 4927532,
     "region": "Africa",
+    "subregion": "Western Africa",
     "flagUrl": "https://flagcdn.com/w320/mr.png",
+    "flagIcon": "https://flagcdn.com/w40/mr.png",
     "code": "mr",
+    "iso3": "MRT",
     "currency": "Mauritanian ouguiya (UM)",
+    "currencyCode": "MRU",
     "language": "Arabic",
     "coordinates": [
       20,
       -12
+    ],
+    "area": 1030700,
+    "borders": [
+      "DZA",
+      "MLI",
+      "SEN",
+      "ESH"
+    ],
+    "timezones": [
+      "UTC"
     ]
   },
   {
     "name": "Mauritius",
+    "officialName": "Republic of Mauritius",
     "capital": "Port Louis",
     "population": "1,243,741",
+    "populationRaw": 1243741,
     "region": "Africa",
+    "subregion": "Eastern Africa",
     "flagUrl": "https://flagcdn.com/w320/mu.png",
+    "flagIcon": "https://flagcdn.com/w40/mu.png",
     "code": "mu",
+    "iso3": "MUS",
     "currency": "Mauritian rupee (₨)",
-    "language": "English, French",
+    "currencyCode": "MUR",
+    "language": "English, French, Mauritian Creole",
     "coordinates": [
       -20.28333333,
       57.55
+    ],
+    "area": 2040,
+    "borders": [],
+    "timezones": [
+      "UTC+04:00"
     ]
   },
   {
     "name": "Mayotte",
+    "officialName": "Department of Mayotte",
     "capital": "Mamoudzou",
     "population": "320,901",
+    "populationRaw": 320901,
     "region": "Africa",
+    "subregion": "Eastern Africa",
     "flagUrl": "https://flagcdn.com/w320/yt.png",
+    "flagIcon": "https://flagcdn.com/w40/yt.png",
     "code": "yt",
+    "iso3": "MYT",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "French",
     "coordinates": [
       -12.83333333,
       45.16666666
+    ],
+    "area": 374,
+    "borders": [],
+    "timezones": [
+      "UTC+03:00"
     ]
   },
   {
     "name": "Mexico",
+    "officialName": "United Mexican States",
     "capital": "Mexico City",
     "population": "130,575,786",
+    "populationRaw": 130575786,
     "region": "Americas",
+    "subregion": "North America",
     "flagUrl": "https://flagcdn.com/w320/mx.png",
+    "flagIcon": "https://flagcdn.com/w40/mx.png",
     "code": "mx",
+    "iso3": "MEX",
     "currency": "Mexican peso ($)",
+    "currencyCode": "MXN",
     "language": "Spanish",
     "coordinates": [
       23,
       -102
+    ],
+    "area": 1964375,
+    "borders": [
+      "BLZ",
+      "GTM",
+      "USA"
+    ],
+    "timezones": [
+      "UTC-08:00",
+      "UTC-07:00",
+      "UTC-06:00"
     ]
   },
   {
     "name": "Micronesia",
+    "officialName": "Federated States of Micronesia",
     "capital": "Palikir",
     "population": "105,564",
+    "populationRaw": 105564,
     "region": "Oceania",
+    "subregion": "Micronesia",
     "flagUrl": "https://flagcdn.com/w320/fm.png",
+    "flagIcon": "https://flagcdn.com/w40/fm.png",
     "code": "fm",
+    "iso3": "FSM",
     "currency": "United States dollar ($)",
+    "currencyCode": "USD",
     "language": "English",
     "coordinates": [
       6.91666666,
       158.25
+    ],
+    "area": 702,
+    "borders": [],
+    "timezones": [
+      "UTC+10:00",
+      "UTC+11:00"
     ]
   },
   {
     "name": "Moldova",
+    "officialName": "Republic of Moldova",
     "capital": "Chișinău",
     "population": "2,749,076",
+    "populationRaw": 2749076,
     "region": "Europe",
+    "subregion": "Eastern Europe",
     "flagUrl": "https://flagcdn.com/w320/md.png",
+    "flagIcon": "https://flagcdn.com/w40/md.png",
     "code": "md",
+    "iso3": "MDA",
     "currency": "Moldovan leu (L)",
+    "currencyCode": "MDL",
     "language": "Romanian",
     "coordinates": [
       47,
       29
+    ],
+    "area": 33847,
+    "borders": [
+      "ROU",
+      "UKR"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "Monaco",
+    "officialName": "Principality of Monaco",
     "capital": "Monaco",
     "population": "38,423",
+    "populationRaw": 38423,
     "region": "Europe",
+    "subregion": "Western Europe",
     "flagUrl": "https://flagcdn.com/w320/mc.png",
+    "flagIcon": "https://flagcdn.com/w40/mc.png",
     "code": "mc",
+    "iso3": "MCO",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "French",
     "coordinates": [
       43.73333333,
       7.4
+    ],
+    "area": 2.02,
+    "borders": [
+      "FRA"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Mongolia",
+    "officialName": "Mongolia",
     "capital": "Ulan Bator",
     "population": "3,544,835",
+    "populationRaw": 3544835,
     "region": "Asia",
+    "subregion": "Eastern Asia",
     "flagUrl": "https://flagcdn.com/w320/mn.png",
+    "flagIcon": "https://flagcdn.com/w40/mn.png",
     "code": "mn",
+    "iso3": "MNG",
     "currency": "Mongolian tögrög (₮)",
+    "currencyCode": "MNT",
     "language": "Mongolian",
     "coordinates": [
       46,
       105
+    ],
+    "area": 1564110,
+    "borders": [
+      "CHN",
+      "RUS"
+    ],
+    "timezones": [
+      "UTC+07:00",
+      "UTC+08:00"
     ]
   },
   {
     "name": "Montenegro",
+    "officialName": "Montenegro",
     "capital": "Podgorica",
     "population": "623,327",
+    "populationRaw": 623327,
     "region": "Europe",
+    "subregion": "Southeast Europe",
     "flagUrl": "https://flagcdn.com/w320/me.png",
+    "flagIcon": "https://flagcdn.com/w40/me.png",
     "code": "me",
+    "iso3": "MNE",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "Montenegrin",
     "coordinates": [
       42.5,
       19.3
+    ],
+    "area": 13812,
+    "borders": [
+      "ALB",
+      "BIH",
+      "HRV",
+      "UNK",
+      "SRB"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Montserrat",
+    "officialName": "Montserrat",
     "capital": "Plymouth",
     "population": "4,386",
+    "populationRaw": 4386,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/ms.png",
+    "flagIcon": "https://flagcdn.com/w40/ms.png",
     "code": "ms",
+    "iso3": "MSR",
     "currency": "Eastern Caribbean dollar ($)",
+    "currencyCode": "XCD",
     "language": "English",
     "coordinates": [
       16.75,
       -62.2
+    ],
+    "area": 102,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Morocco",
+    "officialName": "Kingdom of Morocco",
     "capital": "Rabat",
     "population": "36,828,330",
+    "populationRaw": 36828330,
     "region": "Africa",
+    "subregion": "Northern Africa",
     "flagUrl": "https://flagcdn.com/w320/ma.png",
+    "flagIcon": "https://flagcdn.com/w40/ma.png",
     "code": "ma",
+    "iso3": "MAR",
     "currency": "Moroccan dirham (د.م.)",
+    "currencyCode": "MAD",
     "language": "Arabic, Berber",
     "coordinates": [
       32,
       -5
+    ],
+    "area": 446550,
+    "borders": [
+      "DZA",
+      "ESH",
+      "ESP"
+    ],
+    "timezones": [
+      "UTC"
     ]
   },
   {
     "name": "Mozambique",
+    "officialName": "Republic of Mozambique",
     "capital": "Maputo",
     "population": "34,090,466",
+    "populationRaw": 34090466,
     "region": "Africa",
+    "subregion": "Eastern Africa",
     "flagUrl": "https://flagcdn.com/w320/mz.png",
+    "flagIcon": "https://flagcdn.com/w40/mz.png",
     "code": "mz",
+    "iso3": "MOZ",
     "currency": "Mozambican metical (MT)",
+    "currencyCode": "MZN",
     "language": "Portuguese",
     "coordinates": [
       -18.25,
       35
+    ],
+    "area": 801590,
+    "borders": [
+      "MWI",
+      "ZAF",
+      "SWZ",
+      "TZA",
+      "ZMB",
+      "ZWE"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "Myanmar",
+    "officialName": "Republic of the Union of Myanmar",
     "capital": "Naypyidaw",
     "population": "51,316,756",
+    "populationRaw": 51316756,
     "region": "Asia",
+    "subregion": "South-Eastern Asia",
     "flagUrl": "https://flagcdn.com/w320/mm.png",
+    "flagIcon": "https://flagcdn.com/w40/mm.png",
     "code": "mm",
+    "iso3": "MMR",
     "currency": "Burmese kyat (Ks)",
+    "currencyCode": "MMK",
     "language": "Burmese",
     "coordinates": [
       22,
       98
+    ],
+    "area": 676578,
+    "borders": [
+      "BGD",
+      "CHN",
+      "IND",
+      "LAO",
+      "THA"
+    ],
+    "timezones": [
+      "UTC+06:30"
     ]
   },
   {
     "name": "Namibia",
+    "officialName": "Republic of Namibia",
     "capital": "Windhoek",
     "population": "3,022,401",
+    "populationRaw": 3022401,
     "region": "Africa",
+    "subregion": "Southern Africa",
     "flagUrl": "https://flagcdn.com/w320/na.png",
+    "flagIcon": "https://flagcdn.com/w40/na.png",
     "code": "na",
+    "iso3": "NAM",
     "currency": "Namibian dollar ($)",
-    "language": "Afrikaans, German",
+    "currencyCode": "NAD",
+    "language": "Afrikaans, German, English",
     "coordinates": [
       -22,
       17
+    ],
+    "area": 825615,
+    "borders": [
+      "AGO",
+      "BWA",
+      "ZAF",
+      "ZMB"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Nauru",
+    "officialName": "Republic of Nauru",
     "capital": "Yaren",
     "population": "11,680",
+    "populationRaw": 11680,
     "region": "Oceania",
+    "subregion": "Micronesia",
     "flagUrl": "https://flagcdn.com/w320/nr.png",
+    "flagIcon": "https://flagcdn.com/w40/nr.png",
     "code": "nr",
+    "iso3": "NRU",
     "currency": "Australian dollar ($)",
+    "currencyCode": "AUD",
     "language": "English, Nauru",
     "coordinates": [
       -0.53333333,
       166.91666666
+    ],
+    "area": 21,
+    "borders": [],
+    "timezones": [
+      "UTC+12:00"
     ]
   },
   {
     "name": "Nepal",
+    "officialName": "Federal Democratic Republic of Nepal",
     "capital": "Kathmandu",
     "population": "29,911,840",
+    "populationRaw": 29911840,
     "region": "Asia",
+    "subregion": "Southern Asia",
     "flagUrl": "https://flagcdn.com/w320/np.png",
+    "flagIcon": "https://flagcdn.com/w40/np.png",
     "code": "np",
+    "iso3": "NPL",
     "currency": "Nepalese rupee (₨)",
+    "currencyCode": "NPR",
     "language": "Nepali",
     "coordinates": [
       28,
       84
+    ],
+    "area": 147181,
+    "borders": [
+      "CHN",
+      "IND"
+    ],
+    "timezones": [
+      "UTC+05:45"
     ]
   },
   {
     "name": "Netherlands",
+    "officialName": "Kingdom of the Netherlands",
     "capital": "Amsterdam",
     "population": "18,100,436",
+    "populationRaw": 18100436,
     "region": "Europe",
+    "subregion": "Western Europe",
     "flagUrl": "https://flagcdn.com/w320/nl.png",
+    "flagIcon": "https://flagcdn.com/w40/nl.png",
     "code": "nl",
+    "iso3": "NLD",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "Dutch",
     "coordinates": [
       52.5,
       5.75
+    ],
+    "area": 41865,
+    "borders": [
+      "BEL",
+      "DEU"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "New Caledonia",
+    "officialName": "New Caledonia",
     "capital": "Nouméa",
     "population": "264,596",
+    "populationRaw": 264596,
     "region": "Oceania",
+    "subregion": "Melanesia",
     "flagUrl": "https://flagcdn.com/w320/nc.png",
+    "flagIcon": "https://flagcdn.com/w40/nc.png",
     "code": "nc",
+    "iso3": "NCL",
     "currency": "CFP franc (₣)",
+    "currencyCode": "XPF",
     "language": "French",
     "coordinates": [
       -21.5,
       165.5
+    ],
+    "area": 18575,
+    "borders": [],
+    "timezones": [
+      "UTC+11:00"
     ]
   },
   {
     "name": "New Zealand",
+    "officialName": "New Zealand",
     "capital": "Wellington",
     "population": "5,324,700",
+    "populationRaw": 5324700,
     "region": "Oceania",
+    "subregion": "Australia and New Zealand",
     "flagUrl": "https://flagcdn.com/w320/nz.png",
+    "flagIcon": "https://flagcdn.com/w40/nz.png",
     "code": "nz",
+    "iso3": "NZL",
     "currency": "New Zealand dollar ($)",
-    "language": "English, Māori",
+    "currencyCode": "NZD",
+    "language": "English, Māori, New Zealand Sign Language",
     "coordinates": [
       -41,
       174
+    ],
+    "area": 268838,
+    "borders": [],
+    "timezones": [
+      "UTC-11:00",
+      "UTC-10:00",
+      "UTC+12:00",
+      "UTC+12:45",
+      "UTC+13:00"
     ]
   },
   {
     "name": "Nicaragua",
+    "officialName": "Republic of Nicaragua",
     "capital": "Managua",
     "population": "6,803,886",
+    "populationRaw": 6803886,
     "region": "Americas",
+    "subregion": "Central America",
     "flagUrl": "https://flagcdn.com/w320/ni.png",
+    "flagIcon": "https://flagcdn.com/w40/ni.png",
     "code": "ni",
+    "iso3": "NIC",
     "currency": "Nicaraguan córdoba (C$)",
+    "currencyCode": "NIO",
     "language": "Spanish",
     "coordinates": [
       13,
       -85
+    ],
+    "area": 130373,
+    "borders": [
+      "CRI",
+      "HND"
+    ],
+    "timezones": [
+      "UTC-06:00"
     ]
   },
   {
     "name": "Niger",
+    "officialName": "Republic of Niger",
     "capital": "Niamey",
     "population": "26,312,034",
+    "populationRaw": 26312034,
     "region": "Africa",
+    "subregion": "Western Africa",
     "flagUrl": "https://flagcdn.com/w320/ne.png",
+    "flagIcon": "https://flagcdn.com/w40/ne.png",
     "code": "ne",
+    "iso3": "NER",
     "currency": "West African CFA franc (Fr)",
+    "currencyCode": "XOF",
     "language": "French",
     "coordinates": [
       16,
       8
+    ],
+    "area": 1267000,
+    "borders": [
+      "DZA",
+      "BEN",
+      "BFA",
+      "TCD",
+      "LBY",
+      "MLI",
+      "NGA"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Nigeria",
+    "officialName": "Federal Republic of Nigeria",
     "capital": "Abuja",
     "population": "223,800,000",
+    "populationRaw": 223800000,
     "region": "Africa",
+    "subregion": "Western Africa",
     "flagUrl": "https://flagcdn.com/w320/ng.png",
+    "flagIcon": "https://flagcdn.com/w40/ng.png",
     "code": "ng",
+    "iso3": "NGA",
     "currency": "Nigerian naira (₦)",
+    "currencyCode": "NGN",
     "language": "English",
     "coordinates": [
       10,
       8
+    ],
+    "area": 923768,
+    "borders": [
+      "BEN",
+      "CMR",
+      "TCD",
+      "NER"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Niue",
+    "officialName": "Niue",
     "capital": "Alofi",
     "population": "1,681",
+    "populationRaw": 1681,
     "region": "Oceania",
+    "subregion": "Polynesia",
     "flagUrl": "https://flagcdn.com/w320/nu.png",
+    "flagIcon": "https://flagcdn.com/w40/nu.png",
     "code": "nu",
+    "iso3": "NIU",
     "currency": "New Zealand dollar ($)",
+    "currencyCode": "NZD",
     "language": "English, Niuean",
     "coordinates": [
       -19.03333333,
       -169.86666666
+    ],
+    "area": 260,
+    "borders": [],
+    "timezones": [
+      "UTC-11:00"
     ]
   },
   {
     "name": "Norfolk Island",
+    "officialName": "Territory of Norfolk Island",
     "capital": "Kingston",
     "population": "2,188",
+    "populationRaw": 2188,
     "region": "Oceania",
+    "subregion": "Australia and New Zealand",
     "flagUrl": "https://flagcdn.com/w320/nf.png",
+    "flagIcon": "https://flagcdn.com/w40/nf.png",
     "code": "nf",
+    "iso3": "NFK",
     "currency": "Australian dollar ($)",
+    "currencyCode": "AUD",
     "language": "English, Norfuk",
     "coordinates": [
       -29.03333333,
       167.95
+    ],
+    "area": 36,
+    "borders": [],
+    "timezones": [
+      "UTC+11:30"
     ]
   },
   {
     "name": "North Korea",
+    "officialName": "Democratic People's Republic of Korea",
     "capital": "Pyongyang",
     "population": "25,950,000",
+    "populationRaw": 25950000,
     "region": "Asia",
+    "subregion": "Eastern Asia",
     "flagUrl": "https://flagcdn.com/w320/kp.png",
+    "flagIcon": "https://flagcdn.com/w40/kp.png",
     "code": "kp",
+    "iso3": "PRK",
     "currency": "North Korean won (₩)",
+    "currencyCode": "KPW",
     "language": "Korean",
     "coordinates": [
       40,
       127
+    ],
+    "area": 120538,
+    "borders": [
+      "CHN",
+      "KOR",
+      "RUS"
+    ],
+    "timezones": [
+      "UTC+09:00"
     ]
   },
   {
     "name": "North Macedonia",
+    "officialName": "Republic of North Macedonia",
     "capital": "Skopje",
     "population": "1,822,612",
+    "populationRaw": 1822612,
     "region": "Europe",
+    "subregion": "Southeast Europe",
     "flagUrl": "https://flagcdn.com/w320/mk.png",
+    "flagIcon": "https://flagcdn.com/w40/mk.png",
     "code": "mk",
+    "iso3": "MKD",
     "currency": "denar (den)",
+    "currencyCode": "MKD",
     "language": "Macedonian",
     "coordinates": [
       41.83333333,
       22
+    ],
+    "area": 25713,
+    "borders": [
+      "ALB",
+      "BGR",
+      "GRC",
+      "UNK",
+      "SRB"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Northern Mariana Islands",
+    "officialName": "Commonwealth of the Northern Mariana Islands",
     "capital": "Saipan",
     "population": "47,329",
+    "populationRaw": 47329,
     "region": "Oceania",
+    "subregion": "Micronesia",
     "flagUrl": "https://flagcdn.com/w320/mp.png",
+    "flagIcon": "https://flagcdn.com/w40/mp.png",
     "code": "mp",
+    "iso3": "MNP",
     "currency": "United States dollar ($)",
-    "language": "Carolinian, Chamorro",
+    "currencyCode": "USD",
+    "language": "Carolinian, Chamorro, English",
     "coordinates": [
       15.2,
       145.75
+    ],
+    "area": 464,
+    "borders": [],
+    "timezones": [
+      "UTC+10:00"
     ]
   },
   {
     "name": "Norway",
+    "officialName": "Kingdom of Norway",
     "capital": "Oslo",
     "population": "5,606,944",
+    "populationRaw": 5606944,
     "region": "Europe",
+    "subregion": "Northern Europe",
     "flagUrl": "https://flagcdn.com/w320/no.png",
+    "flagIcon": "https://flagcdn.com/w40/no.png",
     "code": "no",
+    "iso3": "NOR",
     "currency": "Norwegian krone (kr)",
-    "language": "Norwegian Nynorsk, Norwegian Bokmål",
+    "currencyCode": "NOK",
+    "language": "Norwegian Nynorsk, Norwegian Bokmål, Sami",
     "coordinates": [
       62,
       10
+    ],
+    "area": 386224,
+    "borders": [
+      "FIN",
+      "SWE",
+      "RUS"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Oman",
+    "officialName": "Sultanate of Oman",
     "capital": "Muscat",
     "population": "5,343,630",
+    "populationRaw": 5343630,
     "region": "Asia",
+    "subregion": "Western Asia",
     "flagUrl": "https://flagcdn.com/w320/om.png",
+    "flagIcon": "https://flagcdn.com/w40/om.png",
     "code": "om",
+    "iso3": "OMN",
     "currency": "Omani rial (ر.ع.)",
+    "currencyCode": "OMR",
     "language": "Arabic",
     "coordinates": [
       21,
       57
+    ],
+    "area": 309500,
+    "borders": [
+      "SAU",
+      "ARE",
+      "YEM"
+    ],
+    "timezones": [
+      "UTC+04:00"
     ]
   },
   {
     "name": "Pakistan",
+    "officialName": "Islamic Republic of Pakistan",
     "capital": "Islamabad",
     "population": "241,499,431",
+    "populationRaw": 241499431,
     "region": "Asia",
+    "subregion": "Southern Asia",
     "flagUrl": "https://flagcdn.com/w320/pk.png",
+    "flagIcon": "https://flagcdn.com/w40/pk.png",
     "code": "pk",
+    "iso3": "PAK",
     "currency": "Pakistani rupee (₨)",
+    "currencyCode": "PKR",
     "language": "English, Urdu",
     "coordinates": [
       30,
       70
+    ],
+    "area": 796095,
+    "borders": [
+      "AFG",
+      "CHN",
+      "IND",
+      "IRN"
+    ],
+    "timezones": [
+      "UTC+05:00"
     ]
   },
   {
     "name": "Palau",
+    "officialName": "Republic of Palau",
     "capital": "Ngerulmud",
     "population": "16,733",
+    "populationRaw": 16733,
     "region": "Oceania",
+    "subregion": "Micronesia",
     "flagUrl": "https://flagcdn.com/w320/pw.png",
+    "flagIcon": "https://flagcdn.com/w40/pw.png",
     "code": "pw",
+    "iso3": "PLW",
     "currency": "United States dollar ($)",
+    "currencyCode": "USD",
     "language": "English, Palauan",
     "coordinates": [
       7.5,
       134.5
+    ],
+    "area": 459,
+    "borders": [],
+    "timezones": [
+      "UTC+09:00"
     ]
   },
   {
     "name": "Palestine",
+    "officialName": "State of Palestine",
     "capital": "Ramallah",
     "population": "5,483,450",
+    "populationRaw": 5483450,
     "region": "Asia",
+    "subregion": "Western Asia",
     "flagUrl": "https://flagcdn.com/w320/ps.png",
+    "flagIcon": "https://flagcdn.com/w40/ps.png",
     "code": "ps",
+    "iso3": "PSE",
     "currency": "Egyptian pound (E£)",
+    "currencyCode": "EGP",
     "language": "Arabic",
     "coordinates": [
       31.9,
       35.2
+    ],
+    "area": 6220,
+    "borders": [
+      "ISR",
+      "EGY",
+      "JOR"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "Panama",
+    "officialName": "Republic of Panama",
     "capital": "Panama City",
     "population": "4,064,780",
+    "populationRaw": 4064780,
     "region": "Americas",
+    "subregion": "Central America",
     "flagUrl": "https://flagcdn.com/w320/pa.png",
+    "flagIcon": "https://flagcdn.com/w40/pa.png",
     "code": "pa",
+    "iso3": "PAN",
     "currency": "Panamanian balboa (B/.)",
+    "currencyCode": "PAB",
     "language": "Spanish",
     "coordinates": [
       9,
       -80
+    ],
+    "area": 75417,
+    "borders": [
+      "COL",
+      "CRI"
+    ],
+    "timezones": [
+      "UTC-05:00"
     ]
   },
   {
     "name": "Papua New Guinea",
+    "officialName": "Independent State of Papua New Guinea",
     "capital": "Port Moresby",
     "population": "11,781,559",
+    "populationRaw": 11781559,
     "region": "Oceania",
+    "subregion": "Melanesia",
     "flagUrl": "https://flagcdn.com/w320/pg.png",
+    "flagIcon": "https://flagcdn.com/w40/pg.png",
     "code": "pg",
+    "iso3": "PNG",
     "currency": "Papua New Guinean kina (K)",
-    "language": "English, Hiri Motu",
+    "currencyCode": "PGK",
+    "language": "English, Hiri Motu, Tok Pisin",
     "coordinates": [
       -6,
       147
+    ],
+    "area": 462840,
+    "borders": [
+      "IDN"
+    ],
+    "timezones": [
+      "UTC+10:00"
     ]
   },
   {
     "name": "Paraguay",
+    "officialName": "Republic of Paraguay",
     "capital": "Asunción",
     "population": "6,109,644",
+    "populationRaw": 6109644,
     "region": "Americas",
+    "subregion": "South America",
     "flagUrl": "https://flagcdn.com/w320/py.png",
+    "flagIcon": "https://flagcdn.com/w40/py.png",
     "code": "py",
+    "iso3": "PRY",
     "currency": "Paraguayan guaraní (₲)",
+    "currencyCode": "PYG",
     "language": "Guaraní, Spanish",
     "coordinates": [
       -23,
       -58
+    ],
+    "area": 406752,
+    "borders": [
+      "ARG",
+      "BOL",
+      "BRA"
+    ],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Peru",
+    "officialName": "Republic of Peru",
     "capital": "Lima",
     "population": "34,350,244",
+    "populationRaw": 34350244,
     "region": "Americas",
+    "subregion": "South America",
     "flagUrl": "https://flagcdn.com/w320/pe.png",
+    "flagIcon": "https://flagcdn.com/w40/pe.png",
     "code": "pe",
+    "iso3": "PER",
     "currency": "Peruvian sol (S/ )",
-    "language": "Aymara, Quechua",
+    "currencyCode": "PEN",
+    "language": "Aymara, Quechua, Spanish",
     "coordinates": [
       -10,
       -76
+    ],
+    "area": 1285216,
+    "borders": [
+      "BOL",
+      "BRA",
+      "CHL",
+      "COL",
+      "ECU"
+    ],
+    "timezones": [
+      "UTC-05:00"
     ]
   },
   {
     "name": "Philippines",
+    "officialName": "Republic of the Philippines",
     "capital": "Manila",
     "population": "114,123,600",
+    "populationRaw": 114123600,
     "region": "Asia",
+    "subregion": "South-Eastern Asia",
     "flagUrl": "https://flagcdn.com/w320/ph.png",
+    "flagIcon": "https://flagcdn.com/w40/ph.png",
     "code": "ph",
+    "iso3": "PHL",
     "currency": "Philippine peso (₱)",
+    "currencyCode": "PHP",
     "language": "English, Filipino",
     "coordinates": [
       13,
       122
+    ],
+    "area": 342353,
+    "borders": [],
+    "timezones": [
+      "UTC+08:00"
     ]
   },
   {
     "name": "Pitcairn Islands",
+    "officialName": "Pitcairn Group of Islands",
     "capital": "Adamstown",
     "population": "35",
+    "populationRaw": 35,
     "region": "Oceania",
+    "subregion": "Polynesia",
     "flagUrl": "https://flagcdn.com/w320/pn.png",
+    "flagIcon": "https://flagcdn.com/w40/pn.png",
     "code": "pn",
+    "iso3": "PCN",
     "currency": "New Zealand dollar ($)",
+    "currencyCode": "NZD",
     "language": "English",
     "coordinates": [
       -25.06666666,
       -130.1
+    ],
+    "area": 47,
+    "borders": [],
+    "timezones": [
+      "UTC-08:00"
     ]
   },
   {
     "name": "Poland",
+    "officialName": "Republic of Poland",
     "capital": "Warsaw",
     "population": "37,392,000",
+    "populationRaw": 37392000,
     "region": "Europe",
+    "subregion": "Central Europe",
     "flagUrl": "https://flagcdn.com/w320/pl.png",
+    "flagIcon": "https://flagcdn.com/w40/pl.png",
     "code": "pl",
+    "iso3": "POL",
     "currency": "Polish złoty (zł)",
+    "currencyCode": "PLN",
     "language": "Polish",
     "coordinates": [
       52,
       20
+    ],
+    "area": 312679,
+    "borders": [
+      "BLR",
+      "CZE",
+      "DEU",
+      "LTU",
+      "RUS",
+      "SVK",
+      "UKR"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Portugal",
+    "officialName": "Portuguese Republic",
     "capital": "Lisbon",
     "population": "10,749,635",
+    "populationRaw": 10749635,
     "region": "Europe",
+    "subregion": "Southern Europe",
     "flagUrl": "https://flagcdn.com/w320/pt.png",
+    "flagIcon": "https://flagcdn.com/w40/pt.png",
     "code": "pt",
+    "iso3": "PRT",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "Portuguese",
     "coordinates": [
       39.5,
       -8
+    ],
+    "area": 92090,
+    "borders": [
+      "ESP"
+    ],
+    "timezones": [
+      "UTC-01:00",
+      "UTC"
     ]
   },
   {
     "name": "Puerto Rico",
+    "officialName": "Commonwealth of Puerto Rico",
     "capital": "San Juan",
     "population": "3,203,295",
+    "populationRaw": 3203295,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/pr.png",
+    "flagIcon": "https://flagcdn.com/w40/pr.png",
     "code": "pr",
+    "iso3": "PRI",
     "currency": "United States dollar ($)",
+    "currencyCode": "USD",
     "language": "English, Spanish",
     "coordinates": [
       18.25,
       -66.5
+    ],
+    "area": 8870,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Qatar",
+    "officialName": "State of Qatar",
     "capital": "Doha",
     "population": "3,173,024",
+    "populationRaw": 3173024,
     "region": "Asia",
+    "subregion": "Western Asia",
     "flagUrl": "https://flagcdn.com/w320/qa.png",
+    "flagIcon": "https://flagcdn.com/w40/qa.png",
     "code": "qa",
+    "iso3": "QAT",
     "currency": "Qatari riyal (ر.ق)",
+    "currencyCode": "QAR",
     "language": "Arabic",
     "coordinates": [
       25.5,
       51.25
+    ],
+    "area": 11586,
+    "borders": [
+      "SAU"
+    ],
+    "timezones": [
+      "UTC+03:00"
     ]
   },
   {
     "name": "Republic of the Congo",
+    "officialName": "Republic of the Congo",
     "capital": "Brazzaville",
     "population": "6,142,180",
+    "populationRaw": 6142180,
     "region": "Africa",
+    "subregion": "Middle Africa",
     "flagUrl": "https://flagcdn.com/w320/cg.png",
+    "flagIcon": "https://flagcdn.com/w40/cg.png",
     "code": "cg",
+    "iso3": "COG",
     "currency": "Central African CFA franc (Fr)",
-    "language": "French, Kikongo",
+    "currencyCode": "XAF",
+    "language": "French, Kikongo, Lingala",
     "coordinates": [
       -1,
       15
+    ],
+    "area": 342000,
+    "borders": [
+      "AGO",
+      "CMR",
+      "CAF",
+      "COD",
+      "GAB"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Réunion",
+    "officialName": "Réunion Island",
     "capital": "Saint-Denis",
     "population": "896,175",
+    "populationRaw": 896175,
     "region": "Africa",
+    "subregion": "Eastern Africa",
     "flagUrl": "https://flagcdn.com/w320/re.png",
+    "flagIcon": "https://flagcdn.com/w40/re.png",
     "code": "re",
+    "iso3": "REU",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "French",
     "coordinates": [
       -21.15,
       55.5
+    ],
+    "area": 2511,
+    "borders": [],
+    "timezones": [
+      "UTC+04:00"
     ]
   },
   {
     "name": "Romania",
+    "officialName": "Romania",
     "capital": "Bucharest",
     "population": "19,036,031",
+    "populationRaw": 19036031,
     "region": "Europe",
+    "subregion": "Southeast Europe",
     "flagUrl": "https://flagcdn.com/w320/ro.png",
+    "flagIcon": "https://flagcdn.com/w40/ro.png",
     "code": "ro",
+    "iso3": "ROU",
     "currency": "Romanian leu (lei)",
+    "currencyCode": "RON",
     "language": "Romanian",
     "coordinates": [
       46,
       25
+    ],
+    "area": 238391,
+    "borders": [
+      "BGR",
+      "HUN",
+      "MDA",
+      "SRB",
+      "UKR"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "Russia",
+    "officialName": "Russian Federation",
     "capital": "Moscow",
     "population": "146,028,325",
+    "populationRaw": 146028325,
     "region": "Europe",
+    "subregion": "Eastern Europe",
     "flagUrl": "https://flagcdn.com/w320/ru.png",
+    "flagIcon": "https://flagcdn.com/w40/ru.png",
     "code": "ru",
+    "iso3": "RUS",
     "currency": "Russian ruble (₽)",
+    "currencyCode": "RUB",
     "language": "Russian",
     "coordinates": [
       60,
       100
+    ],
+    "area": 17098246,
+    "borders": [
+      "AZE",
+      "BLR",
+      "CHN",
+      "EST",
+      "FIN",
+      "GEO",
+      "KAZ",
+      "PRK",
+      "LVA",
+      "LTU",
+      "MNG",
+      "NOR",
+      "POL",
+      "UKR"
+    ],
+    "timezones": [
+      "UTC+03:00",
+      "UTC+04:00",
+      "UTC+06:00",
+      "UTC+07:00",
+      "UTC+08:00",
+      "UTC+09:00",
+      "UTC+10:00",
+      "UTC+11:00",
+      "UTC+12:00"
     ]
   },
   {
     "name": "Rwanda",
+    "officialName": "Republic of Rwanda",
     "capital": "Kigali",
     "population": "14,104,969",
+    "populationRaw": 14104969,
     "region": "Africa",
+    "subregion": "Eastern Africa",
     "flagUrl": "https://flagcdn.com/w320/rw.png",
+    "flagIcon": "https://flagcdn.com/w40/rw.png",
     "code": "rw",
+    "iso3": "RWA",
     "currency": "Rwandan franc (Fr)",
-    "language": "English, French",
+    "currencyCode": "RWF",
+    "language": "English, French, Kinyarwanda",
     "coordinates": [
       -2,
       30
+    ],
+    "area": 26338,
+    "borders": [
+      "BDI",
+      "COD",
+      "TZA",
+      "UGA"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "Saint Barthélemy",
+    "officialName": "Collectivity of Saint Barthélemy",
     "capital": "Gustavia",
     "population": "10,562",
+    "populationRaw": 10562,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/bl.png",
+    "flagIcon": "https://flagcdn.com/w40/bl.png",
     "code": "bl",
+    "iso3": "BLM",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "French",
     "coordinates": [
       18.5,
       -63.41666666
+    ],
+    "area": 21,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Saint Helena, Ascension and Tristan da Cunha",
+    "officialName": "Saint Helena, Ascension and Tristan da Cunha",
     "capital": "Jamestown",
     "population": "5,651",
+    "populationRaw": 5651,
     "region": "Africa",
+    "subregion": "Western Africa",
     "flagUrl": "https://flagcdn.com/w320/sh.png",
+    "flagIcon": "https://flagcdn.com/w40/sh.png",
     "code": "sh",
+    "iso3": "SHN",
     "currency": "Pound sterling (£)",
+    "currencyCode": "GBP",
     "language": "English",
     "coordinates": [
       -15.95,
       -5.72
+    ],
+    "area": 394,
+    "borders": [],
+    "timezones": [
+      "UTC+00:00"
     ]
   },
   {
     "name": "Saint Kitts and Nevis",
+    "officialName": "Federation of Saint Christopher and Nevis",
     "capital": "Basseterre",
     "population": "51,320",
+    "populationRaw": 51320,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/kn.png",
+    "flagIcon": "https://flagcdn.com/w40/kn.png",
     "code": "kn",
+    "iso3": "KNA",
     "currency": "Eastern Caribbean dollar ($)",
+    "currencyCode": "XCD",
     "language": "English",
     "coordinates": [
       17.33333333,
       -62.75
+    ],
+    "area": 261,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Saint Lucia",
+    "officialName": "Saint Lucia",
     "capital": "Castries",
     "population": "184,100",
+    "populationRaw": 184100,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/lc.png",
+    "flagIcon": "https://flagcdn.com/w40/lc.png",
     "code": "lc",
+    "iso3": "LCA",
     "currency": "Eastern Caribbean dollar ($)",
+    "currencyCode": "XCD",
     "language": "English",
     "coordinates": [
       13.88333333,
       -60.96666666
+    ],
+    "area": 616,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Saint Martin",
+    "officialName": "Saint Martin",
     "capital": "Marigot",
     "population": "31,496",
+    "populationRaw": 31496,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/mf.png",
+    "flagIcon": "https://flagcdn.com/w40/mf.png",
     "code": "mf",
+    "iso3": "MAF",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "French",
     "coordinates": [
       18.0708,
       -63.0501
+    ],
+    "area": 53,
+    "borders": [
+      "SXM"
+    ],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Saint Pierre and Miquelon",
+    "officialName": "Saint Pierre and Miquelon",
     "capital": "Saint-Pierre",
     "population": "5,819",
+    "populationRaw": 5819,
     "region": "Americas",
+    "subregion": "North America",
     "flagUrl": "https://flagcdn.com/w320/pm.png",
+    "flagIcon": "https://flagcdn.com/w40/pm.png",
     "code": "pm",
+    "iso3": "SPM",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "French",
     "coordinates": [
       46.83333333,
       -56.33333333
+    ],
+    "area": 242,
+    "borders": [],
+    "timezones": [
+      "UTC-03:00"
     ]
   },
   {
     "name": "Saint Vincent and the Grenadines",
+    "officialName": "Saint Vincent and the Grenadines",
     "capital": "Kingstown",
     "population": "110,872",
+    "populationRaw": 110872,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/vc.png",
+    "flagIcon": "https://flagcdn.com/w40/vc.png",
     "code": "vc",
+    "iso3": "VCT",
     "currency": "Eastern Caribbean dollar ($)",
+    "currencyCode": "XCD",
     "language": "English",
     "coordinates": [
       13.25,
       -61.2
+    ],
+    "area": 389,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Samoa",
+    "officialName": "Independent State of Samoa",
     "capital": "Apia",
     "population": "205,557",
+    "populationRaw": 205557,
     "region": "Oceania",
+    "subregion": "Polynesia",
     "flagUrl": "https://flagcdn.com/w320/ws.png",
+    "flagIcon": "https://flagcdn.com/w40/ws.png",
     "code": "ws",
+    "iso3": "WSM",
     "currency": "Samoan tālā (T)",
+    "currencyCode": "WST",
     "language": "English, Samoan",
     "coordinates": [
       -13.58333333,
       -172.33333333
+    ],
+    "area": 2842,
+    "borders": [],
+    "timezones": [
+      "UTC+13:00"
     ]
   },
   {
     "name": "San Marino",
+    "officialName": "Republic of San Marino",
     "capital": "City of San Marino",
     "population": "34,132",
+    "populationRaw": 34132,
     "region": "Europe",
+    "subregion": "Southern Europe",
     "flagUrl": "https://flagcdn.com/w320/sm.png",
+    "flagIcon": "https://flagcdn.com/w40/sm.png",
     "code": "sm",
+    "iso3": "SMR",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "Italian",
     "coordinates": [
       43.76666666,
       12.41666666
+    ],
+    "area": 61,
+    "borders": [
+      "ITA"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "São Tomé and Príncipe",
+    "officialName": "Democratic Republic of São Tomé and Príncipe",
     "capital": "São Tomé",
     "population": "209,607",
+    "populationRaw": 209607,
     "region": "Africa",
+    "subregion": "Middle Africa",
     "flagUrl": "https://flagcdn.com/w320/st.png",
+    "flagIcon": "https://flagcdn.com/w40/st.png",
     "code": "st",
+    "iso3": "STP",
     "currency": "São Tomé and Príncipe dobra (Db)",
+    "currencyCode": "STN",
     "language": "Portuguese",
     "coordinates": [
       1,
       7
+    ],
+    "area": 964,
+    "borders": [],
+    "timezones": [
+      "UTC"
     ]
   },
   {
     "name": "Saudi Arabia",
+    "officialName": "Kingdom of Saudi Arabia",
     "capital": "Riyadh",
     "population": "35,300,280",
+    "populationRaw": 35300280,
     "region": "Asia",
+    "subregion": "Western Asia",
     "flagUrl": "https://flagcdn.com/w320/sa.png",
+    "flagIcon": "https://flagcdn.com/w40/sa.png",
     "code": "sa",
+    "iso3": "SAU",
     "currency": "Saudi riyal (ر.س)",
+    "currencyCode": "SAR",
     "language": "Arabic",
     "coordinates": [
       25,
       45
+    ],
+    "area": 2149690,
+    "borders": [
+      "IRQ",
+      "JOR",
+      "KWT",
+      "OMN",
+      "QAT",
+      "ARE",
+      "YEM"
+    ],
+    "timezones": [
+      "UTC+03:00"
     ]
   },
   {
     "name": "Senegal",
+    "officialName": "Republic of Senegal",
     "capital": "Dakar",
     "population": "18,593,258",
+    "populationRaw": 18593258,
     "region": "Africa",
+    "subregion": "Western Africa",
     "flagUrl": "https://flagcdn.com/w320/sn.png",
+    "flagIcon": "https://flagcdn.com/w40/sn.png",
     "code": "sn",
+    "iso3": "SEN",
     "currency": "West African CFA franc (Fr)",
+    "currencyCode": "XOF",
     "language": "French",
     "coordinates": [
       14,
       -14
+    ],
+    "area": 196722,
+    "borders": [
+      "GMB",
+      "GIN",
+      "GNB",
+      "MLI",
+      "MRT"
+    ],
+    "timezones": [
+      "UTC"
     ]
   },
   {
     "name": "Serbia",
+    "officialName": "Republic of Serbia",
     "capital": "Belgrade",
     "population": "6,567,783",
+    "populationRaw": 6567783,
     "region": "Europe",
+    "subregion": "Southeast Europe",
     "flagUrl": "https://flagcdn.com/w320/rs.png",
+    "flagIcon": "https://flagcdn.com/w40/rs.png",
     "code": "rs",
+    "iso3": "SRB",
     "currency": "Serbian dinar (дин.)",
+    "currencyCode": "RSD",
     "language": "Serbian",
     "coordinates": [
       44,
       21
+    ],
+    "area": 77589,
+    "borders": [
+      "BIH",
+      "BGR",
+      "HRV",
+      "HUN",
+      "UNK",
+      "MKD",
+      "MNE",
+      "ROU"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Seychelles",
+    "officialName": "Republic of Seychelles",
     "capital": "Victoria",
     "population": "122,729",
+    "populationRaw": 122729,
     "region": "Africa",
+    "subregion": "Eastern Africa",
     "flagUrl": "https://flagcdn.com/w320/sc.png",
+    "flagIcon": "https://flagcdn.com/w40/sc.png",
     "code": "sc",
+    "iso3": "SYC",
     "currency": "Seychellois rupee (₨)",
-    "language": "Seychellois Creole, English",
+    "currencyCode": "SCR",
+    "language": "Seychellois Creole, English, French",
     "coordinates": [
       -4.58333333,
       55.66666666
+    ],
+    "area": 452,
+    "borders": [],
+    "timezones": [
+      "UTC+04:00"
     ]
   },
   {
     "name": "Sierra Leone",
+    "officialName": "Republic of Sierra Leone",
     "capital": "Freetown",
     "population": "9,077,691",
+    "populationRaw": 9077691,
     "region": "Africa",
+    "subregion": "Western Africa",
     "flagUrl": "https://flagcdn.com/w320/sl.png",
+    "flagIcon": "https://flagcdn.com/w40/sl.png",
     "code": "sl",
+    "iso3": "SLE",
     "currency": "Leone (Le)",
+    "currencyCode": "SLE",
     "language": "English",
     "coordinates": [
       8.5,
       -11.5
+    ],
+    "area": 71740,
+    "borders": [
+      "GIN",
+      "LBR"
+    ],
+    "timezones": [
+      "UTC"
     ]
   },
   {
     "name": "Singapore",
+    "officialName": "Republic of Singapore",
     "capital": "Singapore",
     "population": "6,110,200",
+    "populationRaw": 6110200,
     "region": "Asia",
+    "subregion": "South-Eastern Asia",
     "flagUrl": "https://flagcdn.com/w320/sg.png",
+    "flagIcon": "https://flagcdn.com/w40/sg.png",
     "code": "sg",
+    "iso3": "SGP",
     "currency": "Singapore dollar ($)",
-    "language": "English, Chinese",
+    "currencyCode": "SGD",
+    "language": "English, Chinese, Malay",
     "coordinates": [
       1.36666666,
       103.8
+    ],
+    "area": 710,
+    "borders": [],
+    "timezones": [
+      "UTC+08:00"
     ]
   },
   {
     "name": "Sint Maarten",
+    "officialName": "Sint Maarten",
     "capital": "Philipsburg",
     "population": "41,349",
+    "populationRaw": 41349,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/sx.png",
+    "flagIcon": "https://flagcdn.com/w40/sx.png",
     "code": "sx",
+    "iso3": "SXM",
     "currency": "Netherlands Antillean guilder (ƒ)",
-    "language": "English, French",
+    "currencyCode": "ANG",
+    "language": "English, French, Dutch",
     "coordinates": [
       18.033333,
       -63.05
+    ],
+    "area": 34,
+    "borders": [
+      "MAF"
+    ],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Slovakia",
+    "officialName": "Slovak Republic",
     "capital": "Bratislava",
     "population": "5,413,813",
+    "populationRaw": 5413813,
     "region": "Europe",
+    "subregion": "Central Europe",
     "flagUrl": "https://flagcdn.com/w320/sk.png",
+    "flagIcon": "https://flagcdn.com/w40/sk.png",
     "code": "sk",
+    "iso3": "SVK",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "Slovak",
     "coordinates": [
       48.66666666,
       19.5
+    ],
+    "area": 49037,
+    "borders": [
+      "AUT",
+      "CZE",
+      "HUN",
+      "POL",
+      "UKR"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Slovenia",
+    "officialName": "Republic of Slovenia",
     "capital": "Ljubljana",
     "population": "2,130,638",
+    "populationRaw": 2130638,
     "region": "Europe",
+    "subregion": "Central Europe",
     "flagUrl": "https://flagcdn.com/w320/si.png",
+    "flagIcon": "https://flagcdn.com/w40/si.png",
     "code": "si",
+    "iso3": "SVN",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "Slovene",
     "coordinates": [
       46.11666666,
       14.81666666
+    ],
+    "area": 20273,
+    "borders": [
+      "AUT",
+      "HRV",
+      "ITA",
+      "HUN"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Solomon Islands",
+    "officialName": "Solomon Islands",
     "capital": "Honiara",
     "population": "750,325",
+    "populationRaw": 750325,
     "region": "Oceania",
+    "subregion": "Melanesia",
     "flagUrl": "https://flagcdn.com/w320/sb.png",
+    "flagIcon": "https://flagcdn.com/w40/sb.png",
     "code": "sb",
+    "iso3": "SLB",
     "currency": "Solomon Islands dollar ($)",
+    "currencyCode": "SBD",
     "language": "English",
     "coordinates": [
       -8,
       159
+    ],
+    "area": 28896,
+    "borders": [],
+    "timezones": [
+      "UTC+11:00"
     ]
   },
   {
     "name": "Somalia",
+    "officialName": "Federal Republic of Somalia",
     "capital": "Mogadishu",
     "population": "19,655,000",
+    "populationRaw": 19655000,
     "region": "Africa",
+    "subregion": "Eastern Africa",
     "flagUrl": "https://flagcdn.com/w320/so.png",
+    "flagIcon": "https://flagcdn.com/w40/so.png",
     "code": "so",
+    "iso3": "SOM",
     "currency": "Somali shilling (Sh)",
+    "currencyCode": "SOS",
     "language": "Arabic, Somali",
     "coordinates": [
       10,
       49
+    ],
+    "area": 637657,
+    "borders": [
+      "DJI",
+      "ETH",
+      "KEN"
+    ],
+    "timezones": [
+      "UTC+03:00"
     ]
   },
   {
     "name": "South Africa",
+    "officialName": "Republic of South Africa",
     "capital": "Pretoria",
     "population": "63,100,945",
+    "populationRaw": 63100945,
     "region": "Africa",
+    "subregion": "Southern Africa",
     "flagUrl": "https://flagcdn.com/w320/za.png",
+    "flagIcon": "https://flagcdn.com/w40/za.png",
     "code": "za",
+    "iso3": "ZAF",
     "currency": "South African rand (R)",
-    "language": "Afrikaans, English",
+    "currencyCode": "ZAR",
+    "language": "Afrikaans, English, Southern Ndebele",
     "coordinates": [
       -29,
       24
+    ],
+    "area": 1221037,
+    "borders": [
+      "BWA",
+      "LSO",
+      "MOZ",
+      "NAM",
+      "SWZ",
+      "ZWE"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "South Georgia",
+    "officialName": "South Georgia and the South Sandwich Islands",
     "capital": "King Edward Point",
     "population": "0",
+    "populationRaw": 0,
     "region": "Antarctic",
+    "subregion": "N/A",
     "flagUrl": "https://flagcdn.com/w320/gs.png",
+    "flagIcon": "https://flagcdn.com/w40/gs.png",
     "code": "gs",
+    "iso3": "SGS",
     "currency": "British pound (£)",
+    "currencyCode": "GBP",
     "language": "English",
     "coordinates": [
       -54.5,
       -37
+    ],
+    "area": 3903,
+    "borders": [],
+    "timezones": [
+      "UTC-02:00"
     ]
   },
   {
     "name": "South Korea",
+    "officialName": "Republic of Korea",
     "capital": "Seoul",
     "population": "51,159,889",
+    "populationRaw": 51159889,
     "region": "Asia",
+    "subregion": "Eastern Asia",
     "flagUrl": "https://flagcdn.com/w320/kr.png",
+    "flagIcon": "https://flagcdn.com/w40/kr.png",
     "code": "kr",
+    "iso3": "KOR",
     "currency": "South Korean won (₩)",
+    "currencyCode": "KRW",
     "language": "Korean",
     "coordinates": [
       37,
       127.5
+    ],
+    "area": 100210,
+    "borders": [
+      "PRK"
+    ],
+    "timezones": [
+      "UTC+09:00"
     ]
   },
   {
     "name": "South Sudan",
+    "officialName": "Republic of South Sudan",
     "capital": "Juba",
     "population": "15,786,898",
+    "populationRaw": 15786898,
     "region": "Africa",
+    "subregion": "Middle Africa",
     "flagUrl": "https://flagcdn.com/w320/ss.png",
+    "flagIcon": "https://flagcdn.com/w40/ss.png",
     "code": "ss",
+    "iso3": "SSD",
     "currency": "South Sudanese pound (£)",
+    "currencyCode": "SSP",
     "language": "English",
     "coordinates": [
       7,
       30
+    ],
+    "area": 619745,
+    "borders": [
+      "CAF",
+      "COD",
+      "ETH",
+      "KEN",
+      "SDN",
+      "UGA"
+    ],
+    "timezones": [
+      "UTC+03:00"
     ]
   },
   {
     "name": "Spain",
+    "officialName": "Kingdom of Spain",
     "capital": "Madrid",
     "population": "49,315,949",
+    "populationRaw": 49315949,
     "region": "Europe",
+    "subregion": "Southern Europe",
     "flagUrl": "https://flagcdn.com/w320/es.png",
+    "flagIcon": "https://flagcdn.com/w40/es.png",
     "code": "es",
+    "iso3": "ESP",
     "currency": "euro (€)",
-    "language": "Spanish, Catalan",
+    "currencyCode": "EUR",
+    "language": "Spanish, Catalan, Basque",
     "coordinates": [
       40,
       -4
+    ],
+    "area": 505992,
+    "borders": [
+      "AND",
+      "FRA",
+      "GIB",
+      "PRT",
+      "MAR"
+    ],
+    "timezones": [
+      "UTC",
+      "UTC+01:00"
     ]
   },
   {
     "name": "Sri Lanka",
+    "officialName": "Democratic Socialist Republic of Sri Lanka",
     "capital": "Sri Jayawardenepura Kotte",
     "population": "21,763,170",
+    "populationRaw": 21763170,
     "region": "Asia",
+    "subregion": "Southern Asia",
     "flagUrl": "https://flagcdn.com/w320/lk.png",
+    "flagIcon": "https://flagcdn.com/w40/lk.png",
     "code": "lk",
+    "iso3": "LKA",
     "currency": "Sri Lankan rupee (Rs  රු)",
+    "currencyCode": "LKR",
     "language": "Sinhala, Tamil",
     "coordinates": [
       7,
       81
+    ],
+    "area": 65610,
+    "borders": [],
+    "timezones": [
+      "UTC+05:30"
     ]
   },
   {
     "name": "Sudan",
+    "officialName": "Republic of the Sudan",
     "capital": "Khartoum",
     "population": "51,662,000",
+    "populationRaw": 51662000,
     "region": "Africa",
+    "subregion": "Northern Africa",
     "flagUrl": "https://flagcdn.com/w320/sd.png",
+    "flagIcon": "https://flagcdn.com/w40/sd.png",
     "code": "sd",
+    "iso3": "SDN",
     "currency": "Sudanese pound (ج.س)",
+    "currencyCode": "SDG",
     "language": "Arabic, English",
     "coordinates": [
       15,
       30
+    ],
+    "area": 1886068,
+    "borders": [
+      "CAF",
+      "TCD",
+      "EGY",
+      "ERI",
+      "ETH",
+      "LBY",
+      "SSD"
+    ],
+    "timezones": [
+      "UTC+03:00"
     ]
   },
   {
     "name": "Suriname",
+    "officialName": "Republic of Suriname",
     "capital": "Paramaribo",
     "population": "616,500",
+    "populationRaw": 616500,
     "region": "Americas",
+    "subregion": "South America",
     "flagUrl": "https://flagcdn.com/w320/sr.png",
+    "flagIcon": "https://flagcdn.com/w40/sr.png",
     "code": "sr",
+    "iso3": "SUR",
     "currency": "Surinamese dollar ($)",
+    "currencyCode": "SRD",
     "language": "Dutch",
     "coordinates": [
       4,
       -56
+    ],
+    "area": 163820,
+    "borders": [
+      "BRA",
+      "GUF",
+      "GUY"
+    ],
+    "timezones": [
+      "UTC-03:00"
     ]
   },
   {
     "name": "Svalbard and Jan Mayen",
+    "officialName": "Svalbard og Jan Mayen",
     "capital": "Longyearbyen",
     "population": "2,530",
+    "populationRaw": 2530,
     "region": "Europe",
+    "subregion": "Northern Europe",
     "flagUrl": "https://flagcdn.com/w320/sj.png",
+    "flagIcon": "https://flagcdn.com/w40/sj.png",
     "code": "sj",
+    "iso3": "SJM",
     "currency": "krone (kr)",
+    "currencyCode": "NOK",
     "language": "Norwegian",
     "coordinates": [
       78,
       20
+    ],
+    "area": 61399,
+    "borders": [],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Sweden",
+    "officialName": "Kingdom of Sweden",
     "capital": "Stockholm",
     "population": "10,605,098",
+    "populationRaw": 10605098,
     "region": "Europe",
+    "subregion": "Northern Europe",
     "flagUrl": "https://flagcdn.com/w320/se.png",
+    "flagIcon": "https://flagcdn.com/w40/se.png",
     "code": "se",
+    "iso3": "SWE",
     "currency": "Swedish krona (kr)",
+    "currencyCode": "SEK",
     "language": "Swedish",
     "coordinates": [
       62,
       15
+    ],
+    "area": 450295,
+    "borders": [
+      "FIN",
+      "NOR"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Switzerland",
+    "officialName": "Swiss Confederation",
     "capital": "Bern",
     "population": "9,082,848",
+    "populationRaw": 9082848,
     "region": "Europe",
+    "subregion": "Western Europe",
     "flagUrl": "https://flagcdn.com/w320/ch.png",
+    "flagIcon": "https://flagcdn.com/w40/ch.png",
     "code": "ch",
+    "iso3": "CHE",
     "currency": "Swiss franc (Fr.)",
-    "language": "French, Swiss German",
+    "currencyCode": "CHF",
+    "language": "French, Swiss German, Italian",
     "coordinates": [
       47,
       8
+    ],
+    "area": 41284,
+    "borders": [
+      "AUT",
+      "FRA",
+      "ITA",
+      "LIE",
+      "DEU"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Syria",
+    "officialName": "Syrian Arab Republic",
     "capital": "Damascus",
     "population": "25,620,000",
+    "populationRaw": 25620000,
     "region": "Asia",
+    "subregion": "Western Asia",
     "flagUrl": "https://flagcdn.com/w320/sy.png",
+    "flagIcon": "https://flagcdn.com/w40/sy.png",
     "code": "sy",
+    "iso3": "SYR",
     "currency": "Syrian pound (£)",
+    "currencyCode": "SYP",
     "language": "Arabic",
     "coordinates": [
       35,
       38
+    ],
+    "area": 185180,
+    "borders": [
+      "IRQ",
+      "ISR",
+      "JOR",
+      "LBN",
+      "TUR"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "Taiwan",
+    "officialName": "Republic of China (Taiwan)",
     "capital": "Taipei",
     "population": "23,317,031",
+    "populationRaw": 23317031,
     "region": "Asia",
+    "subregion": "Eastern Asia",
     "flagUrl": "https://flagcdn.com/w320/tw.png",
+    "flagIcon": "https://flagcdn.com/w40/tw.png",
     "code": "tw",
+    "iso3": "TWN",
     "currency": "New Taiwan dollar ($)",
+    "currencyCode": "TWD",
     "language": "Chinese",
     "coordinates": [
       23.5,
       121
+    ],
+    "area": 36197,
+    "borders": [],
+    "timezones": [
+      "UTC+08:00"
     ]
   },
   {
     "name": "Tajikistan",
+    "officialName": "Republic of Tajikistan",
     "capital": "Dushanbe",
     "population": "10,499,000",
+    "populationRaw": 10499000,
     "region": "Asia",
+    "subregion": "Central Asia",
     "flagUrl": "https://flagcdn.com/w320/tj.png",
+    "flagIcon": "https://flagcdn.com/w40/tj.png",
     "code": "tj",
+    "iso3": "TJK",
     "currency": "Tajikistani somoni (ЅМ)",
+    "currencyCode": "TJS",
     "language": "Russian, Tajik",
     "coordinates": [
       39,
       71
+    ],
+    "area": 143100,
+    "borders": [
+      "AFG",
+      "CHN",
+      "KGZ",
+      "UZB"
+    ],
+    "timezones": [
+      "UTC+05:00"
     ]
   },
   {
     "name": "Tanzania",
+    "officialName": "United Republic of Tanzania",
     "capital": "Dodoma",
     "population": "68,153,004",
+    "populationRaw": 68153004,
     "region": "Africa",
+    "subregion": "Eastern Africa",
     "flagUrl": "https://flagcdn.com/w320/tz.png",
+    "flagIcon": "https://flagcdn.com/w40/tz.png",
     "code": "tz",
+    "iso3": "TZA",
     "currency": "Tanzanian shilling (Sh)",
+    "currencyCode": "TZS",
     "language": "English, Swahili",
     "coordinates": [
       -6,
       35
+    ],
+    "area": 947303,
+    "borders": [
+      "BDI",
+      "COD",
+      "KEN",
+      "MWI",
+      "MOZ",
+      "RWA",
+      "UGA",
+      "ZMB"
+    ],
+    "timezones": [
+      "UTC+03:00"
     ]
   },
   {
     "name": "Thailand",
+    "officialName": "Kingdom of Thailand",
     "capital": "Bangkok",
     "population": "65,859,640",
+    "populationRaw": 65859640,
     "region": "Asia",
+    "subregion": "South-Eastern Asia",
     "flagUrl": "https://flagcdn.com/w320/th.png",
+    "flagIcon": "https://flagcdn.com/w40/th.png",
     "code": "th",
+    "iso3": "THA",
     "currency": "Thai baht (฿)",
+    "currencyCode": "THB",
     "language": "Thai",
     "coordinates": [
       15,
       100
+    ],
+    "area": 513120,
+    "borders": [
+      "MMR",
+      "KHM",
+      "LAO",
+      "MYS"
+    ],
+    "timezones": [
+      "UTC+07:00"
     ]
   },
   {
     "name": "Timor-Leste",
+    "officialName": "Democratic Republic of Timor-Leste",
     "capital": "Dili",
     "population": "1,391,221",
+    "populationRaw": 1391221,
     "region": "Asia",
+    "subregion": "South-Eastern Asia",
     "flagUrl": "https://flagcdn.com/w320/tl.png",
+    "flagIcon": "https://flagcdn.com/w40/tl.png",
     "code": "tl",
+    "iso3": "TLS",
     "currency": "United States dollar ($)",
+    "currencyCode": "USD",
     "language": "Portuguese, Tetum",
     "coordinates": [
       -8.83333333,
       125.91666666
+    ],
+    "area": 14874,
+    "borders": [
+      "IDN"
+    ],
+    "timezones": [
+      "UTC+09:00"
     ]
   },
   {
     "name": "Togo",
+    "officialName": "Togolese Republic",
     "capital": "Lomé",
     "population": "8,095,498",
+    "populationRaw": 8095498,
     "region": "Africa",
+    "subregion": "Western Africa",
     "flagUrl": "https://flagcdn.com/w320/tg.png",
+    "flagIcon": "https://flagcdn.com/w40/tg.png",
     "code": "tg",
+    "iso3": "TGO",
     "currency": "West African CFA franc (Fr)",
+    "currencyCode": "XOF",
     "language": "French",
     "coordinates": [
       8,
       1.16666666
+    ],
+    "area": 56785,
+    "borders": [
+      "BEN",
+      "BFA",
+      "GHA"
+    ],
+    "timezones": [
+      "UTC"
     ]
   },
   {
     "name": "Tokelau",
+    "officialName": "Tokelau",
     "capital": "Fakaofo",
     "population": "2,608",
+    "populationRaw": 2608,
     "region": "Oceania",
+    "subregion": "Polynesia",
     "flagUrl": "https://flagcdn.com/w320/tk.png",
+    "flagIcon": "https://flagcdn.com/w40/tk.png",
     "code": "tk",
+    "iso3": "TKL",
     "currency": "New Zealand dollar ($)",
-    "language": "English, Samoan",
+    "currencyCode": "NZD",
+    "language": "English, Samoan, Tokelauan",
     "coordinates": [
       -9,
       -172
+    ],
+    "area": 12,
+    "borders": [],
+    "timezones": [
+      "UTC+13:00"
     ]
   },
   {
     "name": "Tonga",
+    "officialName": "Kingdom of Tonga",
     "capital": "Nuku'alofa",
     "population": "100,179",
+    "populationRaw": 100179,
     "region": "Oceania",
+    "subregion": "Polynesia",
     "flagUrl": "https://flagcdn.com/w320/to.png",
+    "flagIcon": "https://flagcdn.com/w40/to.png",
     "code": "to",
+    "iso3": "TON",
     "currency": "Tongan paʻanga (T$)",
+    "currencyCode": "TOP",
     "language": "English, Tongan",
     "coordinates": [
       -20,
       -175
+    ],
+    "area": 747,
+    "borders": [],
+    "timezones": [
+      "UTC+13:00"
     ]
   },
   {
     "name": "Trinidad and Tobago",
+    "officialName": "Republic of Trinidad and Tobago",
     "capital": "Port of Spain",
     "population": "1,367,764",
+    "populationRaw": 1367764,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/tt.png",
+    "flagIcon": "https://flagcdn.com/w40/tt.png",
     "code": "tt",
+    "iso3": "TTO",
     "currency": "Trinidad and Tobago dollar ($)",
+    "currencyCode": "TTD",
     "language": "English",
     "coordinates": [
       10.6918,
       -61.2225
+    ],
+    "area": 5130,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Tunisia",
+    "officialName": "Tunisian Republic",
     "capital": "Tunis",
     "population": "11,972,169",
+    "populationRaw": 11972169,
     "region": "Africa",
+    "subregion": "Northern Africa",
     "flagUrl": "https://flagcdn.com/w320/tn.png",
+    "flagIcon": "https://flagcdn.com/w40/tn.png",
     "code": "tn",
+    "iso3": "TUN",
     "currency": "Tunisian dinar (د.ت)",
+    "currencyCode": "TND",
     "language": "Arabic",
     "coordinates": [
       34,
       9
+    ],
+    "area": 163610,
+    "borders": [
+      "DZA",
+      "LBY"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Turkey",
+    "officialName": "Republic of Turkey",
     "capital": "Ankara",
     "population": "85,664,944",
+    "populationRaw": 85664944,
     "region": "Asia",
+    "subregion": "Western Asia",
     "flagUrl": "https://flagcdn.com/w320/tr.png",
+    "flagIcon": "https://flagcdn.com/w40/tr.png",
     "code": "tr",
+    "iso3": "TUR",
     "currency": "Turkish lira (₺)",
+    "currencyCode": "TRY",
     "language": "Turkish",
     "coordinates": [
       39,
       35
+    ],
+    "area": 783562,
+    "borders": [
+      "ARM",
+      "AZE",
+      "BGR",
+      "GEO",
+      "GRC",
+      "IRN",
+      "IRQ",
+      "SYR"
+    ],
+    "timezones": [
+      "UTC+03:00"
     ]
   },
   {
     "name": "Turkmenistan",
+    "officialName": "Turkmenistan",
     "capital": "Ashgabat",
     "population": "7,057,841",
+    "populationRaw": 7057841,
     "region": "Asia",
+    "subregion": "Central Asia",
     "flagUrl": "https://flagcdn.com/w320/tm.png",
+    "flagIcon": "https://flagcdn.com/w40/tm.png",
     "code": "tm",
+    "iso3": "TKM",
     "currency": "Turkmenistan manat (m)",
+    "currencyCode": "TMT",
     "language": "Russian, Turkmen",
     "coordinates": [
       40,
       60
+    ],
+    "area": 488100,
+    "borders": [
+      "AFG",
+      "IRN",
+      "KAZ",
+      "UZB"
+    ],
+    "timezones": [
+      "UTC+05:00"
     ]
   },
   {
     "name": "Turks and Caicos Islands",
+    "officialName": "Turks and Caicos Islands",
     "capital": "Cockburn Town",
     "population": "50,828",
+    "populationRaw": 50828,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/tc.png",
+    "flagIcon": "https://flagcdn.com/w40/tc.png",
     "code": "tc",
+    "iso3": "TCA",
     "currency": "United States dollar ($)",
+    "currencyCode": "USD",
     "language": "English",
     "coordinates": [
       21.75,
       -71.58333333
+    ],
+    "area": 948,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Tuvalu",
+    "officialName": "Tuvalu",
     "capital": "Funafuti",
     "population": "10,643",
+    "populationRaw": 10643,
     "region": "Oceania",
+    "subregion": "Polynesia",
     "flagUrl": "https://flagcdn.com/w320/tv.png",
+    "flagIcon": "https://flagcdn.com/w40/tv.png",
     "code": "tv",
+    "iso3": "TUV",
     "currency": "Australian dollar ($)",
+    "currencyCode": "AUD",
     "language": "English, Tuvaluan",
     "coordinates": [
       -8,
       178
+    ],
+    "area": 26,
+    "borders": [],
+    "timezones": [
+      "UTC+12:00"
     ]
   },
   {
     "name": "Uganda",
+    "officialName": "Republic of Uganda",
     "capital": "Kampala",
     "population": "45,905,417",
+    "populationRaw": 45905417,
     "region": "Africa",
+    "subregion": "Eastern Africa",
     "flagUrl": "https://flagcdn.com/w320/ug.png",
+    "flagIcon": "https://flagcdn.com/w40/ug.png",
     "code": "ug",
+    "iso3": "UGA",
     "currency": "Ugandan shilling (Sh)",
+    "currencyCode": "UGX",
     "language": "English, Swahili",
     "coordinates": [
       1,
       32
+    ],
+    "area": 241550,
+    "borders": [
+      "COD",
+      "KEN",
+      "RWA",
+      "SSD",
+      "TZA"
+    ],
+    "timezones": [
+      "UTC+03:00"
     ]
   },
   {
     "name": "Ukraine",
+    "officialName": "Ukraine",
     "capital": "Kyiv",
     "population": "32,862,000",
+    "populationRaw": 32862000,
     "region": "Europe",
+    "subregion": "Eastern Europe",
     "flagUrl": "https://flagcdn.com/w320/ua.png",
+    "flagIcon": "https://flagcdn.com/w40/ua.png",
     "code": "ua",
+    "iso3": "UKR",
     "currency": "Ukrainian hryvnia (₴)",
+    "currencyCode": "UAH",
     "language": "Ukrainian",
     "coordinates": [
       49,
       32
+    ],
+    "area": 603550,
+    "borders": [
+      "BLR",
+      "HUN",
+      "MDA",
+      "POL",
+      "ROU",
+      "RUS",
+      "SVK"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "United Arab Emirates",
+    "officialName": "United Arab Emirates",
     "capital": "Abu Dhabi",
     "population": "11,294,243",
+    "populationRaw": 11294243,
     "region": "Asia",
+    "subregion": "Western Asia",
     "flagUrl": "https://flagcdn.com/w320/ae.png",
+    "flagIcon": "https://flagcdn.com/w40/ae.png",
     "code": "ae",
+    "iso3": "ARE",
     "currency": "United Arab Emirates dirham (د.إ)",
+    "currencyCode": "AED",
     "language": "Arabic",
     "coordinates": [
       24,
       54
+    ],
+    "area": 83600,
+    "borders": [
+      "OMN",
+      "SAU"
+    ],
+    "timezones": [
+      "UTC+04:00"
     ]
   },
   {
     "name": "United Kingdom",
+    "officialName": "United Kingdom of Great Britain and Northern Ireland",
     "capital": "London",
     "population": "69,281,437",
+    "populationRaw": 69281437,
     "region": "Europe",
+    "subregion": "Northern Europe",
     "flagUrl": "https://flagcdn.com/w320/gb.png",
+    "flagIcon": "https://flagcdn.com/w40/gb.png",
     "code": "gb",
+    "iso3": "GBR",
     "currency": "British pound (£)",
+    "currencyCode": "GBP",
     "language": "English",
     "coordinates": [
       54,
       -2
+    ],
+    "area": 244376,
+    "borders": [
+      "IRL"
+    ],
+    "timezones": [
+      "UTC-08:00",
+      "UTC-05:00",
+      "UTC-04:00",
+      "UTC-03:00",
+      "UTC-02:00",
+      "UTC",
+      "UTC+01:00",
+      "UTC+02:00",
+      "UTC+06:00"
     ]
   },
   {
     "name": "United States",
+    "officialName": "United States of America",
     "capital": "Washington, D.C.",
     "population": "340,110,988",
+    "populationRaw": 340110988,
     "region": "Americas",
+    "subregion": "North America",
     "flagUrl": "https://flagcdn.com/w320/us.png",
+    "flagIcon": "https://flagcdn.com/w40/us.png",
     "code": "us",
+    "iso3": "USA",
     "currency": "United States dollar ($)",
+    "currencyCode": "USD",
     "language": "English",
     "coordinates": [
       38,
       -97
+    ],
+    "area": 9525067,
+    "borders": [
+      "CAN",
+      "MEX"
+    ],
+    "timezones": [
+      "UTC-12:00",
+      "UTC-11:00",
+      "UTC-10:00",
+      "UTC-09:00",
+      "UTC-08:00",
+      "UTC-07:00",
+      "UTC-06:00",
+      "UTC-05:00",
+      "UTC-04:00",
+      "UTC+10:00",
+      "UTC+12:00"
     ]
   },
   {
     "name": "United States Minor Outlying Islands",
+    "officialName": "United States Minor Outlying Islands",
     "capital": "Washington DC",
     "population": "0",
+    "populationRaw": 0,
     "region": "Americas",
+    "subregion": "North America",
     "flagUrl": "https://flagcdn.com/w320/um.png",
+    "flagIcon": "https://flagcdn.com/w40/um.png",
     "code": "um",
+    "iso3": "UMI",
     "currency": "United States dollar ($)",
+    "currencyCode": "USD",
     "language": "English",
     "coordinates": [
       19.3,
       166.633333
+    ],
+    "area": 34.2,
+    "borders": [],
+    "timezones": [
+      "UTC-11:00",
+      "UTC-10:00",
+      "UTC+12:00"
     ]
   },
   {
     "name": "United States Virgin Islands",
+    "officialName": "Virgin Islands of the United States",
     "capital": "Charlotte Amalie",
     "population": "87,146",
+    "populationRaw": 87146,
     "region": "Americas",
+    "subregion": "Caribbean",
     "flagUrl": "https://flagcdn.com/w320/vi.png",
+    "flagIcon": "https://flagcdn.com/w40/vi.png",
     "code": "vi",
+    "iso3": "VIR",
     "currency": "United States dollar ($)",
+    "currencyCode": "USD",
     "language": "English",
     "coordinates": [
       18.35,
       -64.933333
+    ],
+    "area": 347,
+    "borders": [],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Uruguay",
+    "officialName": "Oriental Republic of Uruguay",
     "capital": "Montevideo",
     "population": "3,499,451",
+    "populationRaw": 3499451,
     "region": "Americas",
+    "subregion": "South America",
     "flagUrl": "https://flagcdn.com/w320/uy.png",
+    "flagIcon": "https://flagcdn.com/w40/uy.png",
     "code": "uy",
+    "iso3": "URY",
     "currency": "Uruguayan peso ($)",
+    "currencyCode": "UYU",
     "language": "Spanish",
     "coordinates": [
       -33,
       -56
+    ],
+    "area": 181034,
+    "borders": [
+      "ARG",
+      "BRA"
+    ],
+    "timezones": [
+      "UTC-03:00"
     ]
   },
   {
     "name": "Uzbekistan",
+    "officialName": "Republic of Uzbekistan",
     "capital": "Tashkent",
     "population": "37,859,698",
+    "populationRaw": 37859698,
     "region": "Asia",
+    "subregion": "Central Asia",
     "flagUrl": "https://flagcdn.com/w320/uz.png",
+    "flagIcon": "https://flagcdn.com/w40/uz.png",
     "code": "uz",
+    "iso3": "UZB",
     "currency": "Uzbekistani soʻm (so'm)",
+    "currencyCode": "UZS",
     "language": "Russian, Uzbek",
     "coordinates": [
       41,
       64
+    ],
+    "area": 447400,
+    "borders": [
+      "AFG",
+      "KAZ",
+      "KGZ",
+      "TJK",
+      "TKM"
+    ],
+    "timezones": [
+      "UTC+05:00"
     ]
   },
   {
     "name": "Vanuatu",
+    "officialName": "Republic of Vanuatu",
     "capital": "Port Vila",
     "population": "321,409",
+    "populationRaw": 321409,
     "region": "Oceania",
+    "subregion": "Melanesia",
     "flagUrl": "https://flagcdn.com/w320/vu.png",
+    "flagIcon": "https://flagcdn.com/w40/vu.png",
     "code": "vu",
+    "iso3": "VUT",
     "currency": "Vanuatu vatu (Vt)",
-    "language": "Bislama, English",
+    "currencyCode": "VUV",
+    "language": "Bislama, English, French",
     "coordinates": [
       -16,
       167
+    ],
+    "area": 12189,
+    "borders": [],
+    "timezones": [
+      "UTC+11:00"
     ]
   },
   {
     "name": "Vatican City",
+    "officialName": "Vatican City State",
     "capital": "Vatican City",
     "population": "882",
+    "populationRaw": 882,
     "region": "Europe",
+    "subregion": "Southern Europe",
     "flagUrl": "https://flagcdn.com/w320/va.png",
+    "flagIcon": "https://flagcdn.com/w40/va.png",
     "code": "va",
+    "iso3": "VAT",
     "currency": "euro (€)",
+    "currencyCode": "EUR",
     "language": "Italian, Latin",
     "coordinates": [
       41.9,
       12.45
+    ],
+    "area": 0.49,
+    "borders": [
+      "ITA"
+    ],
+    "timezones": [
+      "UTC+01:00"
     ]
   },
   {
     "name": "Venezuela",
+    "officialName": "Bolivarian Republic of Venezuela",
     "capital": "Caracas",
     "population": "28,517,000",
+    "populationRaw": 28517000,
     "region": "Americas",
+    "subregion": "South America",
     "flagUrl": "https://flagcdn.com/w320/ve.png",
+    "flagIcon": "https://flagcdn.com/w40/ve.png",
     "code": "ve",
+    "iso3": "VEN",
     "currency": "Venezuelan bolívar soberano (Bs.S.)",
+    "currencyCode": "VES",
     "language": "Spanish",
     "coordinates": [
       8,
       -66
+    ],
+    "area": 916445,
+    "borders": [
+      "BRA",
+      "COL",
+      "GUY"
+    ],
+    "timezones": [
+      "UTC-04:00"
     ]
   },
   {
     "name": "Vietnam",
+    "officialName": "Socialist Republic of Vietnam",
     "capital": "Hanoi",
     "population": "101,343,800",
+    "populationRaw": 101343800,
     "region": "Asia",
+    "subregion": "South-Eastern Asia",
     "flagUrl": "https://flagcdn.com/w320/vn.png",
+    "flagIcon": "https://flagcdn.com/w40/vn.png",
     "code": "vn",
+    "iso3": "VNM",
     "currency": "Vietnamese đồng (₫)",
+    "currencyCode": "VND",
     "language": "Vietnamese",
     "coordinates": [
       16.16666666,
       107.83333333
+    ],
+    "area": 331212,
+    "borders": [
+      "KHM",
+      "CHN",
+      "LAO"
+    ],
+    "timezones": [
+      "UTC+07:00"
     ]
   },
   {
     "name": "Wallis and Futuna",
+    "officialName": "Territory of the Wallis and Futuna Islands",
     "capital": "Mata-Utu",
     "population": "11,620",
+    "populationRaw": 11620,
     "region": "Oceania",
+    "subregion": "Polynesia",
     "flagUrl": "https://flagcdn.com/w320/wf.png",
+    "flagIcon": "https://flagcdn.com/w40/wf.png",
     "code": "wf",
+    "iso3": "WLF",
     "currency": "CFP franc (₣)",
+    "currencyCode": "XPF",
     "language": "French",
     "coordinates": [
       -13.3,
       -176.2
+    ],
+    "area": 142,
+    "borders": [],
+    "timezones": [
+      "UTC+12:00"
     ]
   },
   {
     "name": "Western Sahara",
+    "officialName": "Sahrawi Arab Democratic Republic",
     "capital": "El Aaiún",
     "population": "600,904",
+    "populationRaw": 600904,
     "region": "Africa",
+    "subregion": "Northern Africa",
     "flagUrl": "https://flagcdn.com/w320/eh.png",
+    "flagIcon": "https://flagcdn.com/w40/eh.png",
     "code": "eh",
+    "iso3": "ESH",
     "currency": "Algerian dinar (دج)",
-    "language": "Berber, Hassaniya",
+    "currencyCode": "DZD",
+    "language": "Berber, Hassaniya, Spanish",
     "coordinates": [
       24.5,
       -13
+    ],
+    "area": 266000,
+    "borders": [
+      "DZA",
+      "MRT",
+      "MAR"
+    ],
+    "timezones": [
+      "UTC+00:00"
     ]
   },
   {
     "name": "Yemen",
+    "officialName": "Republic of Yemen",
     "capital": "Sana'a",
     "population": "32,684,503",
+    "populationRaw": 32684503,
     "region": "Asia",
+    "subregion": "Western Asia",
     "flagUrl": "https://flagcdn.com/w320/ye.png",
+    "flagIcon": "https://flagcdn.com/w40/ye.png",
     "code": "ye",
+    "iso3": "YEM",
     "currency": "Yemeni rial (﷼)",
+    "currencyCode": "YER",
     "language": "Arabic",
     "coordinates": [
       15,
       48
+    ],
+    "area": 527968,
+    "borders": [
+      "OMN",
+      "SAU"
+    ],
+    "timezones": [
+      "UTC+03:00"
     ]
   },
   {
     "name": "Zambia",
+    "officialName": "Republic of Zambia",
     "capital": "Lusaka",
     "population": "19,693,423",
+    "populationRaw": 19693423,
     "region": "Africa",
+    "subregion": "Eastern Africa",
     "flagUrl": "https://flagcdn.com/w320/zm.png",
+    "flagIcon": "https://flagcdn.com/w40/zm.png",
     "code": "zm",
+    "iso3": "ZMB",
     "currency": "Zambian kwacha (ZK)",
+    "currencyCode": "ZMW",
     "language": "English",
     "coordinates": [
       -15,
       30
+    ],
+    "area": 752612,
+    "borders": [
+      "AGO",
+      "BWA",
+      "COD",
+      "MWI",
+      "MOZ",
+      "NAM",
+      "TZA",
+      "ZWE"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   },
   {
     "name": "Zimbabwe",
+    "officialName": "Republic of Zimbabwe",
     "capital": "Harare",
     "population": "17,073,087",
+    "populationRaw": 17073087,
     "region": "Africa",
+    "subregion": "Southern Africa",
     "flagUrl": "https://flagcdn.com/w320/zw.png",
+    "flagIcon": "https://flagcdn.com/w40/zw.png",
     "code": "zw",
+    "iso3": "ZWE",
     "currency": "Zimbabwean dollar ($)",
-    "language": "Chibarwe, English",
+    "currencyCode": "ZWL",
+    "language": "Chibarwe, English, Kalanga",
     "coordinates": [
       -20,
       30
+    ],
+    "area": 390757,
+    "borders": [
+      "BWA",
+      "MOZ",
+      "ZAF",
+      "ZMB"
+    ],
+    "timezones": [
+      "UTC+02:00"
     ]
   }
 ]

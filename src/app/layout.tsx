@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Random Country Generator | Discover the World Instantly",
-  description: "Generate a random country instantly! Discover facts, flags, capitals, and populations with our premium, lightning-fast Random Country Generator.",
+  title: {
+    default: "Random Country Generator | Discover the World Instantly",
+    template: "%s | Random Country Generator",
+  },
+  description: "Generate a random country instantly! Discover facts, flags, capitals, and populations with our premium, lightning-fast Random Country Generator. Perfect for education, travel inspiration, and geography learning.",
   metadataBase: new URL('https://randomcountry.ziamuhammad.com'),
   alternates: {
     canonical: '/',
@@ -21,7 +24,7 @@ export const metadata: Metadata = {
     title: 'Random Country Generator',
     description: 'Generate a random country instantly and learn about its geography, language, and culture.',
   },
-  keywords: ["random country generator", "random country picker", "country generator", "randomizer", "random place generator", "random travel destination"],
+  keywords: ["random country generator", "random country picker", "country generator", "randomizer", "random place generator", "random travel destination", "geography tool", "country facts"],
 };
 
 export default function RootLayout({

@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import styles from './page.module.css';
 import CountryCard from '../components/CountryCard';
 import GenerateButton from '../components/GenerateButton';
 import GoogleMap from '../components/GoogleMap';
@@ -10,15 +9,18 @@ import { getRandomCountry, Country } from '../utils/getRandomCountry';
 export default function Home() {
   const [country, setCountry] = useState<Country | null>(null);
   const [mounted, setMounted] = useState(false);
+  const [favorites, setFavorites] = useState<string[]>([]);
 
-  // Initialize with a random country on mount
   useEffect(() => {
     setCountry(getRandomCountry());
     setMounted(true);
+    const saved = localStorage.getItem('favorites');
+    if (saved) {
+      setFavorites(JSON.parse(saved));
+    }
   }, []);
 
   const handleGenerate = () => {
-    // Generate a new country that is different from the current one
     let newCountry = getRandomCountry();
     while (country && newCountry.code === country.code) {
       newCountry = getRandomCountry();
@@ -26,57 +28,140 @@ export default function Home() {
     setCountry(newCountry);
   };
 
+  const handleCopy = () => {
+    if (country) {
+      const text = `${country.name} - Capital: ${country.capital}, Population: ${country.population}, Currency: ${country.currency}`;
+      navigator.clipboard.writeText(text);
+    }
+  };
+
+  const handleShare = () => {
+    if (country) {
+      const url = `${window.location.origin}/country/${country.code}`;
+      if (navigator.share) {
+        navigator.share({
+          title: `Check out ${country.name}`,
+          url: url,
+        });
+      } else {
+        navigator.clipboard.writeText(url);
+      }
+    }
+  };
+
+  const handleFavorite = () => {
+    if (country) {
+      const newFavorites = favorites.includes(country.code)
+        ? favorites.filter(c => c !== country.code)
+        : [...favorites, country.code];
+      setFavorites(newFavorites);
+      localStorage.setItem('favorites', JSON.stringify(newFavorites));
+    }
+  };
+
+  if (!mounted) {
+    return (
+      <main className="flex-1 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full mx-auto mb-4"></div>
+          <p className="text-gray-600">Loading...</p>
+        </div>
+      </main>
+    );
+  }
+
   return (
-    <main>
-      <div className={styles.header}>
-        <h1 className={styles.title}>Random Country Generator</h1>
-        <p className={styles.subtitle}>
-          Click the button below to instantly explore a random country from around the world.
+    <main className="flex-1 w-full max-w-7xl mx-auto px-4 py-12">
+      <header className="text-center mb-16">
+        <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
+          Random Country Generator
+        </h1>
+        <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          Discover the world with our instant country generator. Click below to explore random countries, 
+          learn about their capitals, populations, currencies, and more.
         </p>
-      </div>
-      
-      <div className={styles.content}>
-        {mounted && country ? (
-          <div className={styles.layoutGrid}>
-            <CountryCard country={country} />
-            <GoogleMap countryName={country.name} coordinates={country.coordinates} />
-          </div>
-        ) : (
-          <div style={{ height: 450 }}></div>
-        )}
+      </header>
+
+      <div className="flex flex-col items-center mb-12">
         <GenerateButton onClick={handleGenerate} />
       </div>
 
-      <section className={styles.seoSection}>
-        <div className={styles.seoContainer}>
-          <h2>What is the Random Country Generator?</h2>
-          <p>
-            The <strong>Random Country Generator</strong> is a free, lightning-fast tool designed to help you discover new places around the globe. Whether you're a geography student looking to test your knowledge, a traveler seeking inspiration for your next trip, or just someone curious about the world, our tool provides instant information at the click of a button.
-          </p>
+      {country && (
+        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+          <CountryCard 
+            country={country} 
+            onCopy={handleCopy}
+            onShare={handleShare}
+            onFavorite={handleFavorite}
+            isFavorited={favorites.includes(country.code)}
+          />
+          <GoogleMap countryName={country.name} coordinates={country.coordinates} />
+        </div>
+      )}
+
+      <section className="mt-20">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+            Explore the World
+          </h2>
           
-          <h3>How does it work?</h3>
-          <p>
-            Simply click the "Generate Random Country" button above. Our algorithm will instantly select one of the 250 recognized countries or territories from our comprehensive, up-to-date database. You will immediately see the country's flag, capital city, population, currency, primary languages, and an interactive map showing its exact location.
-          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 text-center">
+              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
+                  <path d="M21 10H3M16 6l4 4-4 4M8 6l4 4-4 4" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-2">195+ Countries</h3>
+              <p className="text-gray-600 text-sm">Comprehensive database of nations worldwide</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 text-center">
+              <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-2">Detailed Info</h3>
+              <p className="text-gray-600 text-sm">Capitals, populations, currencies, languages & more</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 text-center">
+              <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7,10 12,15 17,10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-2">SEO Optimized</h3>
+              <p className="text-gray-600 text-sm">Discover country-specific pages with rich content</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <h3>Why use a Random Country Picker?</h3>
-          <ul className={styles.seoList}>
-            <li><strong>Education & Trivia:</strong> Perfect for teachers and students studying world geography.</li>
-            <li><strong>Travel Inspiration:</strong> Can't decide where to go next? Let chance decide your next vacation destination.</li>
-            <li><strong>Creative Writing:</strong> Authors and world-builders use our tool to find inspiration for settings, names, and cultures.</li>
-            <li><strong>Games & Challenges:</strong> Use it as a starting point for GeoGuessr challenges or geography bees.</li>
-          </ul>
-
-          <h2>Frequently Asked Questions (FAQ)</h2>
-          <div className={styles.faq}>
-            <h4>How many countries are in the generator?</h4>
-            <p>Our database includes 250 countries and dependent territories, sourced directly from the latest international data standards (ISO 3166).</p>
-
-            <h4>Is the data accurate and up-to-date?</h4>
-            <p>Yes! We regularly update our dataset to ensure populations, capitals, and currencies reflect the most current global information available.</p>
-
-            <h4>Is this tool free to use?</h4>
-            <p>Absolutely. The Random Country Generator is 100% free with no limits on how many times you can spin the globe and discover new places.</p>
+      <section className="mt-20 bg-gray-50 -mx-4 px-4 py-16">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
+            Frequently Asked Questions
+          </h2>
+          
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">How many countries are in the generator?</h3>
+              <p className="text-gray-600">Our database includes 195+ recognized countries and territories, sourced from international data standards.</p>
+            </div>
+            
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Is the data accurate and up-to-date?</h3>
+              <p className="text-gray-600">Yes! We regularly update our dataset to ensure populations, capitals, and currencies reflect the most current global information.</p>
+            </div>
+            
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Can I share the results?</h3>
+              <p className="text-gray-600">Absolutely! Use the share button to easily share any country with friends or on social media.</p>
+            </div>
           </div>
         </div>
       </section>

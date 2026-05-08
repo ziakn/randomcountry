@@ -8,20 +8,17 @@ type GlobeMapProps = {
 
 export default function GlobeMap({ coordinates }: GlobeMapProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const animationIdRef = useRef<number | null>(null);
 
   useEffect(() => {
-    let currentPhi = 0;
-    let currentTheta = 0;
-    let phiOffset = 0;
-
     if (!canvasRef.current) return;
 
     const globe = createGlobe(canvasRef.current, {
       devicePixelRatio: 2,
       width: 1000,
       height: 1000,
-      phi: 0,
-      theta: 0,
+      phi: (coordinates[1] * Math.PI) / 180,
+      theta: (coordinates[0] * Math.PI) / 180,
       dark: 0,
       diffuse: 1.2,
       mapSamples: 16000,
@@ -32,20 +29,12 @@ export default function GlobeMap({ coordinates }: GlobeMapProps) {
       markers: [
         { location: coordinates, size: 0.1 }
       ],
-      onRender: (state) => {
-        phiOffset += 0.005;
-        const targetPhi = (coordinates[1] * Math.PI) / 180 + Math.PI; 
-        const targetTheta = (coordinates[0] * Math.PI) / 180;
-        
-        currentPhi += (targetPhi - currentPhi) * 0.05;
-        currentTheta += (targetTheta - currentTheta) * 0.05;
-
-        state.phi = currentPhi + phiOffset;
-        state.theta = currentTheta;
-      },
     });
 
     return () => {
+      if (animationIdRef.current) {
+        cancelAnimationFrame(animationIdRef.current);
+      }
       globe.destroy();
     };
   }, [coordinates]);
