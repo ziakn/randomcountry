@@ -1,31 +1,21 @@
-import React from 'react';
+import React from "react";
+import { RefreshCw } from "lucide-react";
 
 type GenerateButtonProps = {
   onClick: () => void;
+  isLoading?: boolean;
 };
 
-export default function GenerateButton({ onClick }: GenerateButtonProps) {
+export default function GenerateButton({ onClick, isLoading }: GenerateButtonProps) {
   return (
-    <button 
-      className="flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 text-lg"
+    <button
       onClick={onClick}
+      disabled={isLoading}
+      className="group relative flex items-center gap-3 px-8 py-5 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-75 disabled:cursor-not-allowed text-lg"
     >
-      Generate Random Country
-      <svg 
-        width="20" 
-        height="20" 
-        viewBox="0 0 24 24" 
-        fill="none" 
-        stroke="currentColor" 
-        strokeWidth="2" 
-        strokeLinecap="round" 
-        strokeLinejoin="round"
-      >
-        <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
-        <path d="M3 3v5h5" />
-        <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16" />
-        <path d="M16 21v-5h5" />
-      </svg>
+      <RefreshCw className={`w-6 h-6 transition-transform duration-500 ${isLoading ? 'animate-spin' : 'group-hover:rotate-180'}`} />
+      <span>{isLoading ? "Generating..." : "Generate Random Country"}</span>
+      <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
     </button>
   );
 }
