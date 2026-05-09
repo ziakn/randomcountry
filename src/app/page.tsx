@@ -1,10 +1,11 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import { Sparkles, ArrowRight, TrendingUp, Globe2, Compass, Layers, Brain, BookOpen, BarChart2, Eye, ThumbsUp } from "lucide-react";
 import Link from "next/link";
 import CountryCard from "@/components/CountryCard";
 import GenerateButton from "@/components/GenerateButton";
+import { useRouter } from "next/navigation";
 import dynamic from "next/dynamic";
 
 const GlobeMap = dynamic(() => import("@/components/GlobeMap"), { ssr: false, loading: () => <div className="w-full h-[400px] bg-gray-100 dark:bg-gray-700 rounded-2xl animate-pulse" /> });
@@ -50,13 +51,13 @@ const CONTINENTS = [
 const TRENDING_NOW = ["Japan", "Italy", "Switzerland", "Norway", "South Korea", "Thailand", "UAE", "Portugal", "New Zealand"];
 
 export default function Home() {
+  const router = useRouter();
   const [country, setCountry] = useState<any>(null);
   const [mounted, setMounted] = useState(false);
   const [favorites, setFavorites] = useState<string[]>([]);
   const [history, setHistory] = useState<any[]>([]);
   const [spinGlobe, setSpinGlobe] = useState(false);
-  const [currentGlobeCountry, setCurrentGlobeCountry] = useState(0);
-  const allCountries = getAllCountries();
+  const allCountries = useMemo(() => getAllCountries(), []);
 
   useEffect(() => {
     setCountry(getRandomCountry());
@@ -80,15 +81,6 @@ export default function Home() {
 
     setTimeout(() => setSpinGlobe(false), 2000);
   }, [country, history]);
-
-  useEffect(() => {
-    if (mounted) {
-      const interval = setInterval(() => {
-        setCurrentGlobeCountry((prev) => (prev + 1) % allCountries.length);
-      }, 5000);
-      return () => clearInterval(interval);
-    }
-  }, [mounted, allCountries.length]);
 
   const handleCopy = () => {
     if (country) {
@@ -118,14 +110,24 @@ export default function Home() {
     }
   };
 
-  const handlePopularClick = (code: string) => {
+  const handlePopularClick = useCallback((code: string) => {
     const c = getRandomCountry(code);
     setCountry(c);
     const entry = { code: c.code, name: c.name, timestamp: Date.now() };
     const newHistory = [entry, ...history.filter((h: any) => h.code !== c.code)].slice(0, 50);
     setHistory(newHistory);
     localStorage.setItem("country_history", JSON.stringify(newHistory));
-  };
+  }, [history]);
+
+  const popularCountries = useMemo(() => POPULAR_COUNTRIES.map((c) => {
+    const country = getRandomCountry(c.code);
+    return country ? { ...c, country } : null;
+  }).filter(Boolean), []);
+
+  const trendingCountries = useMemo(() => TRENDING_NOW.map((name) => {
+    const country = allCountries.find((c: any) => c.name.toLowerCase() === name.toLowerCase() || c.name.toLowerCase().includes(name.toLowerCase()));
+    return country ? { name, country } : null;
+  }).filter(Boolean), [allCountries]);
 
   if (!mounted || !country) {
     return (
@@ -140,11 +142,10 @@ export default function Home() {
 
   return (
     <main className="flex-1 w-full">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-900 via-blue-700 to-blue-600 text-white pt-20 pb-24 md:pt-28 md:pb-32">
-        <div className="absolute inset-0 opacity-10">
-          <GlobeMap size={600} interactive={false} />
-        </div>
+        {/* Hero Section */}
+        <section className="relative overflow-hidden bg-gradient-to-br from-blue-900 via-blue-700 to-blue-600 text-white pt-20 pb-24 md:pt-28 md:pb-32">
+          <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-200 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.4%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-20" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 animate-fade-in-down">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6 text-sm">
@@ -174,7 +175,7 @@ export default function Home() {
                 onKeyDown={(e) => {
                   if (e.key === "Enter") {
                     const val = (e.target as HTMLInputElement).value;
-                    if (val) window.location.href = `/country/${val.toLowerCase().replace(/\s+/g, "-")}`;
+                    if (val) router.push(`/country/${encodeURIComponent(val.toLowerCase().replace(/\s+/g, "-"))}`);
                   }
                 }}
               />
@@ -256,19 +257,19 @@ export default function Home() {
             </Link>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {POPULAR_COUNTRIES.map((c) => {
-              const country = getRandomCountry(c.code);
-              return country ? (
+            {popularCountries.map((item: any) => {
+              const c = item as any;
+              return (
                 <Link
                   key={c.code}
                   href={`/country/${c.code}`}
                   onClick={() => handlePopularClick(c.code)}
                   className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-4 hover:shadow-lg hover:-translate-y-1 transition-all text-center group"
                 >
-                  <img src={country.flagUrl} alt={country.name} className="w-full h-14 object-cover rounded-lg shadow-sm mb-3" loading="lazy" />
+                  <img src={c.country.flagUrl} alt={c.name} className="w-full h-14 object-cover rounded-lg shadow-sm mb-3" loading="lazy" />
                   <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 truncate">{c.name}</p>
                 </Link>
-              ) : null;
+              );
             })}
           </div>
         </section>
@@ -337,18 +338,18 @@ export default function Home() {
             Trending Now
           </h2>
           <div className="flex flex-wrap gap-3">
-            {TRENDING_NOW.map((name, i) => {
-              const country = allCountries.find((c: any) => c.name.toLowerCase() === name.toLowerCase() || c.name.toLowerCase().includes(name.toLowerCase()));
-              return country ? (
+            {trendingCountries.map((item: any, i: number) => {
+              const c = item as any;
+              return (
                 <Link
                   key={i}
-                  href={`/country/${country.code}`}
+                  href={`/country/${c.country.code}`}
                   className="flex items-center gap-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-4 py-2.5 rounded-full hover:shadow-md hover:border-blue-300 transition-all text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600"
                 >
-                  <img src={country.flagIcon || country.flagUrl} alt={country.name} className="w-5 h-3.5 rounded-sm" loading="lazy" />
-                  {name}
+                  <img src={c.country.flagIcon || c.country.flagUrl} alt={c.country.name} className="w-5 h-3.5 rounded-sm" loading="lazy" />
+                  {c.name}
                 </Link>
-              ) : null;
+              );
             })}
           </div>
         </section>

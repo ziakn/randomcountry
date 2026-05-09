@@ -22,19 +22,20 @@ export default function GlobeMap({ coordinates, size = 400, interactive = true }
     let animationFrameId: number;
 
     const globe = createGlobe(canvasRef.current, {
-      devicePixelRatio: 2,
+      devicePixelRatio: 1.5,
       width: size,
       height: size,
       phi: coordinates ? (coordinates[1] * Math.PI) / 180 : 0.5,
       theta: coordinates ? (coordinates[0] * Math.PI) / 180 : 0.3,
       dark: 0,
       diffuse: 1.2,
-      mapSamples: 16000,
+      mapSamples: 2500,
       mapBrightness: 1.2,
       baseColor: [0.2, 0.5, 0.9],
       markerColor: [1, 1, 1],
       glowColor: [0.3, 0.6, 1],
       markers: coordinates ? [{ location: coordinates, size: 0.08 }] : [],
+      // @ts-ignore
       onRender: (state: { phi: number; theta: number }) => {
         phiRef.current = state.phi;
         thetaRef.current = state.theta;
@@ -84,25 +85,30 @@ export default function GlobeMap({ coordinates, size = 400, interactive = true }
       )}
       <canvas
         ref={canvasRef}
-        className="rounded-full shadow-2xl"
+        className="rounded-full shadow-2xl cursor-grab active:cursor-grabbing"
         style={{ width: size, height: size }}
-        onMouseDown={(e) => {
+        onPointerDown={(e) => {
+          const canvas = canvasRef.current;
+          if (!canvas) return;
+          canvas.setPointerCapture(e.pointerId);
           const startX = e.clientX;
           const startPhi = phiRef.current;
-          const startTheta = thetaRef.current;
 
-          const handleMouseMove = (ev: MouseEvent) => {
+          const handlePointerMove = (ev: PointerEvent) => {
             const dx = ev.clientX - startX;
             phiRef.current = startPhi + dx * 0.005;
           };
 
-          const handleMouseUp = () => {
-            document.removeEventListener("mousemove", handleMouseMove);
-            document.removeEventListener("mouseup", handleMouseUp);
+          const handlePointerUp = (ev: PointerEvent) => {
+            canvas.removeEventListener("pointermove", handlePointerMove);
+            canvas.removeEventListener("pointerup", handlePointerUp);
+            canvas.removeEventListener("pointercancel", handlePointerUp);
+            canvas.releasePointerCapture(ev.pointerId);
           };
 
-          document.addEventListener("mousemove", handleMouseMove);
-          document.addEventListener("mouseup", handleMouseUp);
+          canvas.addEventListener("pointermove", handlePointerMove);
+          canvas.addEventListener("pointerup", handlePointerUp);
+          canvas.addEventListener("pointercancel", handlePointerUp);
         }}
       />
     </div>

@@ -138,7 +138,7 @@ export default function CountryDetails({ country, relatedCountries = [], funFact
               {country.area > 0 && ` The country covers a total area of ${country.area.toLocaleString()} square kilometers.`}
               {country.borders.length > 0 && ` It shares borders with ${country.borders.length} countries.`}
             </p>
-            <CountryStats />
+
           </>
         );
       case "geography":
@@ -335,26 +335,6 @@ export default function CountryDetails({ country, relatedCountries = [], funFact
           </div>
         </div>
       )}
-    </div>
-  );
-}
-
-function CountryStats() {
-  const stats = [
-    { label: "Capital", value: "capital" },
-    { label: "Population", value: "population" },
-    { label: "Currency", value: "currency" },
-    { label: "Languages", value: "language" },
-    { label: "Region", value: "region" },
-  ];
-  return (
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 my-6">
-      {stats.map(s => (
-        <div key={s.label} className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-900/10 rounded-xl p-4 text-center">
-          <p className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-1">{s.label}</p>
-          <p className="text-lg font-bold text-gray-900 dark:text-white">{(country as any)[s.value]}</p>
-        </div>
-      ))}
     </div>
   );
 }
