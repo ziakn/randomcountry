@@ -1,7 +1,10 @@
-import { getAllCountries } from "@/utils/getRandomCountry";
+import CountryCard from "@/components/CountryCard";
 import GoogleMap from "@/components/GoogleMap";
 import BreadcrumbBar from "@/components/BreadcrumbBar";
 import Link from "next/link";
+import countriesData from "@/data/countries.json";
+
+const allCountries = countriesData;
 
 export const metadata = {
   title: "All Countries - A to Z List",
@@ -16,7 +19,7 @@ export const metadata = {
 };
 
 export default async function CountriesPage() {
-  const allCountries = getAllCountries();
+  const allCountries = countriesData;
 
   const grouped: Record<string, any[]> = {};
   allCountries.forEach((c: any) => {

@@ -56,7 +56,7 @@ export default function Navbar() {
   };
 
   const navLinks = [
-    { href: "/", label: "Home", icon: Home },
+    { href: "/", label: "Home", icon: HomeIcon },
     { href: "/random-country-generator", label: "Random Generator", icon: Compass },
     { href: "/compare", label: "Compare", icon: Layers },
     { href: "/quiz", label: "Quiz", icon: Brain },

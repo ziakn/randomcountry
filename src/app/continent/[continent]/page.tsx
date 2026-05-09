@@ -1,8 +1,10 @@
-import { getAllCountries } from "@/utils/getRandomCountry";
 import CountryCard from "@/components/CountryCard";
 import BreadcrumbBar from "@/components/BreadcrumbBar";
 import Link from "next/link";
 import { Globe2, MapPin, Users, Coins, Flag } from "lucide-react";
+import countriesData from "@/data/countries.json";
+
+const allCountriesData = countriesData;
 
 type Props = {
   params: Promise<{ continent: string }>;
@@ -35,11 +37,11 @@ export default async function ContinentPage({ params }: Props) {
   const { continent } = await params;
   const continentKey = continent.toLowerCase().replace(/s$/, "");
   const info = CONTINENT_INFO[continentKey] || { emoji: "🌍", description: "", countries: 0 };
-  const allCountries = getAllCountries();
+  const allCountries = allCountriesData;
 
   const filteredCountries = allCountries.filter((c) => {
-    const cContinent = c.continent || c.region;
-    return cContinent.toLowerCase() === continentKey || c.region.toLowerCase() === continentKey;
+    const cRegion = c.region;
+    return cRegion.toLowerCase() === continentKey || c.region.toLowerCase() === continentKey;
   });
 
   // Sort by population (largest first)

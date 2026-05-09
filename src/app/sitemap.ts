@@ -1,11 +1,11 @@
 import { MetadataRoute } from "next";
-import { getAllCountries } from "@/utils/getRandomCountry";
+import countriesData from "@/data/countries.json";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://randomcountry.ziamuhammad.com";
   const now = new Date();
 
-  const countryUrls = getAllCountries().map((country) => ({
+  const countryUrls = countriesData.map((country) => ({
     url: `${baseUrl}/country/${country.code}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
@@ -21,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/best-countries-to-study",
   ];
 
-  const staticUrls = [
+  const staticUrls: Array<{ url: string; priority: number; changeFrequency: "daily" | "weekly" | "monthly" | "yearly" | "always" | "hourly" | "never" }> = [
     { url: baseUrl, priority: 1, changeFrequency: "daily" },
     { url: `${baseUrl}/random-country-generator`, priority: 0.9, changeFrequency: "weekly" },
     { url: `${baseUrl}/compare`, priority: 0.9, changeFrequency: "weekly" },

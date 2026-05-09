@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Clock, Info, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import CountryMapWrapper from "./CountryMapWrapper";
 
 type Country = {
   name: string;
@@ -166,7 +167,7 @@ export default function CountryDetails({ country, relatedCountries = [], funFact
               <p className="text-gray-500 mt-2">An island nation with no land borders.</p>
             )}
             <div className="mt-8 bg-gray-100 dark:bg-gray-700 rounded-xl p-4">
-              <GoogleMap countryName={country.name} coordinates={country.coordinates} />
+              <CountryMapWrapper countryName={country.name} coordinates={country.coordinates} />
             </div>
           </>
         );

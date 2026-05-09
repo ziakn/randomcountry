@@ -2,7 +2,19 @@
 
 import { useState, useEffect } from "react";
 import { ThumbsUp, Heart, Share2, RefreshCw, ArrowUp, Loader2, X } from "lucide-react";
-import { getAllCountries, getRandomCountry, getCountryByCode } from "../utils/getRandomCountry";
+import countriesData from "@/data/countries.json";
+
+const getAllCountries = () => countriesData;
+const getCountryByCode = (code: string) => countriesData.find((c) => c.code === code.toLowerCase());
+const getRandomCountry = (excludeCode?: string) => {
+  let idx = Math.floor(Math.random() * countriesData.length);
+  let c = countriesData[idx];
+  while (excludeCode && c.code === excludeCode.toLowerCase()) {
+    idx = Math.floor(Math.random() * countriesData.length);
+    c = countriesData[idx];
+  }
+  return c;
+};
 
 type HistoryEntry = {
   code: string;

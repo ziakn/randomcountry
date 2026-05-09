@@ -29,7 +29,8 @@
     ],
     "timezones": [
       "UTC+04:30"
-    ]
+    ],
+    "slug": "afghanistan"
   },
   {
     "name": "Åland Islands",
@@ -54,7 +55,8 @@
     "borders": [],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "land-islands"
   },
   {
     "name": "Albania",
@@ -84,7 +86,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "albania"
   },
   {
     "name": "Algeria",
@@ -117,7 +120,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "algeria"
   },
   {
     "name": "American Samoa",
@@ -142,7 +146,8 @@
     "borders": [],
     "timezones": [
       "UTC-11:00"
-    ]
+    ],
+    "slug": "american-samoa"
   },
   {
     "name": "Andorra",
@@ -170,7 +175,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "andorra"
   },
   {
     "name": "Angola",
@@ -200,7 +206,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "angola"
   },
   {
     "name": "Anguilla",
@@ -225,7 +232,8 @@
     "borders": [],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "anguilla"
   },
   {
     "name": "Antarctica",
@@ -257,7 +265,8 @@
       "UTC+08:00",
       "UTC+10:00",
       "UTC+12:00"
-    ]
+    ],
+    "slug": "antarctica"
   },
   {
     "name": "Antigua and Barbuda",
@@ -282,7 +291,8 @@
     "borders": [],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "antigua-and-barbuda"
   },
   {
     "name": "Argentina",
@@ -313,7 +323,8 @@
     ],
     "timezones": [
       "UTC-03:00"
-    ]
+    ],
+    "slug": "argentina"
   },
   {
     "name": "Armenia",
@@ -343,7 +354,8 @@
     ],
     "timezones": [
       "UTC+04:00"
-    ]
+    ],
+    "slug": "armenia"
   },
   {
     "name": "Aruba",
@@ -368,7 +380,8 @@
     "borders": [],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "aruba"
   },
   {
     "name": "Australia",
@@ -400,7 +413,8 @@
       "UTC+10:00",
       "UTC+10:30",
       "UTC+11:30"
-    ]
+    ],
+    "slug": "australia"
   },
   {
     "name": "Austria",
@@ -434,7 +448,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "austria"
   },
   {
     "name": "Azerbaijan",
@@ -465,7 +480,8 @@
     ],
     "timezones": [
       "UTC+04:00"
-    ]
+    ],
+    "slug": "azerbaijan"
   },
   {
     "name": "Bahamas",
@@ -490,7 +506,8 @@
     "borders": [],
     "timezones": [
       "UTC-05:00"
-    ]
+    ],
+    "slug": "bahamas"
   },
   {
     "name": "Bahrain",
@@ -515,7 +532,8 @@
     "borders": [],
     "timezones": [
       "UTC+03:00"
-    ]
+    ],
+    "slug": "bahrain"
   },
   {
     "name": "Bangladesh",
@@ -543,7 +561,8 @@
     ],
     "timezones": [
       "UTC+06:00"
-    ]
+    ],
+    "slug": "bangladesh"
   },
   {
     "name": "Barbados",
@@ -568,7 +587,8 @@
     "borders": [],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "barbados"
   },
   {
     "name": "Belarus",
@@ -599,7 +619,8 @@
     ],
     "timezones": [
       "UTC+03:00"
-    ]
+    ],
+    "slug": "belarus"
   },
   {
     "name": "Belgium",
@@ -629,7 +650,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "belgium"
   },
   {
     "name": "Belize",
@@ -657,7 +679,8 @@
     ],
     "timezones": [
       "UTC-06:00"
-    ]
+    ],
+    "slug": "belize"
   },
   {
     "name": "Benin",
@@ -687,7 +710,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "benin"
   },
   {
     "name": "Bermuda",
@@ -712,7 +736,8 @@
     "borders": [],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "bermuda"
   },
   {
     "name": "Bhutan",
@@ -740,7 +765,8 @@
     ],
     "timezones": [
       "UTC+06:00"
-    ]
+    ],
+    "slug": "bhutan"
   },
   {
     "name": "Bolivia",
@@ -771,7 +797,8 @@
     ],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "bolivia"
   },
   {
     "name": "Bosnia and Herzegovina",
@@ -800,7 +827,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "bosnia-and-herzegovina"
   },
   {
     "name": "Botswana",
@@ -830,7 +858,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "botswana"
   },
   {
     "name": "Bouvet Island",
@@ -855,7 +884,8 @@
     "borders": [],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "bouvet-island"
   },
   {
     "name": "Brazil",
@@ -894,7 +924,8 @@
       "UTC-04:00",
       "UTC-03:00",
       "UTC-02:00"
-    ]
+    ],
+    "slug": "brazil"
   },
   {
     "name": "British Indian Ocean Territory",
@@ -919,7 +950,8 @@
     "borders": [],
     "timezones": [
       "UTC+06:00"
-    ]
+    ],
+    "slug": "british-indian-ocean-territory"
   },
   {
     "name": "British Virgin Islands",
@@ -944,7 +976,8 @@
     "borders": [],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "british-virgin-islands"
   },
   {
     "name": "Brunei",
@@ -971,7 +1004,8 @@
     ],
     "timezones": [
       "UTC+08:00"
-    ]
+    ],
+    "slug": "brunei"
   },
   {
     "name": "Bulgaria",
@@ -1002,7 +1036,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "bulgaria"
   },
   {
     "name": "Burkina Faso",
@@ -1034,7 +1069,8 @@
     ],
     "timezones": [
       "UTC"
-    ]
+    ],
+    "slug": "burkina-faso"
   },
   {
     "name": "Burundi",
@@ -1063,7 +1099,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "burundi"
   },
   {
     "name": "Cambodia",
@@ -1092,7 +1129,8 @@
     ],
     "timezones": [
       "UTC+07:00"
-    ]
+    ],
+    "slug": "cambodia"
   },
   {
     "name": "Cameroon",
@@ -1124,7 +1162,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "cameroon"
   },
   {
     "name": "Canada",
@@ -1156,7 +1195,8 @@
       "UTC-05:00",
       "UTC-04:00",
       "UTC-03:30"
-    ]
+    ],
+    "slug": "canada"
   },
   {
     "name": "Cape Verde",
@@ -1181,7 +1221,8 @@
     "borders": [],
     "timezones": [
       "UTC-01:00"
-    ]
+    ],
+    "slug": "cape-verde"
   },
   {
     "name": "Caribbean Netherlands",
@@ -1206,7 +1247,8 @@
     "borders": [],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "caribbean-netherlands"
   },
   {
     "name": "Cayman Islands",
@@ -1231,7 +1273,8 @@
     "borders": [],
     "timezones": [
       "UTC-05:00"
-    ]
+    ],
+    "slug": "cayman-islands"
   },
   {
     "name": "Central African Republic",
@@ -1263,7 +1306,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "central-african-republic"
   },
   {
     "name": "Chad",
@@ -1295,7 +1339,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "chad"
   },
   {
     "name": "Chile",
@@ -1325,7 +1370,8 @@
     "timezones": [
       "UTC-06:00",
       "UTC-04:00"
-    ]
+    ],
+    "slug": "chile"
   },
   {
     "name": "China",
@@ -1367,7 +1413,8 @@
     ],
     "timezones": [
       "UTC+08:00"
-    ]
+    ],
+    "slug": "china"
   },
   {
     "name": "Christmas Island",
@@ -1392,7 +1439,8 @@
     "borders": [],
     "timezones": [
       "UTC+07:00"
-    ]
+    ],
+    "slug": "christmas-island"
   },
   {
     "name": "Cocos (Keeling) Islands",
@@ -1417,7 +1465,8 @@
     "borders": [],
     "timezones": [
       "UTC+06:30"
-    ]
+    ],
+    "slug": "cocos-keeling-islands"
   },
   {
     "name": "Colombia",
@@ -1448,7 +1497,8 @@
     ],
     "timezones": [
       "UTC-05:00"
-    ]
+    ],
+    "slug": "colombia"
   },
   {
     "name": "Comoros",
@@ -1473,7 +1523,8 @@
     "borders": [],
     "timezones": [
       "UTC+03:00"
-    ]
+    ],
+    "slug": "comoros"
   },
   {
     "name": "Cook Islands",
@@ -1498,7 +1549,8 @@
     "borders": [],
     "timezones": [
       "UTC-10:00"
-    ]
+    ],
+    "slug": "cook-islands"
   },
   {
     "name": "Costa Rica",
@@ -1526,7 +1578,8 @@
     ],
     "timezones": [
       "UTC-06:00"
-    ]
+    ],
+    "slug": "costa-rica"
   },
   {
     "name": "Croatia",
@@ -1557,7 +1610,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "croatia"
   },
   {
     "name": "Cuba",
@@ -1582,7 +1636,8 @@
     "borders": [],
     "timezones": [
       "UTC-05:00"
-    ]
+    ],
+    "slug": "cuba"
   },
   {
     "name": "Curaçao",
@@ -1607,7 +1662,8 @@
     "borders": [],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "cura-ao"
   },
   {
     "name": "Cyprus",
@@ -1632,7 +1688,8 @@
     "borders": [],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "cyprus"
   },
   {
     "name": "Czechia",
@@ -1662,7 +1719,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "czechia"
   },
   {
     "name": "Denmark",
@@ -1693,7 +1751,8 @@
       "UTC-01:00",
       "UTC",
       "UTC+01:00"
-    ]
+    ],
+    "slug": "denmark"
   },
   {
     "name": "Djibouti",
@@ -1722,7 +1781,8 @@
     ],
     "timezones": [
       "UTC+03:00"
-    ]
+    ],
+    "slug": "djibouti"
   },
   {
     "name": "Dominica",
@@ -1747,7 +1807,8 @@
     "borders": [],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "dominica"
   },
   {
     "name": "Dominican Republic",
@@ -1774,7 +1835,8 @@
     ],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "dominican-republic"
   },
   {
     "name": "DR Congo",
@@ -1810,7 +1872,8 @@
     "timezones": [
       "UTC+01:00",
       "UTC+02:00"
-    ]
+    ],
+    "slug": "dr-congo"
   },
   {
     "name": "Ecuador",
@@ -1839,7 +1902,8 @@
     "timezones": [
       "UTC-06:00",
       "UTC-05:00"
-    ]
+    ],
+    "slug": "ecuador"
   },
   {
     "name": "Egypt",
@@ -1869,7 +1933,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "egypt"
   },
   {
     "name": "El Salvador",
@@ -1897,7 +1962,8 @@
     ],
     "timezones": [
       "UTC-06:00"
-    ]
+    ],
+    "slug": "el-salvador"
   },
   {
     "name": "Equatorial Guinea",
@@ -1925,7 +1991,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "equatorial-guinea"
   },
   {
     "name": "Eritrea",
@@ -1954,7 +2021,8 @@
     ],
     "timezones": [
       "UTC+03:00"
-    ]
+    ],
+    "slug": "eritrea"
   },
   {
     "name": "Estonia",
@@ -1982,7 +2050,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "estonia"
   },
   {
     "name": "Eswatini",
@@ -2010,7 +2079,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "eswatini"
   },
   {
     "name": "Ethiopia",
@@ -2042,7 +2112,8 @@
     ],
     "timezones": [
       "UTC+03:00"
-    ]
+    ],
+    "slug": "ethiopia"
   },
   {
     "name": "Falkland Islands",
@@ -2067,7 +2138,8 @@
     "borders": [],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "falkland-islands"
   },
   {
     "name": "Faroe Islands",
@@ -2092,7 +2164,8 @@
     "borders": [],
     "timezones": [
       "UTC+00:00"
-    ]
+    ],
+    "slug": "faroe-islands"
   },
   {
     "name": "Fiji",
@@ -2117,7 +2190,8 @@
     "borders": [],
     "timezones": [
       "UTC+12:00"
-    ]
+    ],
+    "slug": "fiji"
   },
   {
     "name": "Finland",
@@ -2146,7 +2220,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "finland"
   },
   {
     "name": "France",
@@ -2193,7 +2268,8 @@
       "UTC+10:00",
       "UTC+11:00",
       "UTC+12:00"
-    ]
+    ],
+    "slug": "france"
   },
   {
     "name": "French Guiana",
@@ -2221,7 +2297,8 @@
     ],
     "timezones": [
       "UTC-03:00"
-    ]
+    ],
+    "slug": "french-guiana"
   },
   {
     "name": "French Polynesia",
@@ -2248,7 +2325,8 @@
       "UTC-10:00",
       "UTC-09:30",
       "UTC-09:00"
-    ]
+    ],
+    "slug": "french-polynesia"
   },
   {
     "name": "French Southern and Antarctic Lands",
@@ -2273,7 +2351,8 @@
     "borders": [],
     "timezones": [
       "UTC+05:00"
-    ]
+    ],
+    "slug": "french-southern-and-antarctic-lands"
   },
   {
     "name": "Gabon",
@@ -2302,7 +2381,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "gabon"
   },
   {
     "name": "Gambia",
@@ -2329,7 +2409,8 @@
     ],
     "timezones": [
       "UTC+00:00"
-    ]
+    ],
+    "slug": "gambia"
   },
   {
     "name": "Georgia",
@@ -2359,7 +2440,8 @@
     ],
     "timezones": [
       "UTC+04:00"
-    ]
+    ],
+    "slug": "georgia"
   },
   {
     "name": "Germany",
@@ -2394,7 +2476,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "germany"
   },
   {
     "name": "Ghana",
@@ -2423,7 +2506,8 @@
     ],
     "timezones": [
       "UTC"
-    ]
+    ],
+    "slug": "ghana"
   },
   {
     "name": "Gibraltar",
@@ -2450,7 +2534,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "gibraltar"
   },
   {
     "name": "Greece",
@@ -2480,7 +2565,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "greece"
   },
   {
     "name": "Greenland",
@@ -2508,7 +2594,8 @@
       "UTC-03:00",
       "UTC-01:00",
       "UTC+00:00"
-    ]
+    ],
+    "slug": "greenland"
   },
   {
     "name": "Grenada",
@@ -2533,7 +2620,8 @@
     "borders": [],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "grenada"
   },
   {
     "name": "Guadeloupe",
@@ -2558,7 +2646,8 @@
     "borders": [],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "guadeloupe"
   },
   {
     "name": "Guam",
@@ -2583,7 +2672,8 @@
     "borders": [],
     "timezones": [
       "UTC+10:00"
-    ]
+    ],
+    "slug": "guam"
   },
   {
     "name": "Guatemala",
@@ -2613,7 +2703,8 @@
     ],
     "timezones": [
       "UTC-06:00"
-    ]
+    ],
+    "slug": "guatemala"
   },
   {
     "name": "Guernsey",
@@ -2638,7 +2729,8 @@
     "borders": [],
     "timezones": [
       "UTC+00:00"
-    ]
+    ],
+    "slug": "guernsey"
   },
   {
     "name": "Guinea",
@@ -2670,7 +2762,8 @@
     ],
     "timezones": [
       "UTC"
-    ]
+    ],
+    "slug": "guinea"
   },
   {
     "name": "Guinea-Bissau",
@@ -2698,7 +2791,8 @@
     ],
     "timezones": [
       "UTC"
-    ]
+    ],
+    "slug": "guinea-bissau"
   },
   {
     "name": "Guyana",
@@ -2727,7 +2821,8 @@
     ],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "guyana"
   },
   {
     "name": "Haiti",
@@ -2754,7 +2849,8 @@
     ],
     "timezones": [
       "UTC-05:00"
-    ]
+    ],
+    "slug": "haiti"
   },
   {
     "name": "Heard Island and McDonald Islands",
@@ -2779,7 +2875,8 @@
     "borders": [],
     "timezones": [
       "UTC+05:00"
-    ]
+    ],
+    "slug": "heard-island-and-mcdonald-islands"
   },
   {
     "name": "Honduras",
@@ -2808,7 +2905,8 @@
     ],
     "timezones": [
       "UTC-06:00"
-    ]
+    ],
+    "slug": "honduras"
   },
   {
     "name": "Hong Kong",
@@ -2835,7 +2933,8 @@
     ],
     "timezones": [
       "UTC+08:00"
-    ]
+    ],
+    "slug": "hong-kong"
   },
   {
     "name": "Hungary",
@@ -2868,7 +2967,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "hungary"
   },
   {
     "name": "Iceland",
@@ -2893,7 +2993,8 @@
     "borders": [],
     "timezones": [
       "UTC"
-    ]
+    ],
+    "slug": "iceland"
   },
   {
     "name": "India",
@@ -2925,7 +3026,8 @@
     ],
     "timezones": [
       "UTC+05:30"
-    ]
+    ],
+    "slug": "india"
   },
   {
     "name": "Indonesia",
@@ -2956,7 +3058,8 @@
       "UTC+07:00",
       "UTC+08:00",
       "UTC+09:00"
-    ]
+    ],
+    "slug": "indonesia"
   },
   {
     "name": "Iran",
@@ -2989,7 +3092,8 @@
     ],
     "timezones": [
       "UTC+03:30"
-    ]
+    ],
+    "slug": "iran"
   },
   {
     "name": "Iraq",
@@ -3021,7 +3125,8 @@
     ],
     "timezones": [
       "UTC+03:00"
-    ]
+    ],
+    "slug": "iraq"
   },
   {
     "name": "Ireland",
@@ -3048,7 +3153,8 @@
     ],
     "timezones": [
       "UTC"
-    ]
+    ],
+    "slug": "ireland"
   },
   {
     "name": "Isle of Man",
@@ -3073,7 +3179,8 @@
     "borders": [],
     "timezones": [
       "UTC+00:00"
-    ]
+    ],
+    "slug": "isle-of-man"
   },
   {
     "name": "Israel",
@@ -3104,7 +3211,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "israel"
   },
   {
     "name": "Italy",
@@ -3136,7 +3244,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "italy"
   },
   {
     "name": "Ivory Coast",
@@ -3167,7 +3276,8 @@
     ],
     "timezones": [
       "UTC"
-    ]
+    ],
+    "slug": "ivory-coast"
   },
   {
     "name": "Jamaica",
@@ -3192,7 +3302,8 @@
     "borders": [],
     "timezones": [
       "UTC-05:00"
-    ]
+    ],
+    "slug": "jamaica"
   },
   {
     "name": "Japan",
@@ -3217,7 +3328,8 @@
     "borders": [],
     "timezones": [
       "UTC+09:00"
-    ]
+    ],
+    "slug": "japan"
   },
   {
     "name": "Jersey",
@@ -3242,7 +3354,8 @@
     "borders": [],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "jersey"
   },
   {
     "name": "Jordan",
@@ -3273,7 +3386,8 @@
     ],
     "timezones": [
       "UTC+03:00"
-    ]
+    ],
+    "slug": "jordan"
   },
   {
     "name": "Kazakhstan",
@@ -3305,7 +3419,8 @@
     "timezones": [
       "UTC+05:00",
       "UTC+06:00"
-    ]
+    ],
+    "slug": "kazakhstan"
   },
   {
     "name": "Kenya",
@@ -3336,7 +3451,8 @@
     ],
     "timezones": [
       "UTC+03:00"
-    ]
+    ],
+    "slug": "kenya"
   },
   {
     "name": "Kiribati",
@@ -3363,7 +3479,8 @@
       "UTC+12:00",
       "UTC+13:00",
       "UTC+14:00"
-    ]
+    ],
+    "slug": "kiribati"
   },
   {
     "name": "Kosovo",
@@ -3393,7 +3510,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "kosovo"
   },
   {
     "name": "Kuwait",
@@ -3421,7 +3539,8 @@
     ],
     "timezones": [
       "UTC+03:00"
-    ]
+    ],
+    "slug": "kuwait"
   },
   {
     "name": "Kyrgyzstan",
@@ -3451,7 +3570,8 @@
     ],
     "timezones": [
       "UTC+06:00"
-    ]
+    ],
+    "slug": "kyrgyzstan"
   },
   {
     "name": "Laos",
@@ -3482,7 +3602,8 @@
     ],
     "timezones": [
       "UTC+07:00"
-    ]
+    ],
+    "slug": "laos"
   },
   {
     "name": "Latvia",
@@ -3512,7 +3633,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "latvia"
   },
   {
     "name": "Lebanon",
@@ -3540,7 +3662,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "lebanon"
   },
   {
     "name": "Lesotho",
@@ -3567,7 +3690,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "lesotho"
   },
   {
     "name": "Liberia",
@@ -3596,7 +3720,8 @@
     ],
     "timezones": [
       "UTC"
-    ]
+    ],
+    "slug": "liberia"
   },
   {
     "name": "Libya",
@@ -3628,7 +3753,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "libya"
   },
   {
     "name": "Liechtenstein",
@@ -3656,7 +3782,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "liechtenstein"
   },
   {
     "name": "Lithuania",
@@ -3686,7 +3813,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "lithuania"
   },
   {
     "name": "Luxembourg",
@@ -3715,7 +3843,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "luxembourg"
   },
   {
     "name": "Macau",
@@ -3742,7 +3871,8 @@
     ],
     "timezones": [
       "UTC+08:00"
-    ]
+    ],
+    "slug": "macau"
   },
   {
     "name": "Madagascar",
@@ -3767,7 +3897,8 @@
     "borders": [],
     "timezones": [
       "UTC+03:00"
-    ]
+    ],
+    "slug": "madagascar"
   },
   {
     "name": "Malawi",
@@ -3796,7 +3927,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "malawi"
   },
   {
     "name": "Malaysia",
@@ -3825,7 +3957,8 @@
     ],
     "timezones": [
       "UTC+08:00"
-    ]
+    ],
+    "slug": "malaysia"
   },
   {
     "name": "Maldives",
@@ -3850,7 +3983,8 @@
     "borders": [],
     "timezones": [
       "UTC+05:00"
-    ]
+    ],
+    "slug": "maldives"
   },
   {
     "name": "Mali",
@@ -3883,7 +4017,8 @@
     ],
     "timezones": [
       "UTC"
-    ]
+    ],
+    "slug": "mali"
   },
   {
     "name": "Malta",
@@ -3908,7 +4043,8 @@
     "borders": [],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "malta"
   },
   {
     "name": "Marshall Islands",
@@ -3933,7 +4069,8 @@
     "borders": [],
     "timezones": [
       "UTC+12:00"
-    ]
+    ],
+    "slug": "marshall-islands"
   },
   {
     "name": "Martinique",
@@ -3958,7 +4095,8 @@
     "borders": [],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "martinique"
   },
   {
     "name": "Mauritania",
@@ -3988,7 +4126,8 @@
     ],
     "timezones": [
       "UTC"
-    ]
+    ],
+    "slug": "mauritania"
   },
   {
     "name": "Mauritius",
@@ -4013,7 +4152,8 @@
     "borders": [],
     "timezones": [
       "UTC+04:00"
-    ]
+    ],
+    "slug": "mauritius"
   },
   {
     "name": "Mayotte",
@@ -4038,7 +4178,8 @@
     "borders": [],
     "timezones": [
       "UTC+03:00"
-    ]
+    ],
+    "slug": "mayotte"
   },
   {
     "name": "Mexico",
@@ -4069,7 +4210,8 @@
       "UTC-08:00",
       "UTC-07:00",
       "UTC-06:00"
-    ]
+    ],
+    "slug": "mexico"
   },
   {
     "name": "Micronesia",
@@ -4095,7 +4237,8 @@
     "timezones": [
       "UTC+10:00",
       "UTC+11:00"
-    ]
+    ],
+    "slug": "micronesia"
   },
   {
     "name": "Moldova",
@@ -4123,7 +4266,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "moldova"
   },
   {
     "name": "Monaco",
@@ -4150,7 +4294,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "monaco"
   },
   {
     "name": "Mongolia",
@@ -4179,7 +4324,8 @@
     "timezones": [
       "UTC+07:00",
       "UTC+08:00"
-    ]
+    ],
+    "slug": "mongolia"
   },
   {
     "name": "Montenegro",
@@ -4210,7 +4356,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "montenegro"
   },
   {
     "name": "Montserrat",
@@ -4235,7 +4382,8 @@
     "borders": [],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "montserrat"
   },
   {
     "name": "Morocco",
@@ -4264,7 +4412,8 @@
     ],
     "timezones": [
       "UTC"
-    ]
+    ],
+    "slug": "morocco"
   },
   {
     "name": "Mozambique",
@@ -4296,7 +4445,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "mozambique"
   },
   {
     "name": "Myanmar",
@@ -4327,7 +4477,8 @@
     ],
     "timezones": [
       "UTC+06:30"
-    ]
+    ],
+    "slug": "myanmar"
   },
   {
     "name": "Namibia",
@@ -4357,7 +4508,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "namibia"
   },
   {
     "name": "Nauru",
@@ -4382,7 +4534,8 @@
     "borders": [],
     "timezones": [
       "UTC+12:00"
-    ]
+    ],
+    "slug": "nauru"
   },
   {
     "name": "Nepal",
@@ -4410,7 +4563,8 @@
     ],
     "timezones": [
       "UTC+05:45"
-    ]
+    ],
+    "slug": "nepal"
   },
   {
     "name": "Netherlands",
@@ -4438,7 +4592,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "netherlands"
   },
   {
     "name": "New Caledonia",
@@ -4463,7 +4618,8 @@
     "borders": [],
     "timezones": [
       "UTC+11:00"
-    ]
+    ],
+    "slug": "new-caledonia"
   },
   {
     "name": "New Zealand",
@@ -4492,7 +4648,8 @@
       "UTC+12:00",
       "UTC+12:45",
       "UTC+13:00"
-    ]
+    ],
+    "slug": "new-zealand"
   },
   {
     "name": "Nicaragua",
@@ -4520,7 +4677,8 @@
     ],
     "timezones": [
       "UTC-06:00"
-    ]
+    ],
+    "slug": "nicaragua"
   },
   {
     "name": "Niger",
@@ -4553,7 +4711,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "niger"
   },
   {
     "name": "Nigeria",
@@ -4583,7 +4742,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "nigeria"
   },
   {
     "name": "Niue",
@@ -4608,7 +4768,8 @@
     "borders": [],
     "timezones": [
       "UTC-11:00"
-    ]
+    ],
+    "slug": "niue"
   },
   {
     "name": "Norfolk Island",
@@ -4633,7 +4794,8 @@
     "borders": [],
     "timezones": [
       "UTC+11:30"
-    ]
+    ],
+    "slug": "norfolk-island"
   },
   {
     "name": "North Korea",
@@ -4662,7 +4824,8 @@
     ],
     "timezones": [
       "UTC+09:00"
-    ]
+    ],
+    "slug": "north-korea"
   },
   {
     "name": "North Macedonia",
@@ -4693,7 +4856,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "north-macedonia"
   },
   {
     "name": "Northern Mariana Islands",
@@ -4718,7 +4882,8 @@
     "borders": [],
     "timezones": [
       "UTC+10:00"
-    ]
+    ],
+    "slug": "northern-mariana-islands"
   },
   {
     "name": "Norway",
@@ -4747,7 +4912,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "norway"
   },
   {
     "name": "Oman",
@@ -4776,7 +4942,8 @@
     ],
     "timezones": [
       "UTC+04:00"
-    ]
+    ],
+    "slug": "oman"
   },
   {
     "name": "Pakistan",
@@ -4806,7 +4973,8 @@
     ],
     "timezones": [
       "UTC+05:00"
-    ]
+    ],
+    "slug": "pakistan"
   },
   {
     "name": "Palau",
@@ -4831,7 +4999,8 @@
     "borders": [],
     "timezones": [
       "UTC+09:00"
-    ]
+    ],
+    "slug": "palau"
   },
   {
     "name": "Palestine",
@@ -4860,7 +5029,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "palestine"
   },
   {
     "name": "Panama",
@@ -4888,7 +5058,8 @@
     ],
     "timezones": [
       "UTC-05:00"
-    ]
+    ],
+    "slug": "panama"
   },
   {
     "name": "Papua New Guinea",
@@ -4915,7 +5086,8 @@
     ],
     "timezones": [
       "UTC+10:00"
-    ]
+    ],
+    "slug": "papua-new-guinea"
   },
   {
     "name": "Paraguay",
@@ -4944,7 +5116,8 @@
     ],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "paraguay"
   },
   {
     "name": "Peru",
@@ -4975,7 +5148,8 @@
     ],
     "timezones": [
       "UTC-05:00"
-    ]
+    ],
+    "slug": "peru"
   },
   {
     "name": "Philippines",
@@ -5000,7 +5174,8 @@
     "borders": [],
     "timezones": [
       "UTC+08:00"
-    ]
+    ],
+    "slug": "philippines"
   },
   {
     "name": "Pitcairn Islands",
@@ -5025,7 +5200,8 @@
     "borders": [],
     "timezones": [
       "UTC-08:00"
-    ]
+    ],
+    "slug": "pitcairn-islands"
   },
   {
     "name": "Poland",
@@ -5058,7 +5234,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "poland"
   },
   {
     "name": "Portugal",
@@ -5086,7 +5263,8 @@
     "timezones": [
       "UTC-01:00",
       "UTC"
-    ]
+    ],
+    "slug": "portugal"
   },
   {
     "name": "Puerto Rico",
@@ -5111,7 +5289,8 @@
     "borders": [],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "puerto-rico"
   },
   {
     "name": "Qatar",
@@ -5138,7 +5317,8 @@
     ],
     "timezones": [
       "UTC+03:00"
-    ]
+    ],
+    "slug": "qatar"
   },
   {
     "name": "Republic of the Congo",
@@ -5169,7 +5349,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "republic-of-the-congo"
   },
   {
     "name": "Réunion",
@@ -5194,7 +5375,8 @@
     "borders": [],
     "timezones": [
       "UTC+04:00"
-    ]
+    ],
+    "slug": "r-union"
   },
   {
     "name": "Romania",
@@ -5225,7 +5407,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "romania"
   },
   {
     "name": "Russia",
@@ -5273,7 +5456,8 @@
       "UTC+10:00",
       "UTC+11:00",
       "UTC+12:00"
-    ]
+    ],
+    "slug": "russia"
   },
   {
     "name": "Rwanda",
@@ -5303,7 +5487,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "rwanda"
   },
   {
     "name": "Saint Barthélemy",
@@ -5328,7 +5513,8 @@
     "borders": [],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "saint-barth-lemy"
   },
   {
     "name": "Saint Helena, Ascension and Tristan da Cunha",
@@ -5353,7 +5539,8 @@
     "borders": [],
     "timezones": [
       "UTC+00:00"
-    ]
+    ],
+    "slug": "saint-helena-ascension-and-tristan-da-cunha"
   },
   {
     "name": "Saint Kitts and Nevis",
@@ -5378,7 +5565,8 @@
     "borders": [],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "saint-kitts-and-nevis"
   },
   {
     "name": "Saint Lucia",
@@ -5403,7 +5591,8 @@
     "borders": [],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "saint-lucia"
   },
   {
     "name": "Saint Martin",
@@ -5430,7 +5619,8 @@
     ],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "saint-martin"
   },
   {
     "name": "Saint Pierre and Miquelon",
@@ -5455,7 +5645,8 @@
     "borders": [],
     "timezones": [
       "UTC-03:00"
-    ]
+    ],
+    "slug": "saint-pierre-and-miquelon"
   },
   {
     "name": "Saint Vincent and the Grenadines",
@@ -5480,7 +5671,8 @@
     "borders": [],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "saint-vincent-and-the-grenadines"
   },
   {
     "name": "Samoa",
@@ -5505,7 +5697,8 @@
     "borders": [],
     "timezones": [
       "UTC+13:00"
-    ]
+    ],
+    "slug": "samoa"
   },
   {
     "name": "San Marino",
@@ -5532,7 +5725,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "san-marino"
   },
   {
     "name": "São Tomé and Príncipe",
@@ -5557,7 +5751,8 @@
     "borders": [],
     "timezones": [
       "UTC"
-    ]
+    ],
+    "slug": "s-o-tom-and-pr-ncipe"
   },
   {
     "name": "Saudi Arabia",
@@ -5590,7 +5785,8 @@
     ],
     "timezones": [
       "UTC+03:00"
-    ]
+    ],
+    "slug": "saudi-arabia"
   },
   {
     "name": "Senegal",
@@ -5621,7 +5817,8 @@
     ],
     "timezones": [
       "UTC"
-    ]
+    ],
+    "slug": "senegal"
   },
   {
     "name": "Serbia",
@@ -5655,7 +5852,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "serbia"
   },
   {
     "name": "Seychelles",
@@ -5680,7 +5878,8 @@
     "borders": [],
     "timezones": [
       "UTC+04:00"
-    ]
+    ],
+    "slug": "seychelles"
   },
   {
     "name": "Sierra Leone",
@@ -5708,7 +5907,8 @@
     ],
     "timezones": [
       "UTC"
-    ]
+    ],
+    "slug": "sierra-leone"
   },
   {
     "name": "Singapore",
@@ -5733,7 +5933,8 @@
     "borders": [],
     "timezones": [
       "UTC+08:00"
-    ]
+    ],
+    "slug": "singapore"
   },
   {
     "name": "Sint Maarten",
@@ -5760,7 +5961,8 @@
     ],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "sint-maarten"
   },
   {
     "name": "Slovakia",
@@ -5791,7 +5993,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "slovakia"
   },
   {
     "name": "Slovenia",
@@ -5821,7 +6024,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "slovenia"
   },
   {
     "name": "Solomon Islands",
@@ -5846,7 +6050,8 @@
     "borders": [],
     "timezones": [
       "UTC+11:00"
-    ]
+    ],
+    "slug": "solomon-islands"
   },
   {
     "name": "Somalia",
@@ -5875,7 +6080,8 @@
     ],
     "timezones": [
       "UTC+03:00"
-    ]
+    ],
+    "slug": "somalia"
   },
   {
     "name": "South Africa",
@@ -5907,7 +6113,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "south-africa"
   },
   {
     "name": "South Georgia",
@@ -5932,7 +6139,8 @@
     "borders": [],
     "timezones": [
       "UTC-02:00"
-    ]
+    ],
+    "slug": "south-georgia"
   },
   {
     "name": "South Korea",
@@ -5959,7 +6167,8 @@
     ],
     "timezones": [
       "UTC+09:00"
-    ]
+    ],
+    "slug": "south-korea"
   },
   {
     "name": "South Sudan",
@@ -5991,7 +6200,8 @@
     ],
     "timezones": [
       "UTC+03:00"
-    ]
+    ],
+    "slug": "south-sudan"
   },
   {
     "name": "Spain",
@@ -6023,7 +6233,8 @@
     "timezones": [
       "UTC",
       "UTC+01:00"
-    ]
+    ],
+    "slug": "spain"
   },
   {
     "name": "Sri Lanka",
@@ -6048,7 +6259,8 @@
     "borders": [],
     "timezones": [
       "UTC+05:30"
-    ]
+    ],
+    "slug": "sri-lanka"
   },
   {
     "name": "Sudan",
@@ -6081,7 +6293,8 @@
     ],
     "timezones": [
       "UTC+03:00"
-    ]
+    ],
+    "slug": "sudan"
   },
   {
     "name": "Suriname",
@@ -6110,7 +6323,8 @@
     ],
     "timezones": [
       "UTC-03:00"
-    ]
+    ],
+    "slug": "suriname"
   },
   {
     "name": "Svalbard and Jan Mayen",
@@ -6135,7 +6349,8 @@
     "borders": [],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "svalbard-and-jan-mayen"
   },
   {
     "name": "Sweden",
@@ -6163,7 +6378,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "sweden"
   },
   {
     "name": "Switzerland",
@@ -6194,7 +6410,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "switzerland"
   },
   {
     "name": "Syria",
@@ -6225,7 +6442,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "syria"
   },
   {
     "name": "Taiwan",
@@ -6250,7 +6468,8 @@
     "borders": [],
     "timezones": [
       "UTC+08:00"
-    ]
+    ],
+    "slug": "taiwan"
   },
   {
     "name": "Tajikistan",
@@ -6280,7 +6499,8 @@
     ],
     "timezones": [
       "UTC+05:00"
-    ]
+    ],
+    "slug": "tajikistan"
   },
   {
     "name": "Tanzania",
@@ -6314,7 +6534,8 @@
     ],
     "timezones": [
       "UTC+03:00"
-    ]
+    ],
+    "slug": "tanzania"
   },
   {
     "name": "Thailand",
@@ -6344,7 +6565,8 @@
     ],
     "timezones": [
       "UTC+07:00"
-    ]
+    ],
+    "slug": "thailand"
   },
   {
     "name": "Timor-Leste",
@@ -6371,7 +6593,8 @@
     ],
     "timezones": [
       "UTC+09:00"
-    ]
+    ],
+    "slug": "timor-leste"
   },
   {
     "name": "Togo",
@@ -6400,7 +6623,8 @@
     ],
     "timezones": [
       "UTC"
-    ]
+    ],
+    "slug": "togo"
   },
   {
     "name": "Tokelau",
@@ -6425,7 +6649,8 @@
     "borders": [],
     "timezones": [
       "UTC+13:00"
-    ]
+    ],
+    "slug": "tokelau"
   },
   {
     "name": "Tonga",
@@ -6450,7 +6675,8 @@
     "borders": [],
     "timezones": [
       "UTC+13:00"
-    ]
+    ],
+    "slug": "tonga"
   },
   {
     "name": "Trinidad and Tobago",
@@ -6475,7 +6701,8 @@
     "borders": [],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "trinidad-and-tobago"
   },
   {
     "name": "Tunisia",
@@ -6503,7 +6730,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "tunisia"
   },
   {
     "name": "Turkey",
@@ -6537,7 +6765,8 @@
     ],
     "timezones": [
       "UTC+03:00"
-    ]
+    ],
+    "slug": "turkey"
   },
   {
     "name": "Turkmenistan",
@@ -6567,7 +6796,8 @@
     ],
     "timezones": [
       "UTC+05:00"
-    ]
+    ],
+    "slug": "turkmenistan"
   },
   {
     "name": "Turks and Caicos Islands",
@@ -6592,7 +6822,8 @@
     "borders": [],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "turks-and-caicos-islands"
   },
   {
     "name": "Tuvalu",
@@ -6617,7 +6848,8 @@
     "borders": [],
     "timezones": [
       "UTC+12:00"
-    ]
+    ],
+    "slug": "tuvalu"
   },
   {
     "name": "Uganda",
@@ -6648,7 +6880,8 @@
     ],
     "timezones": [
       "UTC+03:00"
-    ]
+    ],
+    "slug": "uganda"
   },
   {
     "name": "Ukraine",
@@ -6681,7 +6914,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "ukraine"
   },
   {
     "name": "United Arab Emirates",
@@ -6709,7 +6943,8 @@
     ],
     "timezones": [
       "UTC+04:00"
-    ]
+    ],
+    "slug": "united-arab-emirates"
   },
   {
     "name": "United Kingdom",
@@ -6744,7 +6979,8 @@
       "UTC+01:00",
       "UTC+02:00",
       "UTC+06:00"
-    ]
+    ],
+    "slug": "united-kingdom"
   },
   {
     "name": "United States",
@@ -6782,7 +7018,8 @@
       "UTC-04:00",
       "UTC+10:00",
       "UTC+12:00"
-    ]
+    ],
+    "slug": "united-states"
   },
   {
     "name": "United States Minor Outlying Islands",
@@ -6809,7 +7046,8 @@
       "UTC-11:00",
       "UTC-10:00",
       "UTC+12:00"
-    ]
+    ],
+    "slug": "united-states-minor-outlying-islands"
   },
   {
     "name": "United States Virgin Islands",
@@ -6834,7 +7072,8 @@
     "borders": [],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "united-states-virgin-islands"
   },
   {
     "name": "Uruguay",
@@ -6862,7 +7101,8 @@
     ],
     "timezones": [
       "UTC-03:00"
-    ]
+    ],
+    "slug": "uruguay"
   },
   {
     "name": "Uzbekistan",
@@ -6893,7 +7133,8 @@
     ],
     "timezones": [
       "UTC+05:00"
-    ]
+    ],
+    "slug": "uzbekistan"
   },
   {
     "name": "Vanuatu",
@@ -6918,7 +7159,8 @@
     "borders": [],
     "timezones": [
       "UTC+11:00"
-    ]
+    ],
+    "slug": "vanuatu"
   },
   {
     "name": "Vatican City",
@@ -6945,7 +7187,8 @@
     ],
     "timezones": [
       "UTC+01:00"
-    ]
+    ],
+    "slug": "vatican-city"
   },
   {
     "name": "Venezuela",
@@ -6974,7 +7217,8 @@
     ],
     "timezones": [
       "UTC-04:00"
-    ]
+    ],
+    "slug": "venezuela"
   },
   {
     "name": "Vietnam",
@@ -7003,7 +7247,8 @@
     ],
     "timezones": [
       "UTC+07:00"
-    ]
+    ],
+    "slug": "vietnam"
   },
   {
     "name": "Wallis and Futuna",
@@ -7028,7 +7273,8 @@
     "borders": [],
     "timezones": [
       "UTC+12:00"
-    ]
+    ],
+    "slug": "wallis-and-futuna"
   },
   {
     "name": "Western Sahara",
@@ -7057,7 +7303,8 @@
     ],
     "timezones": [
       "UTC+00:00"
-    ]
+    ],
+    "slug": "western-sahara"
   },
   {
     "name": "Yemen",
@@ -7085,7 +7332,8 @@
     ],
     "timezones": [
       "UTC+03:00"
-    ]
+    ],
+    "slug": "yemen"
   },
   {
     "name": "Zambia",
@@ -7119,7 +7367,8 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "zambia"
   },
   {
     "name": "Zimbabwe",
@@ -7149,6 +7398,7 @@
     ],
     "timezones": [
       "UTC+02:00"
-    ]
+    ],
+    "slug": "zimbabwe"
   }
 ]

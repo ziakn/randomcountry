@@ -1,6 +1,8 @@
-import { getAllCountries } from "@/utils/getRandomCountry";
 import BreadcrumbBar from "@/components/BreadcrumbBar";
 import Link from "next/link";
+import countriesData from "@/data/countries.json";
+
+const allCountries = countriesData;
 
 export const metadata = {
   title: "Continents - Explore Countries by Continent",
@@ -25,7 +27,7 @@ const CONTINENTS = [
 ];
 
 export default async function ContinentsPage() {
-  const allCountries = getAllCountries();
+  const countries = allCountries;
 
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

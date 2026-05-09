@@ -1,7 +1,9 @@
-import { getAllCountries } from "@/utils/getRandomCountry";
 import CountryCard from "@/components/CountryCard";
 import BreadcrumbBar from "@/components/BreadcrumbBar";
 import Link from "next/link";
+import countriesData from "@/data/countries.json";
+
+const allCountries = countriesData;
 
 type Props = {
   params: Promise<{ type: string }>;
@@ -9,7 +11,7 @@ type Props = {
 
 export default async function RankingTypePage({ params }: Props) {
   const { type } = await params;
-  const allCountries = getAllCountries();
+  const allData = allCountries;
 
   const rankingConfig: Record<string, { title: string; description: string; getValue: (c: any) => number; format: (v: number) => string }> = {
     "largest-countries": {

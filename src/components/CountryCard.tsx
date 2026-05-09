@@ -1,18 +1,19 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
-import { Heart, HeartFilled, Share2, Copy, Check, Flag, MapPin, Users, Coins, Languages, Phone, Clock, Info } from "lucide-react";
+import { Heart, Share2, Copy, Check, Flag, MapPin, Users, Coins, Languages, Phone, Clock, Info } from "lucide-react";
 
 type Country = {
   name: string;
-  officialName: string;
+  officialName?: string;
   capital: string;
   population: string;
   region: string;
   code: string;
   currency: string;
   language: string;
-  coordinates: [number, number];
+  coordinates: number[];
   timezones: string[];
   flagUrl: string;
   area: number;
@@ -151,7 +152,7 @@ export default function CountryCard({
                 isFavorited ? 'bg-red-500 text-white' : 'bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600'
               }`}
             >
-              {isFavorited ? <HeartFilled className="w-5 h-5" /> : <Heart className="w-5 h-5" />}
+              {isFavorited ? <Heart className="w-5 h-5 fill-red-500 stroke-red-500" /> : <Heart className="w-5 h-5" />}
               <span className="sr-only">Favorite</span>
             </button>
           )}
@@ -170,5 +171,3 @@ function StatItem({ icon, label, value }: { icon: React.ReactNode; label: string
     </div>
   );
 }
-
-import Link from "next/link";

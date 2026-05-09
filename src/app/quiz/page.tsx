@@ -1,9 +1,21 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { Flag, CircleDot, Trophy, Timer, RotateCcw, Brain, Layers } from "lucide-react";
+import { Flag, CircleDot, Trophy, Timer, RotateCcw, Brain, Layers, ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { getAllCountries } from "../utils/getRandomCountry";
+import countriesData from "@/data/countries.json";
+
+const getAllCountries = () => countriesData;
+const getRandomCountry = (excludeCode?: string) => {
+  const all = countriesData;
+  let idx = Math.floor(Math.random() * all.length);
+  let c = all[idx];
+  while (excludeCode && c.code === excludeCode.toLowerCase()) {
+    idx = Math.floor(Math.random() * all.length);
+    c = all[idx];
+  }
+  return c;
+};
 
 type QuizMode = "flags" | "capitals" | "population" | "region";
 
@@ -301,5 +313,3 @@ export default function QuizPage() {
     </main>
   );
 }
-
-import { ArrowRight } from "lucide-react";

@@ -1,15 +1,17 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { Globe2, Target } from "lucide-react";
 import GlobeMap from "@/components/GlobeMap";
-import { getAllCountries } from "@/utils/getRandomCountry";
 import BreadcrumbBar from "@/components/BreadcrumbBar";
 import dynamic from "next/dynamic";
+import countriesData from "@/data/countries.json";
+
+const allCountries = countriesData;
 
 const CountryCard = dynamic(() => import("@/components/CountryCard"), { ssr: false });
 
 export default function ComparePage() {
-  const allCountries = getAllCountries();
   const [country1, setCountry1] = useState<string>("");
   const [country2, setCountry2] = useState<string>("");
   const [result1, setResult1] = useState<any>(null);
@@ -262,5 +264,3 @@ export default function ComparePage() {
     </main>
   );
 }
-
-import { Globe2 } from "lucide-react";

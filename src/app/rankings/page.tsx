@@ -1,7 +1,10 @@
-import { getAllCountries } from "@/utils/getRandomCountry";
 import CountryCard from "@/components/CountryCard";
 import BreadcrumbBar from "@/components/BreadcrumbBar";
+import Link from "next/link";
 import { ArrowRight, Earth, Users, MapPin, BarChart2, TrendingUp, Award, Clock } from "lucide-react";
+import countriesData from "@/data/countries.json";
+
+const allCountries = countriesData;
 
 export const metadata = {
   title: "Rankings - Top Countries by Various Categories",
@@ -16,7 +19,7 @@ export const metadata = {
 };
 
 export default async function RankingsPage() {
-  const allCountries = getAllCountries();
+  const countries = allCountries;
 
   // Sort countries for various rankings
   const byPopulation = [...allCountries].sort((a, b) => (b.populationRaw || 0) - (a.populationRaw || 0));

@@ -2,12 +2,26 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { Sparkles, ArrowRight, TrendingUp, Globe2, Compass, Layers, Brain, BookOpen, BarChart2, Eye, ThumbsUp } from "lucide-react";
-import CountryCard from "../components/CountryCard";
-import GenerateButton from "../components/GenerateButton";
-import { getRandomCountry, getAllCountries } from "../utils/getRandomCountry";
+import Link from "next/link";
+import CountryCard from "@/components/CountryCard";
+import GenerateButton from "@/components/GenerateButton";
 import dynamic from "next/dynamic";
 
-const GlobeMap = dynamic(() => import("../components/GlobeMap"), { ssr: false, loading: () => <div className="w-full h-[400px] bg-gray-100 dark:bg-gray-700 rounded-2xl animate-pulse" /> });
+const GlobeMap = dynamic(() => import("@/components/GlobeMap"), { ssr: false, loading: () => <div className="w-full h-[400px] bg-gray-100 dark:bg-gray-700 rounded-2xl animate-pulse" /> });
+
+import countriesData from "@/data/countries.json";
+
+const getAllCountries = () => countriesData;
+const getRandomCountry = (excludeCode?: string) => {
+  const all = countriesData;
+  let idx = Math.floor(Math.random() * all.length);
+  let c = all[idx];
+  while (excludeCode && c.code === excludeCode.toLowerCase()) {
+    idx = Math.floor(Math.random() * all.length);
+    c = all[idx];
+  }
+  return c;
+};
 
 const POPULAR_COUNTRIES = [
   { code: "jp", name: "Japan" },

@@ -1,20 +1,21 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Globe2, Loader2, RotateCcw } from "lucide-react";
+import { Globe2, Loader2, RotateCcw, X } from "lucide-react";
 
 type CompareItem = {
   name: string;
   code: string;
   flagUrl: string;
   population: string;
+  populationRaw: number;
   area: number;
   currency: string;
   language: string;
   region: string;
+  subregion: string;
   capital: string;
   timezones: string[];
-  populationRaw: number;
 };
 
 const PRESET_COMPARISONS = [

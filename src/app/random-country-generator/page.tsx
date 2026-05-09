@@ -1,12 +1,29 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Shuffle, History, Clock, Heart, Sparkles, Target } from "lucide-react";
-import { getRandomCountry, getAllCountries } from "../utils/getRandomCountry";
-import GeneratorHistory from "../components/GeneratorHistory";
-import CountryCard from "../components/CountryCard";
-import GenerateButton from "../components/GenerateButton";
+import { Sparkles, History, Clock, Heart, Target } from "lucide-react";
+import dynamic from "next/dynamic";
 import BreadcrumbBar from "@/components/BreadcrumbBar";
+import "@/utils/getRandomCountry";
+
+const GeneratorHistory = dynamic(() => import("@/components/GeneratorHistory"), { ssr: false });
+const CountryCard = dynamic(() => import("@/components/CountryCard"));
+const GenerateButton = dynamic(() => import("@/components/GenerateButton"));
+
+// Fetch country data
+import countriesData from "@/data/countries.json";
+
+const getAllCountries = () => countriesData;
+const getRandomCountry = (excludeCode?: string) => {
+  const all = countriesData;
+  let idx = Math.floor(Math.random() * all.length);
+  let c = all[idx];
+  while (excludeCode && c.code === excludeCode.toLowerCase()) {
+    idx = Math.floor(Math.random() * all.length);
+    c = all[idx];
+  }
+  return c;
+};
 
 const FEATURED_COUNTRIES = [
   { code: "jp", name: "Japan" },

@@ -2,8 +2,19 @@
 
 import { useState, useEffect } from "react";
 import { Shuffle, Clock, X, Heart, Trash2 } from "lucide-react";
-import { getAllCountries, getRandomCountry } from "../utils/getRandomCountry";
 import Link from "next/link";
+import countriesData from "@/data/countries.json";
+
+const getAllCountries = () => countriesData;
+const getRandomCountry = (excludeCode?: string) => {
+  let idx = Math.floor(Math.random() * countriesData.length);
+  let c = countriesData[idx];
+  while (excludeCode && c.code === excludeCode.toLowerCase()) {
+    idx = Math.floor(Math.random() * countriesData.length);
+    c = countriesData[idx];
+  }
+  return c;
+};
 
 type HistoryEntry = {
   code: string;
