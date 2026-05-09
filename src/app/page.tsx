@@ -10,7 +10,7 @@ import dynamic from "next/dynamic";
 
 const GlobeMap = dynamic(() => import("@/components/GlobeMap"), { ssr: false, loading: () => <div className="w-full h-[400px] bg-gray-100 dark:bg-gray-700 rounded-2xl animate-pulse" /> });
 
-import countriesData from "@/data/countries.json";
+import countriesData from "@/data/countries";
 
 const getAllCountries = () => countriesData;
 const getRandomCountry = (excludeCode?: string) => {

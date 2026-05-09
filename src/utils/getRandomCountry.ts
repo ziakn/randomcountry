@@ -1,4 +1,4 @@
-import countries from "../data/countries.json";
+import countries from "../data/countries";
 
 export type Country = {
   id: string;

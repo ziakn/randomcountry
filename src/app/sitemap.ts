@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-import countriesData from "@/data/countries.json";
+import countriesData from "@/data/countries";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://randomcountry.ziamuhammad.com";

@@ -2,7 +2,7 @@ import CountryCard from "@/components/CountryCard";
 import BreadcrumbBar from "@/components/BreadcrumbBar";
 import Link from "next/link";
 import { Globe2, MapPin, Users, Coins, Flag } from "lucide-react";
-import countriesData from "@/data/countries.json";
+import countriesData from "@/data/countries";
 
 const allCountriesData = countriesData;
 

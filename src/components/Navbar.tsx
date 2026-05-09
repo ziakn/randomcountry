@@ -11,7 +11,7 @@ export default function Navbar() {
   const [isDark, setIsDark] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
+  const [searchResults, setSearchResults] = useState<any[]>([]);
   const pathname = usePathname();
   const searchRef = useRef(null);
 
@@ -42,7 +42,7 @@ export default function Navbar() {
     setIsDark(!isDark);
   };
 
-  const handleSearch = (e) => {
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     const q = e.target.value;
     setSearchQuery(q);
     if (q.length > 1) {

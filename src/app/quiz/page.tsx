@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Flag, CircleDot, Trophy, Timer, RotateCcw, Brain, Layers, ArrowRight } from "lucide-react";
 import Link from "next/link";
-import countriesData from "@/data/countries.json";
+import countriesData from "@/data/countries";
 
 const getAllCountries = () => countriesData;
 const getRandomCountry = (excludeCode?: string) => {

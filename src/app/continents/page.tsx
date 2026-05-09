@@ -1,6 +1,6 @@
 import BreadcrumbBar from "@/components/BreadcrumbBar";
 import Link from "next/link";
-import countriesData from "@/data/countries.json";
+import countriesData from "@/data/countries";
 
 const allCountries = countriesData;
 

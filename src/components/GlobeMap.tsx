@@ -15,6 +15,7 @@ export default function GlobeMap({ coordinates, size = 400, interactive = true }
   const [isReady, setIsReady] = useState(false);
   const phiRef = useRef(0);
   const thetaRef = useRef(0);
+  const autoRotateRef = useRef(false);
 
   useEffect(() => {
     if (!canvasRef.current) return;
@@ -37,34 +38,27 @@ export default function GlobeMap({ coordinates, size = 400, interactive = true }
       markers: coordinates ? [{ location: coordinates, size: 0.08 }] : [],
       // @ts-ignore
       onRender: (state: { phi: number; theta: number }) => {
-        phiRef.current = state.phi;
-        thetaRef.current = state.theta;
+        if (autoRotateRef.current) {
+          phiRef.current += 0.003;
+        }
+        state.phi = phiRef.current;
+        state.theta = thetaRef.current;
       },
     });
 
     setIsReady(true);
 
     if (interactive && !coordinates) {
-      let autoRotate = true;
-      const autoRotateSpeed = 0.003;
-
-      const animate = () => {
-        if (autoRotate) {
-          globe.setPhi(globe.phi + autoRotateSpeed);
-        }
-        animationFrameId = requestAnimationFrame(animate);
-      };
-      animate();
+      autoRotateRef.current = true;
 
       // Pause on hover
       const canvas = canvasRef.current;
-      const handleMouseEnter = () => { autoRotate = false; };
-      const handleMouseLeave = () => { autoRotate = true; };
+      const handleMouseEnter = () => { autoRotateRef.current = false; };
+      const handleMouseLeave = () => { autoRotateRef.current = true; };
       canvas.addEventListener("mouseenter", handleMouseEnter);
       canvas.addEventListener("mouseleave", handleMouseLeave);
 
       return () => {
-        cancelAnimationFrame(animationFrameId);
         canvas.removeEventListener("mouseenter", handleMouseEnter);
         canvas.removeEventListener("mouseleave", handleMouseLeave);
         globe.destroy();

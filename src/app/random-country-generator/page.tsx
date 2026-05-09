@@ -11,7 +11,7 @@ const CountryCard = dynamic(() => import("@/components/CountryCard"));
 const GenerateButton = dynamic(() => import("@/components/GenerateButton"));
 
 // Fetch country data
-import countriesData from "@/data/countries.json";
+import countriesData from "@/data/countries";
 
 const getAllCountries = () => countriesData;
 const getRandomCountry = (excludeCode?: string) => {

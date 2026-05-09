@@ -1,8 +1,8 @@
 "use client";
-
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import { ThumbsUp, Heart, Share2, RefreshCw, ArrowUp, Loader2, X } from "lucide-react";
-import countriesData from "@/data/countries.json";
+import countriesData from "@/data/countries";
 
 const getAllCountries = () => countriesData;
 const getCountryByCode = (code: string) => countriesData.find((c) => c.code === code.toLowerCase());
@@ -108,7 +108,7 @@ export default function Sidebar() {
           <span>🔥</span> Trending Countries
         </h3>
         <div className="grid grid-cols-3 gap-2">
-          {trending.slice(0, 9).map((country) => (
+          {trending.slice(0, 9).map((country) => country && (
             <Link
               key={country.code}
               href={`/country/${country.code}`}

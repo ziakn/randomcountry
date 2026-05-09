@@ -1,3 +1,4 @@
+const countriesData =
 [
   {
     "name": "Afghanistan",
@@ -7401,4 +7402,5 @@
     ],
     "slug": "zimbabwe"
   }
-]
+];
+export default countriesData;

@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { Shuffle, Clock, X, Heart, Trash2 } from "lucide-react";
 import Link from "next/link";
-import countriesData from "@/data/countries.json";
+import countriesData from "@/data/countries";
 
 const getAllCountries = () => countriesData;
 const getRandomCountry = (excludeCode?: string) => {

@@ -1,14 +1,14 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { RotateCcw, Flag, Trophy, Timer, Brain } from "lucide-react";
+import { RotateCcw, Flag, Trophy, Timer, Brain, X } from "lucide-react";
 
 type Country = {
   name: string;
   code: string;
   flagUrl: string;
   capital: string;
-  population: string;
+  population: number;
   region: string;
 };
 

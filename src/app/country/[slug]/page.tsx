@@ -3,7 +3,7 @@ import { Globe2, Share2, ArrowRight, Flag, MapPin, Users, Coins, Languages, Info
 import Link from "next/link";
 import BreadcrumbBar from "@/components/BreadcrumbBar";
 import CountryMapWrapper from "@/components/CountryMapWrapper";
-import countriesData from "@/data/countries.json";
+import countriesData from "@/data/countries";
 
 const allCountries = countriesData;
 

@@ -5,7 +5,7 @@ import { Globe2, Target } from "lucide-react";
 import GlobeMap from "@/components/GlobeMap";
 import BreadcrumbBar from "@/components/BreadcrumbBar";
 import dynamic from "next/dynamic";
-import countriesData from "@/data/countries.json";
+import countriesData from "@/data/countries";
 
 const allCountries = countriesData;
 
