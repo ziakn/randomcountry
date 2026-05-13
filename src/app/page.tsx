@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import CountryTable from "@/components/CountryTable";
 import JsonLd from "@/components/JsonLd";
 import RandomCountryTool from "@/components/RandomCountryTool";
 import { getCountries } from "@/lib/countries";
+
+export const metadata: Metadata = {
+  title: "Random Country Generator",
+  description: "Generate a random country instantly and learn its flag, capital, continent, population, area, currency, language, map, and facts.",
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
   const countries = getCountries();
@@ -10,13 +17,45 @@ export default function Home() {
   return (
     <main className="page-shell">
       <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "WebApplication",
-          name: "Random Country Generator",
-          applicationCategory: "EducationalApplication",
-          description: "Generate a random country and learn facts about flags, capitals, continents, population, area, currency, language, and maps.",
-        }}
+        data={[
+          {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            name: "Random Country Generator",
+            applicationCategory: "EducationalApplication",
+            description: "Generate a random country and learn facts about flags, capitals, continents, population, area, currency, language, and maps.",
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Is this random country picker accurate?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The tool uses country records imported into SQLite from REST Countries and normalized for this website.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Can I use it for school?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes. The result card and country pages are designed for school projects, quizzes, and geography practice.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Does the site include country pages?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes. Each country in the database has a profile page with flag, map, facts, geography, culture, travel notes, and FAQs.",
+                },
+              },
+            ],
+          },
+        ]}
       />
       <RandomCountryTool countries={countries} title="Random Country Generator" headingLevel="h1" />
 
@@ -63,9 +102,11 @@ export default function Home() {
       <section className="panel">
         <h2>Quick navigation</h2>
         <div className="actions">
+          <Link className="button secondary" href="/tools">All tools</Link>
           <Link className="button secondary" href="/countries">Browse countries</Link>
           <Link className="button secondary" href="/quizzes">Try quizzes</Link>
           <Link className="button secondary" href="/learn">Learn geography</Link>
+          <Link className="button secondary" href="/blog">Read guides</Link>
         </div>
       </section>
 

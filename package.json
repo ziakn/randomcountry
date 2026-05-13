@@ -6,6 +6,7 @@
     "dev": "next dev --webpack",
     "build": "next build",
     "db:import": "node scripts/import-countries.mjs",
+    "db:refresh-copy": "node scripts/refresh-country-copy.mjs",
     "start": "next start",
     "lint": "eslint"
   },

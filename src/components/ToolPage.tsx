@@ -3,19 +3,50 @@ import CountryTable from "@/components/CountryTable";
 import JsonLd from "@/components/JsonLd";
 import RandomCountryTool from "@/components/RandomCountryTool";
 import { Country } from "@/lib/countries";
+import { absoluteUrl } from "@/lib/seo";
 import type { RootPage } from "@/lib/site";
 
 export default function ToolPage({ page, countries }: { page: RootPage; countries: Country[] }) {
+  const faqSchema = page.faq
+    ? [
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: page.faq.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: item.answer,
+            },
+          })),
+        },
+      ]
+    : [];
+
   return (
     <main className="page-shell">
       <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "WebApplication",
-          name: page.title,
-          description: page.description,
-          applicationCategory: "EducationalApplication",
-        }}
+        data={[
+          {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            name: page.title,
+            description: page.description,
+            url: absoluteUrl(`/${page.slug}`),
+            applicationCategory: "EducationalApplication",
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: page.title,
+            description: page.description,
+            url: absoluteUrl(`/${page.slug}`),
+            applicationCategory: "EducationalApplication",
+            operatingSystem: "Web",
+          },
+          ...faqSchema,
+        ]}
       />
       <Breadcrumbs items={[{ label: page.title }]} />
       <section className="hero compact">

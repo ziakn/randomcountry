@@ -2,11 +2,11 @@ import Link from "next/link";
 
 const nav = [
   ["/random-country-generator", "Random Country"],
+  ["/tools", "Tools"],
   ["/countries", "Countries"],
-  ["/maps", "Maps"],
   ["/quizzes", "Quizzes"],
-  ["/lists", "Lists"],
   ["/learn", "Learn"],
+  ["/blog", "Blog"],
 ];
 
 export default function Header() {

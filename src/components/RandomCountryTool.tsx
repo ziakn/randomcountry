@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import type { Country } from "@/lib/countries";
 
@@ -57,7 +58,14 @@ export default function RandomCountryTool({ countries, title = "Generate Random 
 
       <article className="generator-spotlight">
         <div className="generator-flag">
-          <img src={`https://flagcdn.com/w640/${country.flagCode}.png`} alt={`Flag of ${country.name}`} />
+          <Image
+            src={`https://flagcdn.com/w640/${country.flagCode}.png`}
+            alt={`Flag of ${country.name}`}
+            width={640}
+            height={427}
+            sizes="(max-width: 880px) 100vw, 420px"
+            priority={headingLevel === "h1"}
+          />
           <span>{country.continent}</span>
         </div>
         <div className="generator-country">

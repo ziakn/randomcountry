@@ -35,14 +35,14 @@ export default async function TravelPage({ params }: Props) {
     <main className="page-shell">
       <Breadcrumbs items={[{ href: "/travel", label: "Travel" }, { label: title }]} />
       <section className="hero compact">
-        <p className="eyebrow">Review before publishing</p>
+        <p className="eyebrow">Travel inspiration</p>
         <h1>{title}</h1>
         <p>{description}</p>
       </section>
       <RandomCountryTool countries={countries} title={title} />
       <section className="panel">
         <h2>Important travel note</h2>
-        <p>Travel conditions, entry rules, prices, and safety information can change quickly. Add official sources and update dates before treating travel content as advice.</p>
+        <p>Travel conditions, entry rules, prices, and safety information can change quickly. Use these pages for inspiration and check official sources before making travel decisions.</p>
       </section>
     </main>
   );

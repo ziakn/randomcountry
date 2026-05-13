@@ -3,9 +3,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CountryTable from "@/components/CountryTable";
+import JsonLd from "@/components/JsonLd";
 import ToolPage from "@/components/ToolPage";
 import { getCountries } from "@/lib/countries";
-import { listPages, mapPages, quizPages, rootPages, toolPages, travelPages } from "@/lib/site";
+import { absoluteUrl } from "@/lib/seo";
+import { blogPages, learnPages, legalPages, listPages, mapPages, quizPages, rootPages, toolPages, travelPages } from "@/lib/site";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -39,16 +41,28 @@ export default async function RootContentPage({ params }: Props) {
   }
 
   const sitemapGroups = [
-    ["Tools", toolPages.map((item) => ["/" + item.slug, item.title])],
+    ["Tools", [["/tools", "All Tools"], ...toolPages.map((item) => ["/" + item.slug, item.title])]],
     ["Countries", [["/countries", "All Countries"], ...countries.map((country) => [`/country/${country.slug}`, country.name])]],
     ["Lists", [["/lists", "Lists Hub"], ...listPages.map(([itemSlug, title]) => [`/lists/${itemSlug}`, title])]],
     ["Quizzes", [["/quizzes", "Quiz Hub"], ...quizPages.map(([itemSlug, title]) => [`/quiz/${itemSlug}`, title])]],
     ["Maps", [["/maps", "Map Hub"], ...mapPages.map(([itemSlug, title]) => [`/maps/${itemSlug}`, title])]],
+    ["Learn", [["/learn", "Learn Hub"], ...learnPages.map(([itemSlug, title]) => [`/learn/${itemSlug}`, title])]],
+    ["Blog", [["/blog", "Blog Hub"], ...blogPages.map((item) => [`/blog/${item.slug}`, item.title])]],
     ["Travel", [["/travel", "Travel Hub"], ...travelPages.map(([itemSlug, title]) => [`/travel/${itemSlug}`, title])]],
+    ["Trust", legalPages.map((item) => ["/" + item.slug, item.title])],
   ] as const;
 
   return (
     <main className="page-shell">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          name: page.title,
+          description: page.description,
+          url: absoluteUrl(`/${page.slug}`),
+        }}
+      />
       <Breadcrumbs items={[{ label: page.title }]} />
       <section className="hero compact">
         <p className="eyebrow">{page.kind}</p>

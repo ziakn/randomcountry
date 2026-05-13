@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Country, formatArea, getFlagUrl } from "@/lib/countries";
 
@@ -20,7 +21,7 @@ export default function CountryTable({ countries }: { countries: Country[] }) {
             <tr key={country.slug}>
               <td>
                 <Link className="country-link" href={`/country/${country.slug}`}>
-                  <img src={getFlagUrl(country)} alt={`Flag of ${country.name}`} />
+                  <Image src={getFlagUrl(country)} alt={`Flag of ${country.name}`} width={34} height={23} sizes="34px" />
                   {country.name}
                 </Link>
               </td>

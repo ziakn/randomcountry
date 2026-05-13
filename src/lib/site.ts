@@ -9,6 +9,14 @@ export type RootPage = {
   faq?: { question: string; answer: string }[];
 };
 
+export type BlogPage = {
+  slug: string;
+  title: string;
+  description: string;
+  sections: { heading: string; body: string }[];
+  faq?: { question: string; answer: string }[];
+};
+
 export const toolPages: RootPage[] = [
   {
     slug: "random-country-generator",
@@ -173,8 +181,9 @@ export const legalPages: RootPage[] = [
     description: "Contact the Random Country Generator team with questions, corrections, or feedback.",
     kind: "legal",
     sections: [
-      { heading: "Contact method", body: "For now, use email@example.com as a placeholder contact address. Replace it with your real inbox before launch." },
-      { heading: "Corrections", body: "If you spot outdated country data, include the country name, the field that needs correction, and a reliable source." },
+      { heading: "Contact method", body: "Use contact@example.com as the launch placeholder and replace it with a real monitored inbox before the site goes public." },
+      { heading: "Response expectation", body: "Messages about corrections, accessibility issues, data problems, and partnership requests should be reviewed within a reasonable business timeframe after launch." },
+      { heading: "Corrections", body: "If you spot outdated country data, include the country name, the field that needs correction, the date you checked it, and a reliable source." },
     ],
   },
   {
@@ -184,8 +193,9 @@ export const legalPages: RootPage[] = [
     kind: "legal",
     sections: [
       { heading: "Information we collect", body: "This site does not require user accounts. If analytics, ads, or contact forms are added, they may process standard technical data such as pages visited and browser information." },
-      { heading: "Advertising and cookies", body: "If Google AdSense or another ad provider is enabled, third-party vendors may use cookies to serve ads based on visits to this and other websites." },
-      { heading: "Your choices", body: "Users can control cookies through browser settings and any consent tools added before launch." },
+      { heading: "Google advertising cookies", body: "If Google AdSense is enabled, third-party vendors, including Google, may use cookies to serve ads based on a user's prior visits to this website or other websites." },
+      { heading: "Personalized ads and opt out", body: "Google's use of advertising cookies enables Google and its partners to serve personalized ads. Users can opt out of personalized advertising through Google Ads Settings, industry opt-out tools, browser settings, and any consent controls added before launch." },
+      { heading: "Analytics and consent", body: "If analytics, advertising, or consent tools are added, this policy should be updated with provider names, data purposes, retention notes, and regional consent requirements." },
     ],
   },
   {
@@ -225,8 +235,9 @@ export const legalPages: RootPage[] = [
     description: "How the site collects, reviews, updates, and corrects country information.",
     kind: "legal",
     sections: [
-      { heading: "Data review", body: "Country facts should be checked against reliable sources before publication and reviewed regularly." },
-      { heading: "Corrections", body: "Corrections should be logged with the date, field changed, and source used." },
+      { heading: "Data review", body: "Country facts should be checked against reliable sources before publication and reviewed regularly, especially population, names, currencies, travel notes, and political status wording." },
+      { heading: "Original content", body: "Country and learning pages should explain facts in original language, avoid copied descriptions, and add practical value through examples, tables, FAQs, and internal links." },
+      { heading: "Corrections", body: "Corrections should be logged with the date, field changed, source used, and a short note explaining why the update was made." },
     ],
   },
   {
@@ -237,7 +248,7 @@ export const legalPages: RootPage[] = [
     sections: [
       { heading: "Country data", body: "Country records are imported into SQLite from the REST Countries API and normalized for the generator, directory, country pages, lists, maps, and quizzes." },
       { heading: "Flags", body: "Flag images are loaded from FlagCDN using ISO country codes. Add attribution or replace with your preferred flag source if needed." },
-      { heading: "Update frequency", body: "Population, travel, safety, and cost pages should include review dates and be updated regularly." },
+      { heading: "Update frequency", body: "Population, travel, safety, and cost pages should include visible review dates and be updated regularly before AdSense or public promotion." },
     ],
   },
   {
@@ -300,6 +311,113 @@ export const learnPages = [
   ["countries-and-capitals", "Countries and Capitals", "A guide to capital cities and why some countries have special capital arrangements."],
 ] as const;
 
+export const blogPages: BlogPage[] = [
+  {
+    slug: "how-to-use-a-random-country-generator",
+    title: "How to Use a Random Country Generator",
+    description: "Practical ways to use a random country generator for learning, games, writing prompts, and classroom activities.",
+    sections: [
+      { heading: "Start with the result card", body: "Generate one country, then read the country name, flag, capital, continent, population, area, currency, languages, time zone, and neighboring countries before moving to another result." },
+      { heading: "Turn it into a learning task", body: "Ask learners to find the country on a map, compare its population with another country, name the continent, and write one short paragraph about its geography." },
+      { heading: "Use it for games", body: "For a quick quiz round, hide one fact and ask players to guess it. Flags, capitals, currencies, and continents all work well because they are short and easy to check." },
+    ],
+    faq: [
+      { question: "Is a random country generator useful for students?", answer: "Yes. It gives students a fair country prompt and enough facts to start a geography activity or school report." },
+      { question: "Should I check facts before using them in a report?", answer: "Yes. Important facts such as population and political status should be checked with reliable sources before final submission." },
+    ],
+  },
+  {
+    slug: "how-to-learn-countries-and-capitals",
+    title: "How to Learn Countries and Capitals",
+    description: "A simple study method for learning country and capital pairs without memorizing long lists all at once.",
+    sections: [
+      { heading: "Study by region", body: "Learning capitals by continent is easier than memorizing the entire world list at once. Start with one region, then add another after you can recall most pairs." },
+      { heading: "Use active recall", body: "Look at a country name, cover the capital, guess it, then check the answer. Repeat missed pairs more often than pairs you already know." },
+      { heading: "Mix maps and flags", body: "Capitals become easier to remember when you connect them with a map location, flag, language, and neighboring countries." },
+    ],
+  },
+  {
+    slug: "flag-quiz-study-guide",
+    title: "Flag Quiz Study Guide",
+    description: "How to practice country flags with patterns, colors, regions, and repeated quiz rounds.",
+    sections: [
+      { heading: "Notice common patterns", body: "Many flags use shared visual ideas such as tricolors, crosses, stars, crescents, stripes, and regional color palettes. Spotting patterns helps you remember faster." },
+      { heading: "Practice in small sets", body: "Use ten to fifteen flags per round, then repeat the missed flags. Smaller rounds give better feedback than one huge quiz." },
+      { heading: "Add country facts", body: "Connect each flag with the country name, capital, continent, and language. The extra context makes each flag less isolated." },
+    ],
+  },
+  {
+    slug: "how-to-choose-a-country-for-school-project",
+    title: "How to Choose a Country for a School Project",
+    description: "A student-friendly checklist for choosing a country topic and building a useful geography report.",
+    sections: [
+      { heading: "Pick a country with enough sources", body: "A good project country should have reliable information about geography, population, culture, economy, language, food, landmarks, and current facts." },
+      { heading: "Plan the report sections", body: "Start with quick facts, then add geography, people and culture, famous places, food, history, travel notes, and a short FAQ." },
+      { heading: "Use the generator for fairness", body: "If a class needs assigned topics, a random country picker keeps the selection fair and can introduce students to countries they may not choose on their own." },
+    ],
+  },
+  {
+    slug: "country-facts-to-include-in-a-report",
+    title: "Country Facts to Include in a Report",
+    description: "A useful country report structure covering quick facts, geography, people, culture, food, landmarks, and sources.",
+    sections: [
+      { heading: "Start with quick facts", body: "Include the capital, continent, region, population, area, currency, languages, time zone, calling code, flag, and map location." },
+      { heading: "Explain geography", body: "Write about borders, climate, major landforms, coastlines, rivers, neighboring countries, and important cities." },
+      { heading: "Add culture and daily life", body: "Useful culture notes can include languages, food, holidays, traditions, music, sports, and famous places without relying on stereotypes." },
+    ],
+  },
+  {
+    slug: "continents-vs-regions-explained",
+    title: "Continents vs Regions Explained",
+    description: "Understand the difference between continents, subregions, and political groupings in country data.",
+    sections: [
+      { heading: "Continents are broad groups", body: "A continent is a large geographic grouping, but different school systems and organizations sometimes use slightly different models." },
+      { heading: "Regions are more specific", body: "Regions such as Western Asia, Northern Europe, or the Caribbean help describe location more precisely than continent labels alone." },
+      { heading: "Use neutral wording", body: "Some places have complex political status or disputed labels. Educational pages should explain data categories carefully and avoid overstating claims." },
+    ],
+  },
+  {
+    slug: "how-country-population-and-area-are-measured",
+    title: "How Country Population and Area Are Measured",
+    description: "Why country population and area numbers vary across sources and why update dates matter.",
+    sections: [
+      { heading: "Population changes constantly", body: "Population estimates can differ because sources use different census dates, projection methods, migration assumptions, and update schedules." },
+      { heading: "Area can include different measurements", body: "Some sources report land area only, while others include inland water or total area. Always check the definition before comparing countries." },
+      { heading: "Show update dates", body: "For SEO, trust, and user usefulness, list pages should include a last updated date and avoid presenting changing facts as permanently fixed." },
+    ],
+  },
+  {
+    slug: "random-country-games-for-classrooms",
+    title: "Random Country Games for Classrooms",
+    description: "Classroom game ideas using random countries, flags, capitals, currencies, maps, and comparison prompts.",
+    sections: [
+      { heading: "Five-minute warmups", body: "Generate one country and ask students to name the continent, find it on a map, identify the flag, and guess the capital before revealing the facts." },
+      { heading: "Team comparison rounds", body: "Give two teams different countries and ask them to compare population, area, languages, currency, and neighboring countries." },
+      { heading: "Research relay", body: "Students can generate a country, collect three reliable facts, and present one surprising detail to the class." },
+    ],
+  },
+  {
+    slug: "how-to-compare-two-countries",
+    title: "How to Compare Two Countries",
+    description: "A clear method for comparing countries by population, area, capital, currency, language, region, and map location.",
+    sections: [
+      { heading: "Use the same fields", body: "A fair comparison uses the same fields for both countries: population, area, capital, currency, official languages, region, time zone, flag, and map location." },
+      { heading: "Watch for scale", body: "Population and area can differ by huge amounts, so tables and short explanations are easier to understand than long paragraphs alone." },
+      { heading: "Add context", body: "Numbers are useful, but geography, neighbors, language, and regional history help explain why two countries differ." },
+    ],
+  },
+  {
+    slug: "map-skills-for-learning-countries",
+    title: "Map Skills for Learning Countries",
+    description: "Basic map skills for learning where countries are located and how they relate to regions, borders, and neighbors.",
+    sections: [
+      { heading: "Start with continents", body: "Find the continent first, then narrow down to the region, neighboring countries, coastline, and nearby major cities." },
+      { heading: "Use neighbors as anchors", body: "Remembering border countries gives you mental anchors. A country is easier to place when you know what surrounds it." },
+      { heading: "Combine maps with facts", body: "Map learning works best when combined with flags, capitals, languages, currencies, and short country profiles." },
+    ],
+  },
+];
+
 export const listPages = [
   ["all-countries", "All Countries", "A complete list of countries currently available in this database."],
   ["countries-by-continent", "Countries by Continent", "Countries grouped by continent for faster regional browsing."],
@@ -334,7 +452,7 @@ export const mapPages = [
 export const travelPages = [
   ["random-travel-destination", "Random Travel Destination", "Generate a country for travel inspiration."],
   ["best-countries-to-visit", "Best Countries to Visit", "A maintainable travel inspiration page that should be reviewed regularly."],
-  ["safe-countries-to-visit", "Safe Countries to Visit", "Safety can change quickly; always cite and update this page before publishing recommendations."],
+  ["safe-countries-to-visit", "Safe Countries to Visit", "Safety can change quickly, so this page should stay general and direct readers to official travel advisories."],
   ["cheap-countries-to-visit", "Cheap Countries to Visit", "Cost pages need regular review because prices and exchange rates change."],
   ["countries-with-beaches", "Countries With Beaches", "Country inspiration for coastline and beach interests."],
   ["countries-with-mountains", "Countries With Mountains", "Country inspiration for mountain landscapes."],

@@ -1,10 +1,11 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Country, formatArea, getFlagUrl } from "@/lib/countries";
 
 export default function CountryCard({ country }: { country: Country }) {
   return (
     <article className="country-card">
-      <img src={getFlagUrl(country)} alt={`Flag of ${country.name}`} />
+      <Image src={getFlagUrl(country)} alt={`Flag of ${country.name}`} width={640} height={427} sizes="(max-width: 880px) 100vw, 240px" />
       <div>
         <p className="eyebrow">{country.continent}</p>
         <h2>{country.name}</h2>

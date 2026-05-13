@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import { formatArea, getCountries, getCountry, getFlagUrl } from "@/lib/countries";
+import { absoluteUrl } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -46,17 +48,48 @@ export default async function CountryPage({ params }: Props) {
     ["Internet TLD", country.tld],
     ["Time zone", country.timeZone],
   ];
+  const faqs = [
+    [`What is the capital of ${country.name}?`, `The capital of ${country.name} is ${country.capital}.`],
+    [`What continent is ${country.name} in?`, `${country.name} is in ${country.continent}.`],
+    [`What currency does ${country.name} use?`, `${country.name} uses the ${country.currency}.`],
+    [`What language is spoken in ${country.name}?`, `${country.language} is listed for ${country.name} in this database.`],
+  ];
 
   return (
     <main className="page-shell country-page">
       <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "Country",
-          name: country.name,
-          capital: country.capital,
-          url: `/country/${country.slug}`,
-        }}
+        data={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Country",
+            name: country.name,
+            capital: country.capital,
+            image: getFlagUrl(country),
+            url: absoluteUrl(`/country/${country.slug}`),
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Place",
+            name: country.name,
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: country.latitude,
+              longitude: country.longitude,
+            },
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map(([question, answer]) => ({
+              "@type": "Question",
+              name: question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: answer,
+              },
+            })),
+          },
+        ]}
       />
       <Breadcrumbs items={[{ href: "/countries", label: "Countries" }, { label: country.name }]} />
       <section className="hero compact">
@@ -66,7 +99,7 @@ export default async function CountryPage({ params }: Props) {
       </section>
 
       <section className="panel flag-map-grid">
-        <img src={getFlagUrl(country)} alt={`Flag of ${country.name}`} />
+        <Image src={getFlagUrl(country)} alt={`Flag of ${country.name}`} width={640} height={427} sizes="(max-width: 880px) 100vw, 360px" priority />
         <div>
           <h2>Quick Facts</h2>
           <dl className="fact-list">
@@ -101,10 +134,12 @@ export default async function CountryPage({ params }: Props) {
       <section className="panel">
         <h2>FAQs about {country.name}</h2>
         <div className="faq-list">
-          <article><h3>What is the capital of {country.name}?</h3><p>The capital of {country.name} is {country.capital}.</p></article>
-          <article><h3>What continent is {country.name} in?</h3><p>{country.name} is in {country.continent}.</p></article>
-          <article><h3>What currency does {country.name} use?</h3><p>{country.name} uses the {country.currency}.</p></article>
-          <article><h3>What language is spoken in {country.name}?</h3><p>{country.language} is listed for {country.name} in this database.</p></article>
+          {faqs.map(([question, answer]) => (
+            <article key={question}>
+              <h3>{question}</h3>
+              <p>{answer}</p>
+            </article>
+          ))}
         </div>
       </section>
 

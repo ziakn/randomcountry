@@ -49,11 +49,11 @@ const makeCountryText = (country, neighbors) => {
   const neighborText = neighbors.length ? neighbors.join(", ") : "no listed land-border neighbors";
 
   return {
-    history: `${name} is listed in the country database with official and common names, regional classification, population, area, and international identifiers. Add a reviewed historical summary before publishing this page as a final encyclopedia-style profile.`,
+    history: `${name} is recorded with the official name ${country.name.official || name}. This profile uses country database fields for quick reference and links the country to its region, capital, identifiers, and basic geography. Detailed historical timelines should be checked with dedicated historical sources when used for formal research.`,
     geography: `${name} is in ${region}, ${continent}. Its listed coordinates are ${country.latlng?.[0] ?? 0}, ${country.latlng?.[1] ?? 0}; it has ${neighborText}.`,
-    culture: `${name} uses ${languages} in this dataset. Culture, traditions, education, sport, arts, and daily life vary by region and should be expanded with reviewed local sources.`,
-    food: `Food culture in ${name} should be expanded with reviewed culinary sources. This starter record keeps the page factual and avoids inventing dishes that were not present in the source dataset.`,
-    famousPlaces: [capital, `${region} landmarks`, "Museums, historic sites, and natural areas to verify"],
+    culture: `${name} uses ${languages} in this dataset. Culture, traditions, education, sport, arts, and daily life can vary by region, language community, and local history, so deeper cultural notes should be checked with reliable local sources.`,
+    food: `Food culture in ${name} varies by region and community. This profile avoids naming specific dishes unless they have been reviewed from a dedicated source, making it a safe starting point for classroom or travel research.`,
+    famousPlaces: [capital, `${region} cultural and historic sites`, `${continent} map and regional landmarks`],
     travelFacts: [`Capital or main administrative city: ${capital}`, `Time zone data: ${timezones}`, "Check official sources for entry, safety, and transport information."],
     funFacts: [
       `${name} is grouped under ${continent}.`,

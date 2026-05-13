@@ -1,8 +1,7 @@
 import type { MetadataRoute } from "next";
 import { continents, getCountries } from "@/lib/countries";
-import { learnPages, listPages, mapPages, quizPages, rootPages, travelPages } from "@/lib/site";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://example.com";
+import { siteUrl } from "@/lib/seo";
+import { blogPages, learnPages, listPages, mapPages, quizPages, rootPages, travelPages } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -10,6 +9,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPaths = [
     "",
     "countries",
+    "tools",
+    "blog",
     "lists",
     "learn",
     "maps",
@@ -22,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...listPages.map(([slug]) => `lists/${slug}`),
     ..."abcdefghijklmnopqrstuvwxyz".split("").map((letter) => `lists/countries-starting-with-${letter}`),
     ...learnPages.map(([slug]) => `learn/${slug}`),
+    ...blogPages.map((page) => `blog/${page.slug}`),
     ...mapPages.map(([slug]) => `maps/${slug}`),
     ...quizPages.map(([slug]) => `quiz/${slug}`),
     ...travelPages.map(([slug]) => `travel/${slug}`),
@@ -31,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "compare/japan-vs-south-korea",
   ];
 
-  return staticPaths.map((path) => ({
+  return Array.from(new Set(staticPaths)).map((path) => ({
     url: `${siteUrl}/${path}`,
     lastModified: now,
     changeFrequency: path === "" ? "daily" : "weekly",

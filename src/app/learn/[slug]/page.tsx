@@ -5,6 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import CountryTable from "@/components/CountryTable";
 import { getCountries } from "@/lib/countries";
+import { absoluteUrl, lastUpdated, siteAuthor, siteName } from "@/lib/seo";
 import { learnPages } from "@/lib/site";
 
 type Props = {
@@ -35,12 +36,37 @@ export default async function LearnPage({ params }: Props) {
 
   return (
     <main className="page-shell">
-      <JsonLd data={{ "@context": "https://schema.org", "@type": "Article", headline: title, description }} />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: title,
+          description,
+          dateModified: "2026-05-13",
+          author: {
+            "@type": "Organization",
+            name: siteAuthor.name,
+          },
+          publisher: {
+            "@type": "Organization",
+            name: siteName,
+            url: absoluteUrl("/"),
+          },
+          mainEntityOfPage: absoluteUrl(`/learn/${slug}`),
+        }}
+      />
       <Breadcrumbs items={[{ href: "/learn", label: "Learn" }, { label: title }]} />
       <section className="hero compact">
         <p className="eyebrow">Educational guide</p>
         <h1>{title}</h1>
         <p>{description}</p>
+      </section>
+      <section className="author-box" aria-label="Article information">
+        <div>
+          <strong>{siteAuthor.name}</strong>
+          <p>{siteAuthor.bio}</p>
+        </div>
+        <span>Last updated {lastUpdated}</span>
       </section>
       <section className="content-grid">
         <article className="panel"><h2>Overview</h2><p>{description} This guide is written for students, teachers, and general readers who want practical geography explanations.</p></article>

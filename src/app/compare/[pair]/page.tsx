@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -59,7 +60,7 @@ export default async function ComparePage({ params }: Props) {
         <div className="link-grid">
           {[a, b].map((country) => (
             <Link className="link-card" href={`/country/${country.slug}`} key={country.slug}>
-              <img src={getFlagUrl(country)} alt={`Flag of ${country.name}`} />
+              <Image src={getFlagUrl(country)} alt={`Flag of ${country.name}`} width={640} height={427} sizes="(max-width: 880px) 100vw, 33vw" />
               <h2>{country.name}</h2>
               <p>{country.capital}, {country.continent}</p>
             </Link>

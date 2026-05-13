@@ -4,6 +4,7 @@ const groups = [
   {
     title: "Tools",
     links: [
+      ["/tools", "All Tools"],
       ["/random-country-generator", "Random Country Generator"],
       ["/random-flag-generator", "Random Flag Generator"],
       ["/random-country-capital-generator", "Random Capital Generator"],
@@ -42,7 +43,10 @@ const groups = [
       ["/terms-and-conditions", "Terms"],
       ["/disclaimer", "Disclaimer"],
       ["/cookie-policy", "Cookie Policy"],
+      ["/editorial-policy", "Editorial Policy"],
       ["/data-sources", "Data Sources"],
+      ["/sitemap", "HTML Sitemap"],
+      ["/blog", "Blog"],
     ],
   },
 ];
