@@ -1,30 +1,25 @@
 import type { Metadata } from "next";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://example.com"),
   title: {
-    default: "Random Country Generator | Discover the World Instantly",
+    default: "Random Country Generator | Countries, Flags, Maps and Quizzes",
     template: "%s | Random Country Generator",
   },
-  description: "Generate a random country instantly! Discover facts, flags, capitals, and populations with our premium, lightning-fast Random Country Generator. Perfect for education, travel inspiration, and geography learning.",
-  metadataBase: new URL('https://randomcountry.ziamuhammad.com'),
-  alternates: {
-    canonical: '/',
-  },
+  description: "Generate random countries, browse country facts, compare countries, study maps, and practice geography quizzes.",
   openGraph: {
-    title: "Random Country Generator | Discover the World Instantly",
-    description: "Generate a random country instantly! Discover facts, flags, capitals, and populations.",
-    url: 'https://randomcountry.ziamuhammad.com',
-    siteName: 'Random Country Generator',
+    title: "Random Country Generator",
+    description: "Generate random countries and learn country facts with flags, maps, quizzes, lists, and guides.",
     type: "website",
-    locale: "en_US",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Random Country Generator',
-    description: 'Generate a random country instantly and learn about its geography, language, and culture.',
+    card: "summary_large_image",
+    title: "Random Country Generator",
+    description: "A country generator and geography learning website.",
   },
-  keywords: ["random country generator", "random country picker", "country generator", "randomizer", "random place generator", "random travel destination", "geography tool", "country facts"],
 };
 
 export default function RootLayout({
@@ -32,27 +27,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    name: 'Random Country Generator',
-    description: 'Generate a random country instantly! Discover facts, flags, capitals, and populations.',
-    url: 'https://randomcountry.ziamuhammad.com',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: 'https://randomcountry.ziamuhammad.com/?q={search_term_string}',
-      'query-input': 'required name=search_term_string',
-    },
-  };
-
   return (
     <html lang="en">
       <body>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -1,82 +1,50 @@
-import CountryCard from "@/components/CountryCard";
-import GoogleMap from "@/components/GoogleMap";
-import BreadcrumbBar from "@/components/BreadcrumbBar";
+import type { Metadata } from "next";
 import Link from "next/link";
-import countriesData from "@/data/countries";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import CountryTable from "@/components/CountryTable";
+import { continents, getCountries } from "@/lib/countries";
 
-const allCountries = countriesData;
-
-export const metadata = {
-  title: "All Countries - A to Z List",
-  description: "Browse all 195+ countries in the world. Find detailed information about any country by clicking on it.",
-  openGraph: {
-    title: "All Countries - A to Z List",
-    description: "Browse the complete list of all countries in the world.",
-  },
-  alternates: {
-    canonical: "/countries",
-  },
+export const metadata: Metadata = {
+  title: "Countries Directory A-Z",
+  description: "Search and browse countries by continent, language, currency, population, and A-Z country list.",
+  alternates: { canonical: "/countries" },
 };
 
-export default async function CountriesPage() {
-  const allCountries = countriesData;
-
-  const grouped: Record<string, any[]> = {};
-  allCountries.forEach((c: any) => {
-    const letter = c.name[0].toUpperCase();
-    if (!grouped[letter]) grouped[letter] = [];
-    grouped[letter].push(c);
-  });
-
-  const letters = Object.keys(grouped).sort();
+export default function CountriesPage() {
+  const countries = getCountries();
+  const letters = Array.from(new Set(countries.map((country) => country.name[0].toUpperCase()))).sort();
 
   return (
-    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <BreadcrumbBar items={[{ label: "Home", href: "/" }, { label: "All Countries" }]} />
+    <main className="page-shell">
+      <Breadcrumbs items={[{ label: "Countries" }]} />
+      <section className="hero compact">
+        <p className="eyebrow">Country directory</p>
+        <h1>Countries A-Z</h1>
+        <p>Browse countries by letter, continent, language, currency, population, and area.</p>
+      </section>
 
-      <section className="animate-fade-in-down">
-        <header className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-black text-gray-900 dark:text-white mb-4">
-            All Countries A to Z 🌍
-          </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Browse all {allCountries.length} countries in the world. Click on any country to explore its profile,
-            geography, culture, and travel information.
-          </p>
-        </header>
-
-        {/* Quick filter by region */}
-        <div className="flex flex-wrap gap-2 justify-center mb-10">
-          {["all", "asia", "europe", "africa", "americas", "oceania"].map((region) => (
-            <Link key={region} href={region === "all" ? "/countries" : `/continent/${region}`}>
-              <span className={`px-4 py-2 rounded-full text-sm font-medium border transition-all cursor-pointer ${
-                region === "all"
-                  ? "bg-blue-600 text-white border-blue-600"
-                  : "bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:border-blue-500"
-              }`}>
-                {region === "all" ? "All Countries" : region.charAt(0).toUpperCase() + region.slice(1)}
-              </span>
+      <section className="panel">
+        <h2>Filters and browsing</h2>
+        <div className="link-grid">
+          {continents.filter((continent) => continent !== "Antarctica").map((continent) => (
+            <Link className="link-card" href={`/continent/${continent.toLowerCase().replace(/\s+/g, "-")}/random-country`} key={continent}>
+              <h3>{continent}</h3>
+              <p>Generate and browse countries in {continent}.</p>
             </Link>
           ))}
         </div>
+      </section>
 
-        {/* Alphabetical list */}
-        <div className="space-y-8">
+      <section className="panel">
+        <h2>A-Z country list</h2>
+        <div className="actions">
           {letters.map((letter) => (
-            <div key={letter}>
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 sticky top-0 bg-gray-50 dark:bg-gray-900 py-2 z-10 border-b border-gray-200 dark:border-gray-700">
-                {letter}
-              </h2>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
-                {grouped[letter]
-                  .sort((a: any, b: any) => a.name.length - b.name.length)
-                  .map((country: any) => (
-                    <CountryCard key={country.code} country={country} variant="compact" />
-                  ))}
-              </div>
-            </div>
+            <Link className="button secondary" href={`/countries/${letter.toLowerCase()}`} key={letter}>
+              {letter}
+            </Link>
           ))}
         </div>
+        <CountryTable countries={countries} />
       </section>
     </main>
   );

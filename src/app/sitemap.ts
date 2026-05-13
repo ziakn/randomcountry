@@ -1,56 +1,40 @@
-import { MetadataRoute } from "next";
-import countriesData from "@/data/countries";
+import type { MetadataRoute } from "next";
+import { continents, getCountries } from "@/lib/countries";
+import { learnPages, listPages, mapPages, quizPages, rootPages, travelPages } from "@/lib/site";
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://example.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://randomcountry.ziamuhammad.com";
   const now = new Date();
+  const countries = getCountries();
+  const staticPaths = [
+    "",
+    "countries",
+    "lists",
+    "learn",
+    "maps",
+    "quizzes",
+    "travel",
+    ...rootPages.map((page) => page.slug),
+    ...countries.map((country) => `country/${country.slug}`),
+    ..."abcdefghijklmnopqrstuvwxyz".split("").map((letter) => `countries/${letter}`),
+    ...continents.map((continent) => `continent/${continent.toLowerCase().replace(/\s+/g, "-")}/random-country`),
+    ...listPages.map(([slug]) => `lists/${slug}`),
+    ..."abcdefghijklmnopqrstuvwxyz".split("").map((letter) => `lists/countries-starting-with-${letter}`),
+    ...learnPages.map(([slug]) => `learn/${slug}`),
+    ...mapPages.map(([slug]) => `maps/${slug}`),
+    ...quizPages.map(([slug]) => `quiz/${slug}`),
+    ...travelPages.map(([slug]) => `travel/${slug}`),
+    "compare/pakistan-vs-india",
+    "compare/qatar-vs-uae",
+    "compare/italy-vs-france",
+    "compare/japan-vs-south-korea",
+  ];
 
-  const countryUrls = countriesData.map((country) => ({
-    url: `${baseUrl}/country/${country.code}`,
+  return staticPaths.map((path) => ({
+    url: `${siteUrl}/${path}`,
     lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: 0.8,
+    changeFrequency: path === "" ? "daily" : "weekly",
+    priority: path === "" ? 1 : 0.7,
   }));
-
-  const blogUrls = [
-    "/blog/most-beautiful-countries-in-europe",
-    "/blog/cheapest-countries-to-travel",
-    "/blog/safest-countries-in-asia",
-    "/blog/largest-countries",
-    "/blog/richest-countries",
-    "/blog/best-countries-to-study",
-  ];
-
-  const staticUrls: Array<{ url: string; priority: number; changeFrequency: "daily" | "weekly" | "monthly" | "yearly" | "always" | "hourly" | "never" }> = [
-    { url: baseUrl, priority: 1, changeFrequency: "daily" },
-    { url: `${baseUrl}/random-country-generator`, priority: 0.9, changeFrequency: "weekly" },
-    { url: `${baseUrl}/compare`, priority: 0.9, changeFrequency: "weekly" },
-    { url: `${baseUrl}/quiz`, priority: 0.8, changeFrequency: "weekly" },
-    { url: `${baseUrl}/blog`, priority: 0.7, changeFrequency: "weekly" },
-    { url: `${baseUrl}/countries`, priority: 0.8, changeFrequency: "monthly" },
-    { url: `${baseUrl}/continents`, priority: 0.7, changeFrequency: "monthly" },
-    { url: `${baseUrl}/rankings`, priority: 0.7, changeFrequency: "monthly" },
-    { url: `${baseUrl}/about`, priority: 0.5, changeFrequency: "yearly" },
-    { url: `${baseUrl}/contact`, priority: 0.3, changeFrequency: "yearly" },
-    { url: `${baseUrl}/privacy-policy`, priority: 0.3, changeFrequency: "yearly" },
-    { url: `${baseUrl}/terms`, priority: 0.3, changeFrequency: "yearly" },
-    { url: `${baseUrl}/disclaimer`, priority: 0.3, changeFrequency: "yearly" },
-    { url: `${baseUrl}/cookie-policy`, priority: 0.3, changeFrequency: "yearly" },
-  ];
-
-  return [
-    ...staticUrls.map((u) => ({
-      url: u.url,
-      lastModified: now,
-      changeFrequency: u.changeFrequency,
-      priority: u.priority,
-    })),
-    ...blogUrls.map((url) => ({
-      url: `${baseUrl}${url}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
-    })),
-    ...countryUrls,
-  ];
 }

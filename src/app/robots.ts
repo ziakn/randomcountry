@@ -1,15 +1,13 @@
-import { MetadataRoute } from "next";
-import { getAllCountries } from "@/utils/getRandomCountry";
+import type { MetadataRoute } from "next";
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://example.com";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = "https://randomcountry.ziamuhammad.com";
-
   return {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/admin", "/api/internal"],
     },
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: `${siteUrl}/sitemap.xml`,
   };
 }
