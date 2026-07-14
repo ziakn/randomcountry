@@ -74,7 +74,7 @@ function rowToCountry(row: CountryRow): Country {
   };
 }
 
-function getDb() {
+export function getDb() {
   if (db) return db;
 
   const dbPath = join(process.cwd(), "data", "app.sqlite");
@@ -114,6 +114,36 @@ function getDb() {
       landlocked INTEGER NOT NULL
     );
   `);
+
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS posts (
+      slug TEXT PRIMARY KEY,
+      title TEXT NOT NULL,
+      description TEXT NOT NULL,
+      publishAt TEXT NOT NULL,
+      updatedAt TEXT NOT NULL,
+      status TEXT NOT NULL DEFAULT 'scheduled',
+      author TEXT NOT NULL DEFAULT '',
+      tags TEXT NOT NULL DEFAULT '[]',
+      sections TEXT NOT NULL DEFAULT '[]',
+      faq TEXT NOT NULL DEFAULT '[]'
+    );
+    CREATE INDEX IF NOT EXISTS posts_publish_idx ON posts (status, publishAt);
+  `);
+
+  const postColumns = db.prepare("PRAGMA table_info(posts);").all() as { name: string }[];
+  const hasPostColumn = (name: string) => postColumns.some((column) => column.name === name);
+  // SEO fields. metaTitle/metaDescription are what ship in <head>; title/description are the
+  // on-page copy. They differ because a good SERP title is not always a good H1.
+  if (!hasPostColumn("metaTitle")) db.exec("ALTER TABLE posts ADD COLUMN metaTitle TEXT NOT NULL DEFAULT '';");
+  if (!hasPostColumn("metaDescription")) db.exec("ALTER TABLE posts ADD COLUMN metaDescription TEXT NOT NULL DEFAULT '';");
+  if (!hasPostColumn("focusKeyword")) db.exec("ALTER TABLE posts ADD COLUMN focusKeyword TEXT NOT NULL DEFAULT '';");
+  if (!hasPostColumn("secondaryKeywords")) db.exec("ALTER TABLE posts ADD COLUMN secondaryKeywords TEXT NOT NULL DEFAULT '[]';");
+  if (!hasPostColumn("searchIntent")) db.exec("ALTER TABLE posts ADD COLUMN searchIntent TEXT NOT NULL DEFAULT 'informational';");
+  if (!hasPostColumn("schemaType")) db.exec("ALTER TABLE posts ADD COLUMN schemaType TEXT NOT NULL DEFAULT 'BlogPosting';");
+  if (!hasPostColumn("cluster")) db.exec("ALTER TABLE posts ADD COLUMN cluster TEXT NOT NULL DEFAULT '';");
+  // One focus keyword may be claimed by exactly one post. This is the cannibalization guard.
+  db.exec("CREATE UNIQUE INDEX IF NOT EXISTS posts_focus_keyword_idx ON posts (focusKeyword) WHERE focusKeyword != '';");
 
   const columns = db.prepare("PRAGMA table_info(countries);").all() as { name: string }[];
   const hasColumn = (name: string) => columns.some((column) => column.name === name);

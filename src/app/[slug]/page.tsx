@@ -8,7 +8,8 @@ import JsonLd from "@/components/JsonLd";
 import ToolPage from "@/components/ToolPage";
 import { getCountries } from "@/lib/countries";
 import { absoluteUrl } from "@/lib/seo";
-import { blogPages, learnPages, legalPages, listPages, mapPages, quizPages, rootPages, toolPages, travelPages } from "@/lib/site";
+import { getPublishedPosts } from "@/lib/posts";
+import { learnPages, legalPages, listPages, mapPages, quizPages, rootPages, toolPages, travelPages } from "@/lib/site";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -48,7 +49,7 @@ export default async function RootContentPage({ params }: Props) {
     ["Quizzes", [["/quizzes", "Quiz Hub"], ...quizPages.map(([itemSlug, title]) => [`/quiz/${itemSlug}`, title])]],
     ["Maps", [["/maps", "Map Hub"], ...mapPages.map(([itemSlug, title]) => [`/maps/${itemSlug}`, title])]],
     ["Learn", [["/learn", "Learn Hub"], ...learnPages.map(([itemSlug, title]) => [`/learn/${itemSlug}`, title])]],
-    ["Blog", [["/blog", "Blog Hub"], ...blogPages.map((item) => [`/blog/${item.slug}`, item.title])]],
+    ["Blog", [["/blog", "Blog Hub"], ...getPublishedPosts().map((item) => [`/blog/${item.slug}`, item.title])]],
     ["Travel", [["/travel", "Travel Hub"], ...travelPages.map(([itemSlug, title]) => [`/travel/${itemSlug}`, title])]],
     ["Trust", legalPages.map((item) => ["/" + item.slug, item.title])],
   ] as const;

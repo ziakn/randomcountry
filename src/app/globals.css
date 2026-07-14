@@ -794,3 +794,30 @@ th {
   display: flex;
   gap: 0.5rem;
 }
+
+/* Blog */
+.post-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1.5rem;
+}
+
+.pagination-gap {
+  padding: 0 0.25rem;
+  color: var(--muted);
+}
+
+@media (max-width: 560px) {
+  .post-nav {
+    grid-template-columns: 1fr;
+  }
+}

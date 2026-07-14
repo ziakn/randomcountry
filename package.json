@@ -9,7 +9,9 @@
     "db:refresh-copy": "node scripts/refresh-country-copy.mjs",
     "db:review": "node scripts/mark-reviewed.mjs",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "blog": "node scripts/blog.mjs",
+    "blog:lint": "node scripts/blog-lint.mjs"
   },
   "dependencies": {
     "next": "^16.2.6",

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
-import { blogPages } from "@/lib/site";
-import { absoluteUrl } from "@/lib/seo";
+import { Pagination, PostList } from "@/components/PostList";
+import { getPublishedPostPage } from "@/lib/posts";
+import { absoluteUrl, siteName } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Country Learning Blog",
@@ -11,38 +11,40 @@ export const metadata: Metadata = {
   alternates: { canonical: "/blog" },
 };
 
+// Picks up the day's scheduled post without a redeploy.
+export const revalidate = 3600;
+
 export default function BlogPage() {
+  const { posts, page, totalPages, total } = getPublishedPostPage(1);
+
   return (
     <main className="page-shell">
       <JsonLd
         data={{
           "@context": "https://schema.org",
-          "@type": "ItemList",
-          name: "Country Learning Blog",
-          itemListElement: blogPages.map((page, index) => ({
-            "@type": "ListItem",
-            position: index + 1,
-            name: page.title,
-            url: absoluteUrl(`/blog/${page.slug}`),
+          "@type": "Blog",
+          name: `${siteName} Blog`,
+          url: absoluteUrl("/blog"),
+          blogPost: posts.map((post) => ({
+            "@type": "BlogPosting",
+            headline: post.title,
+            datePublished: post.publishAt,
+            url: absoluteUrl(`/blog/${post.slug}`),
           })),
         }}
       />
       <Breadcrumbs items={[{ label: "Blog" }]} />
       <section className="hero compact">
-        <p className="eyebrow">Blog</p>
+        <p className="eyebrow">Country guides</p>
         <h1>Country Learning Blog</h1>
-        <p>Original guides that support the generator with practical geography lessons, study methods, classroom ideas, and country research tips.</p>
+        <p>
+          Practical geography guides for students, teachers, quiz hosts, and travelers. {total} article
+          {total === 1 ? "" : "s"} published so far.
+        </p>
       </section>
-
       <section className="panel">
-        <div className="link-grid">
-          {blogPages.map((page) => (
-            <Link className="link-card" href={`/blog/${page.slug}`} key={page.slug}>
-              <h2>{page.title}</h2>
-              <p>{page.description}</p>
-            </Link>
-          ))}
-        </div>
+        <PostList posts={posts} />
+        <Pagination page={page} totalPages={totalPages} />
       </section>
     </main>
   );
