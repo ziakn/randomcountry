@@ -4,7 +4,8 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import { getPostNeighbors, getPublishedPost, getPublishedPosts, getRelatedPosts, wordCount } from "@/lib/posts";
-import { absoluteUrl, siteAuthor, siteName } from "@/lib/seo";
+import { postGraph } from "@/lib/schema";
+import { siteAuthor } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -53,69 +54,11 @@ export default async function BlogArticlePage({ params }: Props) {
 
   const { newer, older } = getPostNeighbors(post);
   const related = getRelatedPosts(post);
-  const url = absoluteUrl(`/blog/${post.slug}`);
-
-  // BlogPosting always. HowTo is added for procedural posts because, unlike FAQPage, it is
-  // still a live rich-result type for ordinary sites.
-  const schema: Record<string, unknown>[] = [
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "@id": `${url}#post`,
-      headline: post.metaTitle.slice(0, 110),
-      alternativeHeadline: post.title,
-      description: post.metaDescription,
-      datePublished: post.publishAt,
-      dateModified: post.updatedAt,
-      inLanguage: "en",
-      wordCount: wordCount(post),
-      keywords: [post.focusKeyword, ...post.secondaryKeywords].filter(Boolean).join(", "),
-      articleSection: post.cluster || undefined,
-      author: {
-        "@type": "Organization",
-        name: post.author || siteAuthor.name,
-        url: absoluteUrl("/about"),
-      },
-      publisher: {
-        "@type": "Organization",
-        name: siteName,
-        url: absoluteUrl("/"),
-      },
-      mainEntityOfPage: url,
-    },
-  ];
-
-  if (post.schemaType === "HowTo") {
-    schema.push({
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      name: post.title,
-      description: post.metaDescription,
-      step: post.sections.map((section, index) => ({
-        "@type": "HowToStep",
-        position: index + 1,
-        name: section.heading,
-        text: section.body,
-        url: `${url}#step-${index + 1}`,
-      })),
-    });
-  }
-
-  if (post.faq.length) {
-    schema.push({
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: post.faq.map((item) => ({
-        "@type": "Question",
-        name: item.question,
-        acceptedAnswer: { "@type": "Answer", text: item.answer },
-      })),
-    });
-  }
 
   return (
     <main className="page-shell">
-      <JsonLd data={schema} />
+      {/* WebPage -> BlogPosting -> (HowTo, FAQPage) as one connected graph. */}
+      <JsonLd data={postGraph(post, wordCount(post))} />
       <Breadcrumbs items={[{ href: "/blog", label: "Blog" }, { label: post.title }]} />
       <article>
         <section className="hero compact">
