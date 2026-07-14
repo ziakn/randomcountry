@@ -2,7 +2,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CountryTable from "@/components/CountryTable";
 import JsonLd from "@/components/JsonLd";
 import RandomCountryTool from "@/components/RandomCountryTool";
-import { Country } from "@/lib/countries";
+import { Country, pickSeededCountry } from "@/lib/countries";
 import { absoluteUrl } from "@/lib/seo";
 import type { RootPage } from "@/lib/site";
 
@@ -54,7 +54,11 @@ export default function ToolPage({ page, countries }: { page: RootPage; countrie
         <h1>{page.title}</h1>
         <p>{page.description}</p>
       </section>
-      <RandomCountryTool countries={countries} title={page.title} />
+      <RandomCountryTool
+        countries={countries}
+        title={page.title}
+        initialSlug={pickSeededCountry(countries, page.slug)?.slug}
+      />
       <section className="content-grid">
         {page.sections.map((section) => (
           <article className="panel" key={section.heading}>

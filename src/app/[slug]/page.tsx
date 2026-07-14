@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import ContactForm from "@/components/ContactForm";
 import CountryTable from "@/components/CountryTable";
 import JsonLd from "@/components/JsonLd";
 import ToolPage from "@/components/ToolPage";
@@ -78,6 +79,8 @@ export default async function RootContentPage({ params }: Props) {
           </article>
         ))}
       </section>
+
+      {page.slug === "contact" && <ContactForm />}
 
       {page.slug === "sitemap" ? (
         <section className="panel">

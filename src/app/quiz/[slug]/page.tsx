@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import RandomCountryTool from "@/components/RandomCountryTool";
-import { getCountries } from "@/lib/countries";
+import { getCountries, pickSeededCountry } from "@/lib/countries";
 import { quizPages } from "@/lib/site";
 
 type Props = {
@@ -42,7 +42,7 @@ export default async function QuizPage({ params }: Props) {
         <h1>{title}</h1>
         <p>{description}</p>
       </section>
-      <RandomCountryTool countries={countries} title={title} />
+      <RandomCountryTool countries={countries} title={title} initialSlug={pickSeededCountry(countries, slug)?.slug} />
       <section className="panel">
         <h2>How to play</h2>
         <p>Generate a country, cover part of the result, and ask the player to guess the missing flag, capital, currency, language, continent, or location clue.</p>

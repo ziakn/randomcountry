@@ -1,12 +1,14 @@
 import type { MetadataRoute } from "next";
-import { continents, getCountries } from "@/lib/countries";
+import { continents, getIndexableCountries } from "@/lib/countries";
 import { siteUrl } from "@/lib/seo";
 import { blogPages, learnPages, listPages, mapPages, quizPages, rootPages, travelPages } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  const countries = getCountries();
-  const staticPaths = [
+  // Unreviewed country profiles are noindex, so listing them here would only point Google
+  // at pages it is being told not to index.
+  const countries = getIndexableCountries();
+  const paths = [
     "",
     "countries",
     "tools",
@@ -21,7 +23,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ..."abcdefghijklmnopqrstuvwxyz".split("").map((letter) => `countries/${letter}`),
     ...continents.map((continent) => `continent/${continent.toLowerCase().replace(/\s+/g, "-")}/random-country`),
     ...listPages.map(([slug]) => `lists/${slug}`),
-    ..."abcdefghijklmnopqrstuvwxyz".split("").map((letter) => `lists/countries-starting-with-${letter}`),
     ...learnPages.map(([slug]) => `learn/${slug}`),
     ...blogPages.map((page) => `blog/${page.slug}`),
     ...mapPages.map(([slug]) => `maps/${slug}`),
@@ -33,8 +34,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "compare/japan-vs-south-korea",
   ];
 
-  return Array.from(new Set(staticPaths)).map((path) => ({
-    url: `${siteUrl}/${path}`,
+  return Array.from(new Set(paths)).map((path) => ({
+    // Match the self-referencing canonical exactly: no trailing slash on the homepage.
+    url: path === "" ? siteUrl : `${siteUrl}/${path}`,
     lastModified: now,
     changeFrequency: path === "" ? "daily" : "weekly",
     priority: path === "" ? 1 : 0.7,

@@ -6,11 +6,13 @@ const db = new DatabaseSync(dbPath);
 
 db.exec("PRAGMA busy_timeout = 10000;");
 
+// Reviewed profiles hold hand-written copy. Regenerating them would overwrite it.
 const countries = db
   .prepare(
     `SELECT slug, name, officialName, capital, continent, region, language, timeZone,
       latitude, longitude, neighbors, area, unMember
     FROM countries
+    WHERE reviewed = 0
     ORDER BY name`
   )
   .all();
@@ -18,7 +20,7 @@ const countries = db
 const update = db.prepare(`
   UPDATE countries
   SET history = ?, geography = ?, culture = ?, food = ?, famousPlaces = ?, travelFacts = ?, funFacts = ?
-  WHERE slug = ?
+  WHERE slug = ? AND reviewed = 0
 `);
 
 db.exec("BEGIN IMMEDIATE TRANSACTION;");

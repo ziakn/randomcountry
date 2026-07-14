@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import Script from "next/script";
+import Analytics from "@/components/Analytics";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import JsonLd from "@/components/JsonLd";
-import { siteName, siteUrl } from "@/lib/seo";
+import { siteName, siteUrl, socialProfiles } from "@/lib/seo";
 import "./globals.css";
 
-const googleAnalyticsId = "G-1JFWECSRRQ";
+// Unset in dev and previews, so local traffic no longer pollutes the production property.
+const googleAnalyticsId = process.env.NEXT_PUBLIC_GA_ID;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -37,28 +38,31 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Script src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`} strategy="afterInteractive" />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${googleAnalyticsId}');
-          `}
-        </Script>
+        <Analytics measurementId={googleAnalyticsId} />
         <JsonLd
           data={[
             {
               "@context": "https://schema.org",
               "@type": "WebSite",
+              "@id": `${siteUrl}#website`,
               name: siteName,
               url: siteUrl,
+              publisher: { "@id": `${siteUrl}#organization` },
             },
+            // A bare name + url leaves the publisher unresolvable as an entity. sameAs is what
+            // links it to a known profile; add real ones to socialProfiles as they exist.
             {
               "@context": "https://schema.org",
               "@type": "Organization",
+              "@id": `${siteUrl}#organization`,
               name: siteName,
               url: siteUrl,
+              description: "A geography reference and random country generator for students, teachers, and quiz players.",
+              logo: {
+                "@type": "ImageObject",
+                url: `${siteUrl}/icon.svg`,
+              },
+              ...(socialProfiles.length ? { sameAs: socialProfiles } : {}),
             },
           ]}
         />

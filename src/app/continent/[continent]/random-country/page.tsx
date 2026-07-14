@@ -3,7 +3,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CountryTable from "@/components/CountryTable";
 import RandomCountryTool from "@/components/RandomCountryTool";
-import { continents, getCountriesByContinent } from "@/lib/countries";
+import { continents, getCountriesByContinent, pickSeededCountry } from "@/lib/countries";
 
 type Props = {
   params: Promise<{ continent: string }>;
@@ -39,7 +39,11 @@ export default async function ContinentRandomCountryPage({ params }: Props) {
 
       {countries.length ? (
         <>
-          <RandomCountryTool countries={countries} title={`Generate a random country in ${label}`} />
+          <RandomCountryTool
+            countries={countries}
+            title={`Generate a random country in ${label}`}
+            initialSlug={pickSeededCountry(countries, continent)?.slug}
+          />
           <section className="panel">
             <h2>Countries in {label}</h2>
             <CountryTable countries={countries} />

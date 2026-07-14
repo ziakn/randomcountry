@@ -32,9 +32,12 @@ export type Country = {
   unMember: boolean;
   island: boolean;
   landlocked: boolean;
+  /** Set once a country profile has been rewritten with original, human-reviewed copy. */
+  reviewed: boolean;
+  reviewedAt: string;
 };
 
-type CountryRow = Omit<Country, "neighbors" | "funFacts" | "famousPlaces" | "travelFacts" | "unMember" | "island" | "landlocked"> & {
+type CountryRow = Omit<Country, "neighbors" | "funFacts" | "famousPlaces" | "travelFacts" | "unMember" | "island" | "landlocked" | "reviewed"> & {
   neighbors: string;
   funFacts: string;
   famousPlaces: string;
@@ -42,6 +45,8 @@ type CountryRow = Omit<Country, "neighbors" | "funFacts" | "famousPlaces" | "tra
   unMember: number;
   island: number;
   landlocked: number;
+  reviewed: number;
+  reviewedAt: string;
 };
 
 let db: DatabaseSync | null = null;
@@ -65,6 +70,7 @@ function rowToCountry(row: CountryRow): Country {
     unMember: Boolean(row.unMember),
     island: Boolean(row.island),
     landlocked: Boolean(row.landlocked),
+    reviewed: Boolean(row.reviewed),
   };
 }
 
@@ -109,6 +115,11 @@ function getDb() {
     );
   `);
 
+  const columns = db.prepare("PRAGMA table_info(countries);").all() as { name: string }[];
+  const hasColumn = (name: string) => columns.some((column) => column.name === name);
+  if (!hasColumn("reviewed")) db.exec("ALTER TABLE countries ADD COLUMN reviewed INTEGER NOT NULL DEFAULT 0;");
+  if (!hasColumn("reviewedAt")) db.exec("ALTER TABLE countries ADD COLUMN reviewedAt TEXT NOT NULL DEFAULT '';");
+
   return db;
 }
 
@@ -117,6 +128,36 @@ export function getCountries(): Country[] {
     .prepare("SELECT * FROM countries ORDER BY name COLLATE NOCASE")
     .all()
     .map((row) => rowToCountry(row as CountryRow));
+}
+
+/**
+ * Only reviewed countries are indexable. Templated import copy is identical across
+ * records apart from the country name, which Google treats as scaled content abuse.
+ */
+export function getIndexableCountries(): Country[] {
+  return getCountries().filter((country) => country.reviewed);
+}
+
+export function getCountryStats() {
+  const row = getDb()
+    .prepare(
+      `SELECT
+        COUNT(*) AS total,
+        SUM(unMember) AS unMembers,
+        SUM(island) AS islands,
+        SUM(landlocked) AS landlocked,
+        SUM(reviewed) AS reviewed
+      FROM countries`
+    )
+    .get() as Record<string, number>;
+
+  return {
+    total: row.total ?? 0,
+    unMembers: row.unMembers ?? 0,
+    islands: row.islands ?? 0,
+    landlocked: row.landlocked ?? 0,
+    reviewed: row.reviewed ?? 0,
+  };
 }
 
 export function getCountry(slug: string): Country | undefined {
@@ -156,3 +197,31 @@ export function slugify(value: string) {
 }
 
 export const continents = ["Asia", "Europe", "Africa", "North America", "South America", "Oceania", "Antarctica"];
+
+/**
+ * Picks a stable country from a seed string so each prerendered page ships different
+ * HTML instead of every tool page rendering countries[0].
+ */
+export function pickSeededCountry(countries: Country[], seed: string): Country | undefined {
+  if (countries.length === 0) return undefined;
+  let hash = 2166136261;
+  for (let index = 0; index < seed.length; index += 1) {
+    hash ^= seed.charCodeAt(index);
+    hash = Math.imul(hash, 16777619);
+  }
+  return countries[Math.abs(hash) % countries.length];
+}
+
+export function groupCountries(countries: Country[], key: (country: Country) => string) {
+  const groups = new Map<string, Country[]>();
+  for (const country of countries) {
+    for (const label of key(country).split(",").map((value) => value.trim()).filter(Boolean)) {
+      const existing = groups.get(label);
+      if (existing) existing.push(country);
+      else groups.set(label, [country]);
+    }
+  }
+  return Array.from(groups.entries())
+    .sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]))
+    .map(([label, items]) => ({ label, items }));
+}

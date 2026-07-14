@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import { formatArea, getCountries, getCountry, getFlagUrl } from "@/lib/countries";
-import { absoluteUrl } from "@/lib/seo";
+import { absoluteUrl, dataSource, siteAuthor, siteName } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -23,6 +23,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${country.name}: Capital, Flag, Map, Population, Currency and Facts`,
     description: `Learn about ${country.name}, including its capital, flag, map, population, currency, languages, geography, culture, travel facts, and FAQs.`,
     alternates: { canonical: `/country/${country.slug}` },
+    // Profiles still on generated import copy stay out of the index until rewritten.
+    robots: country.reviewed ? undefined : { index: false, follow: true },
     openGraph: {
       title: `${country.name} Country Facts`,
       description: `Capital, flag, map, population, currency, language, geography and travel facts for ${country.name}.`,
@@ -62,19 +64,35 @@ export default async function CountryPage({ params }: Props) {
           {
             "@context": "https://schema.org",
             "@type": "Country",
+            "@id": absoluteUrl(`/country/${country.slug}#country`),
             name: country.name,
+            alternateName: country.officialName,
             capital: country.capital,
             image: getFlagUrl(country),
             url: absoluteUrl(`/country/${country.slug}`),
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "Place",
-            name: country.name,
             geo: {
               "@type": "GeoCoordinates",
               latitude: country.latitude,
               longitude: country.longitude,
+            },
+          },
+          // Provenance: AI answer engines preferentially cite sources with an explicit
+          // author, revision date, and upstream citation.
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": absoluteUrl(`/country/${country.slug}`),
+            name: `${country.name} country profile`,
+            about: { "@id": absoluteUrl(`/country/${country.slug}#country`) },
+            url: absoluteUrl(`/country/${country.slug}`),
+            dateModified: country.reviewedAt || undefined,
+            isPartOf: { "@type": "WebSite", name: siteName, url: absoluteUrl("/") },
+            author: { "@type": "Organization", name: siteAuthor.name, url: absoluteUrl("/about") },
+            publisher: { "@type": "Organization", name: siteName, url: absoluteUrl("/") },
+            citation: {
+              "@type": "Dataset",
+              name: dataSource.name,
+              url: dataSource.url,
             },
           },
           {
@@ -96,6 +114,12 @@ export default async function CountryPage({ params }: Props) {
         <p className="eyebrow">{country.continent}</p>
         <h1>{country.name}</h1>
         <p>{country.name} is a country in {country.region}. Learn its capital, flag, population, area, currency, language, geography, culture, food, famous places, travel facts, and FAQs.</p>
+        <p className="provenance">
+          Source data: <a href={dataSource.url} rel="nofollow noopener" target="_blank">{dataSource.name}</a>
+          {country.reviewedAt ? ` · Reviewed ${country.reviewedAt}` : " · Awaiting editorial review"}
+          {" · "}
+          <Link href="/data-sources">How we source country data</Link>
+        </p>
       </section>
 
       <section className="panel flag-map-grid">

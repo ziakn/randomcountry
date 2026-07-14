@@ -13,6 +13,8 @@ export type BlogPage = {
   slug: string;
   title: string;
   description: string;
+  datePublished: string;
+  dateModified?: string;
   sections: { heading: string; body: string }[];
   faq?: { question: string; answer: string }[];
 };
@@ -181,9 +183,9 @@ export const legalPages: RootPage[] = [
     description: "Contact the Random Country Generator team with questions, corrections, or feedback.",
     kind: "legal",
     sections: [
-      { heading: "Contact method", body: "Use contact@example.com as the launch placeholder and replace it with a real monitored inbox before the site goes public." },
-      { heading: "Response expectation", body: "Messages about corrections, accessibility issues, data problems, and partnership requests should be reviewed within a reasonable business timeframe after launch." },
-      { heading: "Corrections", body: "If you spot outdated country data, include the country name, the field that needs correction, the date you checked it, and a reliable source." },
+      { heading: "Contact method", body: "Use the form on this page to reach the editorial team. Messages go straight to a monitored inbox, so there is no email address to copy and no account to create." },
+      { heading: "Response expectation", body: "Messages about corrections, accessibility issues, data problems, and partnership requests are reviewed within a few business days." },
+      { heading: "Corrections", body: "If you spot outdated country data, include the country name, the field that needs correction, the date you checked it, and a reliable source. Corrections with a source are actioned fastest." },
     ],
   },
   {
@@ -316,6 +318,7 @@ export const blogPages: BlogPage[] = [
     slug: "how-to-use-a-random-country-generator",
     title: "How to Use a Random Country Generator",
     description: "Practical ways to use a random country generator for learning, games, writing prompts, and classroom activities.",
+    datePublished: "2026-05-13",
     sections: [
       { heading: "Start with the result card", body: "Generate one country, then read the country name, flag, capital, continent, population, area, currency, languages, time zone, and neighboring countries before moving to another result." },
       { heading: "Turn it into a learning task", body: "Ask learners to find the country on a map, compare its population with another country, name the continent, and write one short paragraph about its geography." },
@@ -330,6 +333,7 @@ export const blogPages: BlogPage[] = [
     slug: "how-to-learn-countries-and-capitals",
     title: "How to Learn Countries and Capitals",
     description: "A simple study method for learning country and capital pairs without memorizing long lists all at once.",
+    datePublished: "2026-05-14",
     sections: [
       { heading: "Study by region", body: "Learning capitals by continent is easier than memorizing the entire world list at once. Start with one region, then add another after you can recall most pairs." },
       { heading: "Use active recall", body: "Look at a country name, cover the capital, guess it, then check the answer. Repeat missed pairs more often than pairs you already know." },
@@ -340,6 +344,7 @@ export const blogPages: BlogPage[] = [
     slug: "flag-quiz-study-guide",
     title: "Flag Quiz Study Guide",
     description: "How to practice country flags with patterns, colors, regions, and repeated quiz rounds.",
+    datePublished: "2026-05-15",
     sections: [
       { heading: "Notice common patterns", body: "Many flags use shared visual ideas such as tricolors, crosses, stars, crescents, stripes, and regional color palettes. Spotting patterns helps you remember faster." },
       { heading: "Practice in small sets", body: "Use ten to fifteen flags per round, then repeat the missed flags. Smaller rounds give better feedback than one huge quiz." },
@@ -350,6 +355,7 @@ export const blogPages: BlogPage[] = [
     slug: "how-to-choose-a-country-for-school-project",
     title: "How to Choose a Country for a School Project",
     description: "A student-friendly checklist for choosing a country topic and building a useful geography report.",
+    datePublished: "2026-05-16",
     sections: [
       { heading: "Pick a country with enough sources", body: "A good project country should have reliable information about geography, population, culture, economy, language, food, landmarks, and current facts." },
       { heading: "Plan the report sections", body: "Start with quick facts, then add geography, people and culture, famous places, food, history, travel notes, and a short FAQ." },
@@ -360,6 +366,7 @@ export const blogPages: BlogPage[] = [
     slug: "country-facts-to-include-in-a-report",
     title: "Country Facts to Include in a Report",
     description: "A useful country report structure covering quick facts, geography, people, culture, food, landmarks, and sources.",
+    datePublished: "2026-05-18",
     sections: [
       { heading: "Start with quick facts", body: "Include the capital, continent, region, population, area, currency, languages, time zone, calling code, flag, and map location." },
       { heading: "Explain geography", body: "Write about borders, climate, major landforms, coastlines, rivers, neighboring countries, and important cities." },
@@ -370,6 +377,7 @@ export const blogPages: BlogPage[] = [
     slug: "continents-vs-regions-explained",
     title: "Continents vs Regions Explained",
     description: "Understand the difference between continents, subregions, and political groupings in country data.",
+    datePublished: "2026-05-20",
     sections: [
       { heading: "Continents are broad groups", body: "A continent is a large geographic grouping, but different school systems and organizations sometimes use slightly different models." },
       { heading: "Regions are more specific", body: "Regions such as Western Asia, Northern Europe, or the Caribbean help describe location more precisely than continent labels alone." },
@@ -380,6 +388,7 @@ export const blogPages: BlogPage[] = [
     slug: "how-country-population-and-area-are-measured",
     title: "How Country Population and Area Are Measured",
     description: "Why country population and area numbers vary across sources and why update dates matter.",
+    datePublished: "2026-05-22",
     sections: [
       { heading: "Population changes constantly", body: "Population estimates can differ because sources use different census dates, projection methods, migration assumptions, and update schedules." },
       { heading: "Area can include different measurements", body: "Some sources report land area only, while others include inland water or total area. Always check the definition before comparing countries." },
@@ -390,6 +399,7 @@ export const blogPages: BlogPage[] = [
     slug: "random-country-games-for-classrooms",
     title: "Random Country Games for Classrooms",
     description: "Classroom game ideas using random countries, flags, capitals, currencies, maps, and comparison prompts.",
+    datePublished: "2026-05-25",
     sections: [
       { heading: "Five-minute warmups", body: "Generate one country and ask students to name the continent, find it on a map, identify the flag, and guess the capital before revealing the facts." },
       { heading: "Team comparison rounds", body: "Give two teams different countries and ask them to compare population, area, languages, currency, and neighboring countries." },
@@ -400,6 +410,7 @@ export const blogPages: BlogPage[] = [
     slug: "how-to-compare-two-countries",
     title: "How to Compare Two Countries",
     description: "A clear method for comparing countries by population, area, capital, currency, language, region, and map location.",
+    datePublished: "2026-05-28",
     sections: [
       { heading: "Use the same fields", body: "A fair comparison uses the same fields for both countries: population, area, capital, currency, official languages, region, time zone, flag, and map location." },
       { heading: "Watch for scale", body: "Population and area can differ by huge amounts, so tables and short explanations are easier to understand than long paragraphs alone." },
@@ -410,6 +421,7 @@ export const blogPages: BlogPage[] = [
     slug: "map-skills-for-learning-countries",
     title: "Map Skills for Learning Countries",
     description: "Basic map skills for learning where countries are located and how they relate to regions, borders, and neighbors.",
+    datePublished: "2026-06-01",
     sections: [
       { heading: "Start with continents", body: "Find the continent first, then narrow down to the region, neighboring countries, coastline, and nearby major cities." },
       { heading: "Use neighbors as anchors", body: "Remembering border countries gives you mental anchors. A country is easier to place when you know what surrounds it." },

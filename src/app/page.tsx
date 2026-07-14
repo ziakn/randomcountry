@@ -4,6 +4,7 @@ import CountryTable from "@/components/CountryTable";
 import JsonLd from "@/components/JsonLd";
 import RandomCountryTool from "@/components/RandomCountryTool";
 import { getCountries } from "@/lib/countries";
+import { getDailyCountry } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Random Country Generator",
@@ -11,8 +12,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
+// Rotate the prerendered spotlight country once a day.
+export const revalidate = 86400;
+
 export default function Home() {
   const countries = getCountries();
+  const daily = getDailyCountry(countries);
 
   return (
     <main className="page-shell">
@@ -57,7 +62,7 @@ export default function Home() {
           },
         ]}
       />
-      <RandomCountryTool countries={countries} title="Random Country Generator" headingLevel="h1" />
+      <RandomCountryTool countries={countries} title="Random Country Generator" headingLevel="h1" initialSlug={daily?.slug} />
 
       <section className="content-grid">
         <article className="panel">

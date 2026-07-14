@@ -691,3 +691,106 @@ th {
     min-height: 220px;
   }
 }
+
+/* Provenance line on country profiles */
+.provenance {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.provenance a {
+  text-decoration: underline;
+}
+
+/* List pages */
+.list-summary {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.group-count {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+/* Contact form */
+.contact-form {
+  display: grid;
+  gap: 0.5rem;
+  max-width: 640px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel-soft);
+  color: inherit;
+  font: inherit;
+}
+
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.contact-form button {
+  justify-self: start;
+  margin-top: 0.5rem;
+}
+
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.form-error {
+  color: #a3241c;
+  font-size: 0.9rem;
+}
+
+/* Cookie consent */
+.consent-banner {
+  position: fixed;
+  inset: auto 1rem 1rem 1rem;
+  z-index: 50;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  box-shadow: 0 10px 30px rgb(0 0 0 / 12%);
+}
+
+.consent-banner p {
+  margin: 0;
+  font-size: 0.9rem;
+  flex: 1 1 320px;
+}
+
+.consent-banner a {
+  text-decoration: underline;
+}
+
+.consent-actions {
+  display: flex;
+  gap: 0.5rem;
+}

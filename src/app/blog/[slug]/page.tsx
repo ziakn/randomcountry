@@ -46,10 +46,12 @@ export default async function BlogArticlePage({ params }: Props) {
             "@type": "Article",
             headline: page.title,
             description: page.description,
-            dateModified: "2026-05-13",
+            datePublished: page.datePublished,
+            dateModified: page.dateModified ?? page.datePublished,
             author: {
               "@type": "Organization",
               name: siteAuthor.name,
+              url: absoluteUrl("/about"),
             },
             publisher: {
               "@type": "Organization",

@@ -112,7 +112,9 @@ async function main() {
         longitude: country.latlng?.[1] || 0,
         neighbors,
         unMember: Boolean(country.unMember),
-        island: !country.landlocked && neighbors.length === 0,
+        // Heuristic: no land borders and not landlocked. Antarctic records have no borders
+        // but are not island countries, so they are excluded explicitly.
+        island: !country.landlocked && neighbors.length === 0 && continent !== "Antarctica",
         landlocked: Boolean(country.landlocked),
         ...text,
       };
@@ -152,23 +154,39 @@ async function main() {
       travelFacts TEXT NOT NULL,
       unMember INTEGER NOT NULL,
       island INTEGER NOT NULL,
-      landlocked INTEGER NOT NULL
+      landlocked INTEGER NOT NULL,
+      reviewed INTEGER NOT NULL DEFAULT 0,
+      reviewedAt TEXT NOT NULL DEFAULT ''
     );
   `);
+
+  const columns = db.prepare("PRAGMA table_info(countries);").all();
+  const hasColumn = (name) => columns.some((column) => column.name === name);
+  if (!hasColumn("reviewed")) db.exec("ALTER TABLE countries ADD COLUMN reviewed INTEGER NOT NULL DEFAULT 0;");
+  if (!hasColumn("reviewedAt")) db.exec("ALTER TABLE countries ADD COLUMN reviewedAt TEXT NOT NULL DEFAULT '';");
+
+  // Re-importing replaces every row, so hand-written copy and its review flag must survive.
+  const reviewed = new Map(
+    db
+      .prepare("SELECT slug, history, geography, culture, food, famousPlaces, travelFacts, funFacts, reviewedAt FROM countries WHERE reviewed = 1")
+      .all()
+      .map((row) => [row.slug, row])
+  );
 
   const insert = db.prepare(`
     INSERT OR REPLACE INTO countries (
       slug, name, officialName, capital, continent, region, population, populationNumber, area,
       currency, currencyCode, language, timeZone, callingCode, tld, flagCode, latitude, longitude,
       neighbors, funFacts, history, geography, culture, food, famousPlaces, travelFacts,
-      unMember, island, landlocked
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      unMember, island, landlocked, reviewed, reviewedAt
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
 
   db.exec("BEGIN IMMEDIATE TRANSACTION;");
   try {
     db.exec("DELETE FROM countries;");
     for (const country of countries) {
+      const kept = reviewed.get(country.slug);
       insert.run(
         country.slug,
         country.name,
@@ -189,16 +207,18 @@ async function main() {
         country.latitude,
         country.longitude,
         JSON.stringify(country.neighbors),
-        JSON.stringify(country.funFacts),
-        country.history,
-        country.geography,
-        country.culture,
-        country.food,
-        JSON.stringify(country.famousPlaces),
-        JSON.stringify(country.travelFacts),
+        kept ? kept.funFacts : JSON.stringify(country.funFacts),
+        kept ? kept.history : country.history,
+        kept ? kept.geography : country.geography,
+        kept ? kept.culture : country.culture,
+        kept ? kept.food : country.food,
+        kept ? kept.famousPlaces : JSON.stringify(country.famousPlaces),
+        kept ? kept.travelFacts : JSON.stringify(country.travelFacts),
         country.unMember ? 1 : 0,
         country.island ? 1 : 0,
-        country.landlocked ? 1 : 0
+        country.landlocked ? 1 : 0,
+        kept ? 1 : 0,
+        kept ? kept.reviewedAt : ""
       );
     }
     db.exec("COMMIT;");
@@ -210,6 +230,7 @@ async function main() {
   console.log(`Imported ${countries.length} country records into ${dbPath}`);
   console.log(`UN members: ${countries.filter((country) => country.unMember).length}`);
   console.log(`Independent records: ${rawCountries.filter((country) => country.independent).length}`);
+  console.log(`Preserved reviewed profiles: ${reviewed.size}`);
 }
 
 main().catch((error) => {
