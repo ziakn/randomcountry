@@ -821,3 +821,19 @@ th {
     grid-template-columns: 1fr;
   }
 }
+
+.seo-copy h2 {
+  margin-top: 1.5rem;
+}
+
+.seo-copy h2:first-child {
+  margin-top: 0;
+}
+
+.seo-copy .use-cases {
+  padding-left: 1.25rem;
+}
+
+.seo-copy .use-cases li {
+  margin-bottom: 0.5rem;
+}

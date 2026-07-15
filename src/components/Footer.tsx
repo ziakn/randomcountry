@@ -68,7 +68,11 @@ export default function Footer() {
           </section>
         ))}
       </div>
-      <p className="footer-note">Country data changes over time. Review important facts with official sources.</p>
+      <p className="footer-note">
+        A geography tool by{" "}
+        <a href="https://www.ziamuhammad.com" rel="noopener">Zia Muhammad</a>. Country data changes over time —
+        review important facts with official sources.
+      </p>
     </footer>
   );
 }

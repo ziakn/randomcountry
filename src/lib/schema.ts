@@ -1,5 +1,5 @@
 import type { Post } from "./posts";
-import { absoluteUrl, dataSource, siteAuthor, siteName, siteUrl, socialProfiles } from "./seo";
+import { absoluteUrl, dataSource, parentSite, siteAuthor, siteName, siteUrl, socialProfiles } from "./seo";
 
 // A single connected @graph beats several disjointed JSON-LD blocks: the nodes reference each
 // other by @id, so a crawler resolves Organization -> WebSite -> WebPage -> Article as one unit
@@ -25,8 +25,10 @@ export function organizationNode(): Node {
       caption: `${siteName} logo`,
     },
     image: { "@id": LOGO_ID },
-    // Empty until real profiles exist. An unverifiable sameAs is worse than none.
-    ...(socialProfiles.length ? { sameAs: socialProfiles } : {}),
+    // Ties the subdomain tool to its umbrella brand + root domain for entity consolidation.
+    parentOrganization: { "@type": "Organization", name: parentSite.brand, url: parentSite.url },
+    // parentSite is a verifiable, owned domain; extra social profiles slot in as they exist.
+    sameAs: [parentSite.url, ...socialProfiles],
   };
 }
 
@@ -39,6 +41,37 @@ export function websiteNode(): Node {
     description: "Generate random countries, browse country facts, compare countries, and practice geography quizzes.",
     publisher: { "@id": ORG_ID },
     inLanguage: "en",
+  };
+}
+
+export function webApplicationNode(): Node {
+  return {
+    "@type": "WebApplication",
+    "@id": `${siteUrl}/#webapp`,
+    url: absoluteUrl("/"),
+    name: siteName,
+    applicationCategory: "EducationalApplication",
+    operatingSystem: "All",
+    browserRequirements: "Requires HTML5",
+    description:
+      "An interactive tool to instantly generate a random country for travel inspiration, education, games, and trivia.",
+    // Connected to the sitewide graph by @id rather than redefining Organization/WebSite.
+    isPartOf: { "@id": SITE_ID },
+    publisher: { "@id": ORG_ID },
+    creator: { "@type": "Person", name: parentSite.name, url: parentSite.url },
+    // It is genuinely free; a zero-price Offer is an honest eligibility signal.
+    offers: { "@type": "Offer", price: 0, priceCurrency: "USD" },
+  };
+}
+
+export function faqPageNode(items: { question: string; answer: string }[]): Node {
+  return {
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
   };
 }
 

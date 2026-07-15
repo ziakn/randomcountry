@@ -15,6 +15,15 @@ export const dataSource = {
 /** Public profiles for the Organization entity. Add real ones as they exist. */
 export const socialProfiles: string[] = [];
 
+/** The root domain this tool lives under. Used for cross-domain authority signals. */
+export const parentSite = {
+  /** The person: used as the WebApplication creator and the footer byline. */
+  name: "Zia Muhammad",
+  /** The umbrella brand: used as the parentOrganization over this and sibling tools. */
+  brand: "Zia Muhammad Tools",
+  url: "https://www.ziamuhammad.com",
+};
+
 export function absoluteUrl(path = "/") {
   return `${siteUrl}${path.startsWith("/") ? path : `/${path}`}`;
 }
